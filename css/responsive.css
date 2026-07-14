@@ -1,0 +1,591 @@
+/* =========================================================
+   SIEC EDUCATION -- RESPONSIVE STYLES
+   All breakpoint-specific rules live in this file only.
+   Breakpoints match Bootstrap 5's default grid system:
+
+     xs  : 0px      - 575.98px
+     sm  : 576px    - 767.98px
+     md  : 768px    - 991.98px
+     lg  : 992px    - 1199.98px
+     xl  : 1200px   - 1399.98px
+     xxl : 1400px and up
+
+   style.css holds the default (large-screen / lg-and-up) look.
+   This file overrides it going down through xl -> lg -> md -> sm -> xs,
+   the same "max-width" pattern Bootstrap itself uses internally.
+   ========================================================= */
+
+
+/* =========================================================
+   BELOW XXL  (max-width: 1399.98px)
+   ========================================================= */
+@media (max-width:1399.98px) {
+  .mega-dropdown--services {
+    width: 820px;
+  }
+
+  /* hero section  */
+  .hero-carousel {
+    height: 580px;
+  }
+}
+
+/* =========================================================
+   BELOW XL  (max-width: 1199.98px)
+   ========================================================= */
+@media (max-width:1199.98px) {
+  .main-nav-inner {
+    gap: 24px;
+  }
+
+  .nav-menu>ul>li>a {
+    padding: 12px 12px;
+  }
+
+  .mega-dropdown {
+    width: 640px;
+  }
+
+  .mega-dropdown--services {
+    width: 720px;
+  }
+
+  /* hero section xl */
+  .hero-carousel {
+    height: 540px;
+  }
+
+  .hero-heading {
+    font-size: 36px;
+  }
+
+  .hero-card {
+    padding: 36px 38px;
+    max-width: 500px;
+  }
+
+  /* siec highlight xl */
+  .highlights-grid-wrapper {
+    grid-template-columns: 1fr 1.2fr 1fr;
+    grid-template-rows: 240px 240px;
+    gap: 16px;
+  }
+
+  .card-blue-light {
+    grid-column: 3;
+    grid-row: 1;
+    border-radius: 24px;
+  }
+
+  .card-monuments-bg {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+    border-radius: 24px;
+  }
+}
+
+/* =========================================================
+   BELOW LG  (max-width: 991.98px)  -- main mobile/tablet switch
+   ========================================================= */
+@media (max-width:991.98px) {
+
+  .topbar {
+    display: none;
+  }
+
+  .mobile-search {
+    display: flex;
+  }
+
+  .brand img {
+    height: 44px;
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
+
+  .nav-overlay {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(10, 20, 15, 0.55);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1400;
+  }
+
+  .nav-overlay.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0px;
+    left: -100%;
+    width: 82%;
+    max-width: 320px;
+    height: 100vh;
+    background: var(--white);
+    box-shadow: var(--shadow-md);
+    padding: 52px 22px 24px;
+    transition: left 0.32s ease;
+    overflow-y: auto;
+    z-index: 1500;
+  }
+
+  .nav-menu.open {
+    left: 0px;
+  }
+
+  .mobile-menu-close {
+    display: flex;
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    width: 34px;
+    height: 34px;
+    border: none;
+    background: transparent;
+    color: var(--ink);
+    font-size: 1.05rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.2s ease;
+  }
+
+  .mobile-menu-close:hover {
+    background: var(--green-050);
+  }
+
+  .mobile-menu-logo {
+    display: block;
+    text-align: center;
+    margin-bottom: 22px;
+  }
+
+  .mobile-menu-logo img {
+    width: 150px;
+    margin: 0px auto;
+  }
+
+  .nav-menu>ul {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+  }
+
+  .nav-menu>ul>li>a {
+    padding: 13px 4px;
+    justify-content: space-between;
+    font-size: 1.02rem;
+    border-radius: 0px;
+  }
+
+  .nav-menu>ul>li>a i {
+    color: var(--ink);
+    font-size: 0.85rem;
+  }
+
+  .nav-menu>ul>li:hover>a {
+    background: transparent;
+    color: var(--green-700);
+  }
+
+  .mega-dropdown {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    padding: 0px 0px 8px 10px;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    display: none;
+  }
+
+  .has-dropdown.open .mega-dropdown {
+    display: block;
+  }
+
+  .mega-dropdown-grid,
+  .mega-dropdown-grid--services {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .mega-dropdown--services {
+    width: 100%;
+  }
+
+  .mega-promo {
+    display: none;
+  }
+
+  .flyout-submenu {
+    position: static;
+    box-shadow: none;
+    border: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    display: none;
+    padding-left: 20px;
+    margin-left: 0px;
+  }
+
+  .flyout-submenu.show {
+    display: block;
+  }
+
+  .simple-dropdown {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    display: none;
+    padding-left: 16px;
+  }
+
+  .has-dropdown.open .simple-dropdown {
+    display: block;
+  }
+
+  .mobile-menu-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 22px;
+  }
+
+  .btn-meet-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    background: var(--green-600);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 0.98rem;
+    padding: 13px;
+    border-radius: 10px;
+    transition: background 0.2s ease;
+  }
+
+  .btn-meet-mobile:hover {
+    background: var(--green-700);
+  }
+
+  .btn-signin-mobile {
+    display: block;
+    text-align: center;
+    background: var(--gold-500);
+    color: var(--ink);
+    font-weight: 700;
+    font-size: 0.98rem;
+    padding: 13px;
+    border-radius: 10px;
+    border: 1.5px solid var(--ink);
+    transition: background 0.2s ease;
+  }
+
+  .btn-signin-mobile:hover {
+    background: var(--gold-600);
+  }
+
+  .mobile-menu-divider {
+    display: block;
+    border: none;
+    border-top: 1px solid var(--line);
+    margin: 22px 0px 18px;
+  }
+
+  .mobile-menu-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .mobile-menu-contact a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: var(--grey-600);
+  }
+
+  .mobile-menu-contact i {
+    color: var(--green-600);
+    font-size: 1rem;
+  }
+
+  .mobile-menu-contact a:hover {
+    color: var(--green-700);
+  }
+
+  /* hero lg */
+  .hero-carousel {
+    height: 480px;
+  }
+
+  .hero-heading {
+    font-size: 30px;
+  }
+
+  .hero-subtext {
+    font-size: 16px;
+    margin-bottom: 22px;
+  }
+
+  .hero-card {
+    padding: 30px 32px;
+    max-width: 440px;
+  }
+
+  .hero-eyebrow {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .btn-hero {
+    padding: 12px 22px;
+    font-size: 14px;
+  }
+
+  .hero-carousel .carousel-control-prev,
+  .hero-carousel .carousel-control-next {
+    display: none;
+  }
+
+  /* siec highlights lg */
+  .siec-highlights {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 1.85rem;
+    max-width: 650px;
+  }
+
+  .highlights-grid-wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+
+  .card-yellow-light,
+  .card-pink-light,
+  .card-blue-light,
+  .card-orange-light {
+    grid-column: auto !important;
+    grid-row: auto !important;
+    border-radius: 24px !important;
+    height: 220px;
+  }
+
+
+  .card-banner-img {
+    grid-column: auto !important;
+    grid-row: span 2 !important;
+    height: 460px;
+    border-radius: 24px !important;
+  }
+
+  .card-monuments-bg {
+    grid-column: auto !important;
+    grid-row: auto !important;
+    border-radius: 24px !important;
+    height: 220px;
+  }
+
+  /* footer responsive */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+/* =========================================================
+   BELOW MD  (max-width: 767.98px)  -- tablets in portrait / 
+   ========================================================= */
+@media (max-width:767.98px) {
+  .nav-menu {
+    width: 88%;
+    max-width: 300px;
+  }
+
+  .mobile-search {
+    margin: 0px 10px;
+  }
+
+  /* hero section MD */
+  .hero-carousel {
+    height: 440px;
+  }
+
+  .hero-card {
+    max-width: 88%;
+    padding: 26px 26px;
+  }
+
+  .hero-heading {
+    font-size: 26px;
+  }
+
+  .hero-subtext {
+    font-size: 15px;
+  }
+}
+
+/* =========================================================
+   BELOW SM  (max-width: 575.98px)  -- phones
+   ========================================================= */
+@media (max-width:575.98px) {
+  .mobile-search {
+    margin: 0px 8px;
+    padding: 8px 12px;
+  }
+
+  .mobile-search input::placeholder {
+    font-size: 13px;
+  }
+
+  .brand img {
+    height: 38px;
+  }
+
+  .nav-menu {
+    width: 88%;
+    max-width: 280px;
+    padding: 48px 18px 20px;
+  }
+
+  .mobile-menu-logo img {
+    width: 130px;
+  }
+
+
+  /* hero section sm */
+  .hero-carousel {
+    height: 400px;
+  }
+
+  .hero-card {
+    padding: 22px 20px;
+    border-radius: 14px;
+  }
+
+  .hero-heading {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .hero-subtext {
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+
+  .hero-btn-row {
+    gap: 10px;
+  }
+
+  .hero-btn-row .btn-hero {
+    flex: 1 1 auto;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .btn-hero {
+    padding: 11px 16px;
+    font-size: 13px;
+  }
+
+  .hero-indicators {
+    bottom: 12px;
+  }
+
+  /* siec highlights sm */
+  .siec-highlights {
+    padding: 45px 0;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    line-height: 1.35;
+  }
+
+  .section-subtitle {
+    font-size: 0.88rem;
+    margin-top: 8px;
+  }
+
+
+  .highlights-grid-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 16px;
+    margin-top: 28px;
+  }
+
+  .highlight-card {
+    grid-column: auto !important;
+    grid-row: auto !important;
+    padding: 30px 20px !important;
+    border-radius: 20px !important;
+    height: auto !important;
+  }
+
+
+  .card-banner-img {
+    height: 280px !important;
+    order: -1;
+  }
+
+  .monuments-img {
+    max-height: 140px;
+  }
+
+  .counter-num {
+    font-size: 2.2rem;
+  }
+
+  .card-label {
+    font-size: 0.9rem;
+    line-height: 1.3;
+  }
+
+  /* footer mobile responsive */
+  .siec-footer {
+    padding-top: 45px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .subscribe-card {
+    padding: 16px;
+  }
+
+  .partners-grid {
+    gap: 10px;
+  }
+
+  .partner-card {
+    padding: 8px 12px;
+    height: 48px;
+  }
+
+  .partner-card img {
+    max-height: 28px;
+  }
+}
