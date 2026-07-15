@@ -91,7 +91,6 @@ img {
   border: none;
   cursor: pointer;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-  /* আপনার ইমেজের মতো সফট শ্যাডো */
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease, visibility 0.3s ease;
 }
 
@@ -1168,9 +1167,473 @@ img {
    SIEC HIGHLIGHTS STYLES End
    ========================================================= */
 
+   /* siec course search css start */
+   /* =========================================================
+   SIEC ADVANCED DYNAMIC CAROUSEL SECTION STYLE
+   ========================================================= */
+
+/* ১. টাইপোগ্রাফি ফন্ট ফ্যামিলি অ্যাসাইন */
+.siec-search-slider-sec {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--green-050); /* ওয়ার্ম লাইট ব্যাকগ্রাউন্ড */
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.siec-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* সেকশন হেডার */
+.siec-sec-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.siec-badge {
+  background-color: var(--green-100);
+  color: var(--green-900);
+  font-size: 0.88rem;
+  font-weight: 700;
+  padding: 6px 18px;
+  border-radius: 50px;
+  display: inline-block;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow-sm);
+}
+
+.siec-main-title {
+  font-family: 'Playfair Display', serif;
+  color: var(--green-900);
+  font-size: 2.3rem;
+  font-weight: 700;
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.35;
+}
+
+.siec-main-title span {
+  color: var(--gold-500); /* গোল্ডেন ইয়েলো হাইলাইট */
+}
+
+/* ৩টি সিলেক্ট ড্রপডাউন বার */
+.siec-filter-bar {
+  display: flex;
+  background-color: var(--white);
+  padding: 12px 16px;
+  border-radius: 100px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--line);
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto 60px auto;
+}
+
+.siec-select-group {
+  display: flex;
+  flex: 1;
+  gap: 15px;
+  margin-right: 20px;
+}
+
+.siec-select-box {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid var(--line);
+}
+
+.siec-select-box:last-child {
+  border-right: none;
+}
+
+.siec-select-icon {
+  position: absolute;
+  left: 15px;
+  color: var(--grey-600);
+  font-size: 1.1rem;
+}
+
+.siec-select-box select {
+  width: 100%;
+  padding: 15px 15px 15px 45px;
+  border: none;
+  background-color: transparent;
+  font-size: 0.95rem;
+  color: var(--ink);
+  font-weight: 500;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%230F3D22' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+}
+
+/* খুঁজুন বাটন */
+.siec-find-btn {
+  background-color: var(--gold-500);
+  color: var(--green-900);
+  border: 1px solid var(--line);
+  padding: 16px 36px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 100px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.siec-find-btn:hover {
+  background-color: var(--gold-600);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Discover row layout */
+.siec-discover-row {
+  max-width: 1100px;
+  margin: 0 auto 30px auto;
+}
+
+.siec-discover-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: var(--green-900);
+  font-weight: 700;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.siec-arrow-svg path {
+  stroke: var(--green-900);
+}
+
+/* ট্যাব বাটন স্টাইল */
+.siec-tabs-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.siec-tab {
+  flex: 1;
+  background-color: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: var(--shadow-sm);
+}
+
+.siec-tab-icon {
+  width: 44px;
+  height: 44px;
+  background-color: var(--green-100);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--green-900);
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.siec-tab-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.siec-tab-text span {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  color: var(--grey-600);
+}
+
+.siec-tab-text strong {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--green-900);
+}
+
+/* একটিভ ট্যাব স্টাইল */
+.siec-tab.active {
+  background-color: var(--gold-500);
+  border-color: var(--gold-500);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.siec-tab.active .siec-tab-icon {
+  background-color: var(--white);
+  color: var(--gold-600);
+}
+
+/* =========================================================
+   স্লাইডার মেকানিজম এবং কন্টেন্ট প্যানেল
+   ========================================================= */
+.siec-sliders-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* স্লাইডার প্যানেল (ডিফল্ট হিডেন) */
+.siec-slider-panel {
+  display: none;
+}
+
+.siec-slider-panel.active {
+  display: block;
+}
+
+/* স্লাইডার ভিউপোর্ট এবং নেভিগেশন */
+.siec-slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.siec-slider-track {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* ফায়ারফক্সে স্ক্রোলবার হাইড */
+  padding: 10px 5px;
+}
+
+.siec-slider-track::-webkit-scrollbar {
+  display: none; /* ক্রোম ও সাফারিতে স্ক্রোলবার হাইড */
+}
+
+/* স্লাইডার বাটন */
+.siec-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--white);
+  border: 1px solid var(--line);
+  color: var(--green-900);
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.siec-nav-btn:hover {
+  background-color: var(--green-900);
+  color: var(--white);
+  border-color: var(--green-900);
+}
+
+.prev-btn {
+  left: -22px;
+}
+
+.next-btn {
+  right: -22px;
+}
+
+/* =========================================================
+   কার্ড ডিজাইন (আইকনিক এবং ডেস্টিনেশন)
+   ========================================================= */
+.siec-card {
+  min-width: calc((100% - 80px) / 5); /* ডেক্সটপে ৫টি কার্ড */
+  max-width: calc((100% - 80px) / 5);
+  background-color: var(--white);
+  border-radius: 20px;
+  border: 1px solid var(--line);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 280px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.siec-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--green-800);
+}
+
+/* কার্ডের ভেতরের কন্টেন্ট বিন্যাস */
+.siec-card-top {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.siec-card-icon {
+  width: 48px;
+  height: 48px;
+  background-color: var(--green-050);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: var(--green-900);
+  border: 1px solid var(--line);
+}
+
+.siec-card-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--green-900);
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 2.7rem;
+}
+
+/* পরিসংখ্যান (কোর্সের সংখ্যা) */
+.siec-card-stats {
+  display: flex;
+  gap: 10px;
+  background-color: var(--green-050);
+  border-radius: 12px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  margin-bottom: 20px;
+}
+
+.stat-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stat-box strong {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--green-900);
+}
+
+.stat-box span {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  color: var(--grey-600);
+}
+
+/* কার্ড ফুটার */
+.siec-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  border-top: 1px dotted var(--line);
+}
+
+.siec-card-footer span {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--green-900);
+}
+
+.siec-arrow-circle {
+  width: 32px;
+  height: 32px;
+  background-color: var(--gold-500);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--green-900);
+  font-size: 0.8rem;
+  transition: all 0.2s ease;
+}
+
+.siec-card:hover .siec-arrow-circle {
+  background-color: var(--gold-600);
+  transform: scale(1.1);
+}
+
+/* =========================================================
+   ডেস্টিনেশন কার্ড বিশেষ স্টাইল (ইমেজ ও ফ্ল্যাগ)
+   ========================================================= */
+.dest-card {
+  padding: 0 !important; /* ইমেজ পুরো ফ্রেমে দেখানোর জন্য */
+  overflow: hidden;
+}
+
+.dest-media-box {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  background-color: var(--green-900);
+}
+
+.dest-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.85;
+}
+
+.dest-badge {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background-color: var(--white);
+  color: var(--ink);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+  box-shadow: var(--shadow-sm);
+}
+
+.dest-flag {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 1.4rem;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.25));
+}
+
+.dest-card .siec-card-stats {
+  margin: 16px 16px 12px 16px;
+}
+
+.dest-card .siec-card-footer {
+  margin: 0 16px 16px 16px;
+}
+
+   /* siec course search css end */
+
 /* ---------------------------------------------------------
    Footer section start
-   --------------------------------------------------------- */
+ --------------------------------------------------------- */
 
 .siec-footer {
   background-color: var(--siec-footer-bg);
@@ -1200,6 +1663,7 @@ img {
 .footer-title {
   color: var(--siec-footer-dark);
   font-size: 1.15rem;
+   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   margin-bottom: 22px;
   position: relative;
@@ -1223,15 +1687,18 @@ img {
 }
 
 .footer-links a {
-  color: var(--siec-text-main);
+  color: var(--ink);
   text-decoration: none;
+  font-family: 'Poppins', sans-serif;
   font-size: 0.95rem;
   transition: all 0.25s ease;
   display: inline-block;
+  font-weight: 600;
 }
 
 .footer-links a:hover {
   color: var(--siec-footer-dark);
+  font-family: 'Poppins', sans-serif;
   transform: translateX(4px);
   font-weight: 600;
 }

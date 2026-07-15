@@ -200,3 +200,73 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 // floating icon javascript end
+
+ // ==========================================
+  //  siec course search start
+  // ==========================================
+document.addEventListener("DOMContentLoaded", function () {
+  
+ 
+  const tabs = document.querySelectorAll(".siec-tab");
+  const panels = document.querySelectorAll(".siec-slider-panel");
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", function () {
+      tabs.forEach((t) => t.classList.remove("active"));
+      panels.forEach((p) => p.classList.remove("active"));
+      this.classList.add("active");
+      const targetId = this.getAttribute("data-tab-target");
+      const targetPanel = document.getElementById(targetId);
+      if (targetPanel) {
+        targetPanel.classList.add("active");
+        const track = targetPanel.querySelector(".siec-slider-track");
+        if (track) track.scrollLeft = 0;
+      }
+    });
+  });
+  const sliderPanels = document.querySelectorAll(".siec-slider-panel");
+
+  sliderPanels.forEach((panel) => {
+    const prevBtn = panel.querySelector(".prev-btn");
+    const nextBtn = panel.querySelector(".next-btn");
+    const track = panel.querySelector(".siec-slider-track");
+
+    if (track && prevBtn && nextBtn) {
+      const getScrollAmount = () => {
+        const cardWidth = panel.querySelector(".siec-card").offsetWidth;
+        return cardWidth + 20;
+      };
+
+      nextBtn.addEventListener("click", () => {
+        track.scrollBy({ left: getScrollAmount(), behavior: "smooth" });
+      });
+
+      prevBtn.addEventListener("click", () => {
+        track.scrollBy({ left: -getScrollAmount(), behavior: "smooth" });
+      });
+      const toggleButtons = () => {
+        const maxScroll = track.scrollWidth - track.clientWidth;
+        if (track.scrollLeft <= 5) {
+          prevBtn.style.opacity = "0.3";
+          prevBtn.style.pointerEvents = "none";
+        } else {
+          prevBtn.style.opacity = "1";
+          prevBtn.style.pointerEvents = "auto";
+        }
+        if (track.scrollLeft >= maxScroll - 5) {
+          nextBtn.style.opacity = "0.3";
+          nextBtn.style.pointerEvents = "none";
+        } else {
+          nextBtn.style.opacity = "1";
+          nextBtn.style.pointerEvents = "auto";
+        }
+      };
+      track.addEventListener("scroll", toggleButtons);
+      toggleButtons();
+      window.addEventListener("resize", toggleButtons);
+    }
+  });
+});
+ // ==========================================
+  //  siec course search end
+  // ==========================================
