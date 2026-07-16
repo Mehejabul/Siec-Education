@@ -1167,12 +1167,9 @@ img {
    SIEC HIGHLIGHTS STYLES End
    ========================================================= */
 
-   /* siec course search css start */
    /* =========================================================
-   SIEC ADVANCED DYNAMIC CAROUSEL SECTION STYLE
+   SIEC course search css start
    ========================================================= */
-
-/* ১. টাইপোগ্রাফি ফন্ট ফ্যামিলি অ্যাসাইন */
 .siec-search-slider-sec {
   font-family: 'Poppins', sans-serif;
   background-color: var(--green-050); /* ওয়ার্ম লাইট ব্যাকগ্রাউন্ড */
@@ -1187,7 +1184,6 @@ img {
   padding: 0 20px;
 }
 
-/* সেকশন হেডার */
 .siec-sec-header {
   text-align: center;
   margin-bottom: 40px;
@@ -1216,10 +1212,9 @@ img {
 }
 
 .siec-main-title span {
-  color: var(--gold-500); /* গোল্ডেন ইয়েলো হাইলাইট */
+  color: var(--gold-500);
 }
 
-/* ৩টি সিলেক্ট ড্রপডাউন বার */
 .siec-filter-bar {
   display: flex;
   background-color: var(--white);
@@ -1275,7 +1270,7 @@ img {
   background-position: right 15px center;
 }
 
-/* খুঁজুন বাটন */
+
 .siec-find-btn {
   background-color: var(--gold-500);
   color: var(--green-900);
@@ -1297,7 +1292,6 @@ img {
   box-shadow: var(--shadow-sm);
 }
 
-/* Discover row layout */
 .siec-discover-row {
   max-width: 1100px;
   margin: 0 auto 30px auto;
@@ -1318,7 +1312,7 @@ img {
   stroke: var(--green-900);
 }
 
-/* ট্যাব বাটন স্টাইল */
+
 .siec-tabs-wrapper {
   display: flex;
   gap: 20px;
@@ -1368,7 +1362,7 @@ img {
   color: var(--green-900);
 }
 
-/* একটিভ ট্যাব স্টাইল */
+
 .siec-tab.active {
   background-color: var(--gold-500);
   border-color: var(--gold-500);
@@ -1381,16 +1375,14 @@ img {
   color: var(--gold-600);
 }
 
-/* =========================================================
-   স্লাইডার মেকানিজম এবং কন্টেন্ট প্যানেল
-   ========================================================= */
+
 .siec-sliders-container {
   max-width: 1100px;
   margin: 0 auto;
   position: relative;
 }
 
-/* স্লাইডার প্যানেল (ডিফল্ট হিডেন) */
+
 .siec-slider-panel {
   display: none;
 }
@@ -1399,7 +1391,7 @@ img {
   display: block;
 }
 
-/* স্লাইডার ভিউপোর্ট এবং নেভিগেশন */
+
 .siec-slider-wrapper {
   position: relative;
   display: flex;
@@ -1413,15 +1405,15 @@ img {
   width: 100%;
   overflow-x: auto;
   scroll-behavior: smooth;
-  scrollbar-width: none; /* ফায়ারফক্সে স্ক্রোলবার হাইড */
+  scrollbar-width: none;
   padding: 10px 5px;
 }
 
 .siec-slider-track::-webkit-scrollbar {
-  display: none; /* ক্রোম ও সাফারিতে স্ক্রোলবার হাইড */
+  display: none;
 }
 
-/* স্লাইডার বাটন */
+
 .siec-nav-btn {
   position: absolute;
   top: 50%;
@@ -1456,11 +1448,9 @@ img {
   right: -22px;
 }
 
-/* =========================================================
-   কার্ড ডিজাইন (আইকনিক এবং ডেস্টিনেশন)
-   ========================================================= */
+
 .siec-card {
-  min-width: calc((100% - 80px) / 5); /* ডেক্সটপে ৫টি কার্ড */
+  min-width: calc((100% - 80px) / 5); 
   max-width: calc((100% - 80px) / 5);
   background-color: var(--white);
   border-radius: 20px;
@@ -1480,7 +1470,6 @@ img {
   border-color: var(--green-800);
 }
 
-/* কার্ডের ভেতরের কন্টেন্ট বিন্যাস */
 .siec-card-top {
   display: flex;
   flex-direction: column;
@@ -1513,7 +1502,6 @@ img {
   height: 2.7rem;
 }
 
-/* পরিসংখ্যান (কোর্সের সংখ্যা) */
 .siec-card-stats {
   display: flex;
   gap: 10px;
@@ -1545,7 +1533,6 @@ img {
   color: var(--grey-600);
 }
 
-/* কার্ড ফুটার */
 .siec-card-footer {
   display: flex;
   align-items: center;
@@ -1578,11 +1565,8 @@ img {
   transform: scale(1.1);
 }
 
-/* =========================================================
-   ডেস্টিনেশন কার্ড বিশেষ স্টাইল (ইমেজ ও ফ্ল্যাগ)
-   ========================================================= */
 .dest-card {
-  padding: 0 !important; /* ইমেজ পুরো ফ্রেমে দেখানোর জন্য */
+  padding: 0 !important;
   overflow: hidden;
 }
 
@@ -1628,12 +1612,482 @@ img {
 .dest-card .siec-card-footer {
   margin: 0 16px 16px 16px;
 }
+/* =========================================================
+   Siec course search css end
+ ========================================================= */
+ /* =========================================================
+   Siec university list css start
+ ========================================================= */
+.siec-uni-sec {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fafaf8;
+  padding: 80px 0;
+  overflow: hidden;
+  width: 100%;
+}
 
-   /* siec course search css end */
+.siec-uni-header {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 0 20px;
+}
 
-/* ---------------------------------------------------------
+.siec-uni-title {
+  font-family: 'Playfair Display', serif;
+  color: #0c391f;
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.siec-uni-title span {
+  color: #fabc2c;
+}
+
+.siec-uni-subtitle {
+  color: #4a5568;
+  font-size: 1.05rem;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.siec-uni-slider-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  mask-image: linear-gradient(to right, transparent, #000 15%, #000 85%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 15%, #000 85%, transparent);
+}
+
+.siec-uni-track {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  width: max-content;
+  animation: scrollInfinite 25s linear infinite;
+}
+
+.siec-uni-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.siec-uni-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(20%) opacity(0.85);
+  transition: all 0.3s ease;
+}
+
+.siec-uni-slide:hover img {
+  filter: grayscale(0%) opacity(1);
+  transform: scale(1.05);
+}
+
+@keyframes scrollInfinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 30px));
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .siec-uni-title {
+    font-size: 2.1rem;
+  }
+  .siec-uni-track {
+    gap: 45px;
+  }
+  .siec-uni-slide {
+    width: 140px;
+  }
+  @keyframes scrollInfinite {
+    100% { transform: translateX(calc(-50% - 22.5px)); }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .siec-uni-sec {
+    padding: 60px 0;
+  }
+  .siec-uni-title {
+    font-size: 1.85rem;
+  }
+  .siec-uni-subtitle {
+    font-size: 0.95rem;
+  }
+  .siec-uni-track {
+    gap: 35px;
+  }
+  .siec-uni-slide {
+    width: 125px;
+  }
+  @keyframes scrollInfinite {
+    100% { transform: translateX(calc(-50% - 17.5px)); }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .siec-uni-title {
+    font-size: 1.6rem;
+  }
+  .siec-uni-track {
+    gap: 25px;
+  }
+  .siec-uni-slide {
+    width: 110px;
+  }
+  @keyframes scrollInfinite {
+    100% { transform: translateX(calc(-50% - 12.5px)); }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .siec-uni-sec {
+    padding: 40px 0;
+  }
+  .siec-uni-title {
+    font-size: 1.4rem;
+  }
+  .siec-uni-subtitle {
+    font-size: 0.9rem;
+  }
+  .siec-uni-track {
+    gap: 20px;
+    animation-duration: 18s;
+  }
+  .siec-uni-slide {
+    width: 95px;
+  }
+  @keyframes scrollInfinite {
+    100% { transform: translateX(calc(-50% - 10px)); }
+  }
+}
+ /* =========================================================
+   Siec university list css End
+ ========================================================= */
+ /* =========================================================
+   Siec academic destination start
+ ========================================================= */
+.siec-destination-sec {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdfcf7;
+  padding: 80px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.dest-section-container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.dest-main-header-wrap {
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto 50px auto;
+  position: relative;
+}
+
+.dest-plane-svg-icon {
+  position: absolute;
+  left: -90px;
+  top: 10px;
+  width: 65px;
+  height: 65px;
+  opacity: 0.7;
+  transform: rotate(-15deg);
+}
+
+.dest-badge-tag {
+  background-color: #cce3f5;
+  color: #1a4d66;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 6px 18px;
+  border-radius: 50px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.dest-section-heading {
+  color: #1e3f20;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+.dest-section-heading span {
+  color: #dca018;
+}
+
+.dest-section-subheading {
+  color: #556052;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.dest-slider-viewport {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.dest-slider-moving-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  will-change: transform;
+}
+
+.dest-single-item-card {
+  width: 235px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #e5eae6;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  min-height: 325px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.015);
+  transition: box-shadow 0.3s cubic-bezier(0.25, 1, 0.5, 1), border-color 0.3s ease;
+}
+
+.dest-card-media-top {
+  position: relative;
+  width: 100%;
+  height: 135px;
+  overflow: hidden;
+  transition: height 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.dest-card-img-src {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.dest-card-hover-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(0,0,0,0.45));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  gap: 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  transition: opacity 0.3s ease;
+}
+
+.dest-card-big-flag {
+  width: 85px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.25);
+  transform: scale(0.85);
+  transition: transform 0.3s ease;
+}
+
+.dest-card-big-flag img {
+  width: 100%;
+  display: block;
+}
+
+.dest-card-hover-anchor {
+  background-color: #ffffff;
+  color: #2b5743;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transform: translateY(8px);
+  transition: transform 0.3s ease;
+}
+
+.dest-arrow-circle-span {
+  background-color: #2b5743;
+  color: #ffffff;
+  width: 18px;
+  height: 18px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+}
+
+.dest-card-body-bottom {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  transition: opacity 0.2s ease;
+}
+
+.dest-card-title-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dest-card-country-txt {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #333d31;
+}
+
+.dest-card-mini-flag {
+  width: 28px;
+  border-radius: 3px;
+}
+
+.dest-card-metrics-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 12px 0;
+  border-bottom: 1px solid #f2f5f3;
+}
+
+.dest-card-meta-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dest-emoji-icon {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.dest-meta-txt-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.dest-meta-txt-wrap strong {
+  font-size: 0.95rem;
+  color: #2d3748;
+  line-height: 1.2;
+}
+
+.dest-meta-txt-wrap span {
+  font-size: 0.72rem;
+  color: #8c968a;
+}
+
+.dest-card-static-anchor {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #2b5743;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.dest-arrow-inline-span {
+  font-size: 0.85rem;
+  transition: transform 0.2s ease;
+}
+
+.dest-card-static-anchor:hover .dest-arrow-inline-span {
+  transform: translateX(3px);
+}
+
+.dest-single-item-card:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.dest-single-item-card:hover .dest-card-media-top {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+.dest-single-item-card:hover .dest-card-img-src {
+  transform: scale(1.03);
+}
+
+.dest-single-item-card:hover .dest-card-hover-mask {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dest-single-item-card:hover .dest-card-big-flag {
+  transform: scale(1);
+}
+
+.dest-single-item-card:hover .dest-card-hover-anchor {
+  transform: translateY(0);
+}
+
+.dest-single-item-card:hover .dest-card-body-bottom {
+  opacity: 0;
+}
+
+@media (max-width: 991.98px) {
+  .dest-section-heading { font-size: 1.95rem; }
+  .dest-plane-svg-icon { display: none; }
+  .dest-single-item-card { width: 210px; min-height: 300px; }
+}
+
+@media (max-width: 767.98px) {
+  .dest-section-heading { font-size: 1.6rem; }
+  .dest-section-subheading { font-size: 0.88rem; }
+  .dest-single-item-card { width: 180px; min-height: 275px; }
+  .dest-card-media-top { height: 115px; }
+  .dest-emoji-icon { font-size: 1rem; }
+}
+
+@media (max-width: 480px) {
+  .dest-single-item-card { width: 155px; min-height: 250px; }
+  .dest-card-country-txt { font-size: 0.95rem; }
+}
+ /* =========================================================
+   Siec academic destination End
+ ========================================================= */
+
+/* ========================================================
    Footer section start
- --------------------------------------------------------- */
+ ======================================================== */
 
 .siec-footer {
   background-color: var(--siec-footer-bg);

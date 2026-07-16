@@ -270,3 +270,58 @@ document.addEventListener("DOMContentLoaded", function () {
  // ==========================================
   //  siec course search end
   // ==========================================
+
+  // ==========================================
+  //  siec university list start
+  // ==========================================
+     document.addEventListener("DOMContentLoaded", function () {
+  const track = document.querySelector(".siec-uni-track");
+  
+  if (track) {
+    track.addEventListener("mouseenter", () => {
+      track.style.animationPlayState = "paused";
+    });
+    
+    track.addEventListener("mouseleave", () => {
+      track.style.animationPlayState = "running";
+    });
+  }
+});
+
+  // ==========================================
+  //  siec university list end
+  // ========================================== 
+
+  // siec destination js start
+document.addEventListener("DOMContentLoaded", () => {
+  const destTrack = document.querySelector(".dest-slider-moving-track");
+  if (!destTrack) return;
+
+  const destCards = Array.from(destTrack.children);
+  destCards.forEach(card => {
+    const clone = card.cloneNode(true);
+    destTrack.appendChild(clone);
+  });
+
+  let destSpeed = 1;
+  let destScrollAmount = 0;
+  let destIsPaused = false;
+
+  function runDestSlider() {
+    if (!destIsPaused) {
+      destScrollAmount += destSpeed;
+      if (destScrollAmount >= destTrack.scrollWidth / 2) {
+        destScrollAmount = 0;
+      }
+      destTrack.style.transform = `translateX(-${destScrollAmount}px)`;
+    }
+    requestAnimationFrame(runDestSlider);
+  }
+
+  destTrack.addEventListener("mouseenter", () => destIsPaused = true);
+  destTrack.addEventListener("mouseleave", () => destIsPaused = false);
+
+  requestAnimationFrame(runDestSlider);
+});
+
+  //siec destination js end
