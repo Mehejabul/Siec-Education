@@ -323,5 +323,83 @@ document.addEventListener("DOMContentLoaded", () => {
 
   requestAnimationFrame(runDestSlider);
 });
-
   //siec destination js end
+
+  // siec blog section js start
+  document.addEventListener('DOMContentLoaded', () => {
+  const container = document.getElementById('siecBlogContainer');
+  const prevBtn = document.getElementById('siecBlogPrev');
+  const nextBtn = document.getElementById('siecBlogNext');
+
+  if (container && prevBtn && nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      const card = container.querySelector('.siec-blog-col');
+      const cardWidth = card ? card.offsetWidth : 350;
+      container.scrollBy({ left: cardWidth, behavior: 'smooth' });
+    });
+
+    prevBtn.addEventListener('click', () => {
+      const card = container.querySelector('.siec-blog-col');
+      const cardWidth = card ? card.offsetWidth : 350;
+      container.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+    });
+  }
+});
+
+  //siec blog section js end
+
+  //Alumni section js start
+  document.addEventListener('DOMContentLoaded', () => {
+  const textContainer = document.getElementById('siecTextSlider');
+  const textPrev = document.getElementById('siecTextPrev');
+  const textNext = document.getElementById('siecTextNext');
+
+  if (textContainer && textPrev && textNext) {
+    textNext.addEventListener('click', () => {
+      textContainer.scrollBy({ top: 160, behavior: 'smooth' });
+    });
+    textPrev.addEventListener('click', () => {
+      textContainer.scrollBy({ top: -160, behavior: 'smooth' });
+    });
+  }
+
+  const videoContainer = document.getElementById('siecVideoSlider');
+  const dotsContainer = document.getElementById('siecVideoDots');
+  const videoCards = document.querySelectorAll('.siec-video-card');
+
+  if (videoContainer && dotsContainer && videoCards.length > 0) {
+    videoCards.forEach((_, idx) => {
+      const dot = document.createElement('div');
+      dot.classList.add('siec-dot');
+      if (idx === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => {
+        videoContainer.scrollTo({
+          left: videoContainer.offsetWidth * idx,
+          behavior: 'smooth'
+        });
+      });
+      dotsContainer.appendChild(dot);
+    });
+
+    videoContainer.addEventListener('scroll', () => {
+      const activeIdx = Math.round(videoContainer.scrollLeft / videoContainer.offsetWidth);
+      const dots = dotsContainer.querySelectorAll('.siec-dot');
+      dots.forEach((dot, idx) => {
+        dot.classList.toggle('active', idx === activeIdx);
+      });
+    });
+
+    let autoSlide = setInterval(() => {
+      let nextIdx = Math.round(videoContainer.scrollLeft / videoContainer.offsetWidth) + 1;
+      if (nextIdx >= videoCards.length) nextIdx = 0;
+      videoContainer.scrollTo({
+        left: videoContainer.offsetWidth * nextIdx,
+        behavior: 'smooth'
+      });
+    }, 5000);
+
+    videoContainer.addEventListener('mouseenter', () => clearInterval(autoSlide));
+  }
+});
+
+  //Alumni section js end

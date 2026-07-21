@@ -2085,6 +2085,885 @@ img {
    Siec academic destination End
  ========================================================= */
 
+ /* ========================================================= 
+     service section css start
+  ========================================================= */
+ .siec-services-sec {
+  background-color: var(--green-050);
+  padding: 80px 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.serv-container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.serv-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -12px;
+}
+
+.serv-col {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.serv-header-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 15px;
+}
+
+.serv-badge {
+  background-color: #cce3f5;
+  color: var(--green-900);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 50px;
+  align-self: flex-start;
+  margin-bottom: 16px;
+}
+
+.serv-heading {
+  color: var(--green-900);
+  font-family: 'Playfair Display', serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0 0 16px 0;
+}
+
+.serv-heading span {
+  color: var(--gold-600);
+}
+
+.serv-subheading {
+  color: var(--grey-600);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.serv-card {
+  position: relative;
+  height: 280px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+}
+
+.serv-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.serv-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(13, 49, 25, 0.85) 0%, rgba(0, 0, 0, 0.1) 60%);
+  transition: opacity 0.3s ease;
+}
+
+.serv-icon-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 38px;
+  height: 38px;
+  background-color: var(--green-800);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.serv-icon-badge i {
+  font-size: 0.95rem;
+  color: var(--white);
+}
+
+.serv-default-title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  z-index: 2;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.serv-hover-card {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  background-color: var(--white);
+  padding: 18px;
+  border-radius: 12px;
+  z-index: 3;
+  box-shadow: var(--shadow-md);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  transition: all 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.serv-hover-title {
+  color: var(--green-700);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+}
+
+.serv-hover-desc {
+  color: var(--grey-600);
+  font-size: 0.82rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.serv-card:hover .serv-card-img {
+  transform: scale(1.05);
+}
+
+.serv-card:hover .serv-default-title {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.serv-card:hover .serv-hover-card {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+@media (max-width: 991.98px) {
+  .serv-col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .serv-col-header {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .serv-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .serv-card {
+    height: 250px;
+  }
+  .serv-heading {
+    font-size: 1.65rem;
+  }
+}
+
+  /*=======================================================
+   service section css end 
+   ========================================================*/
+   /* =====================================================
+   recognization css  start
+   ======================================================== */
+   .siec-recognitions-sec {
+  background: linear-gradient(135deg, var(--green-800) 0%, var(--green-900) 100%);
+  padding: 70px 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.recog-container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.recog-heading {
+  color: var(--white);
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 45px 0;
+  letter-spacing: 0.5px;
+}
+
+.recog-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -10px;
+}
+
+.recog-col {
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.recog-card {
+  background-color: var(--white);
+  border-radius: 16px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.recog-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.recog-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+.recog-card:hover .recog-img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1199.98px) {
+  .recog-col {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .recog-heading {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  .recog-col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .recog-card {
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .recog-col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .recog-card {
+    height: 100px;
+    padding: 10px;
+  }
+}
+   /*=======================================================
+    recognization css end
+    ========================================================== */
+    /*=======================================================
+     Blog Section css start
+     ======================================================== */
+ .siec-blog-section {
+  background-color: var(--green-050);
+  padding: 80px 0;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.siec-blog-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.siec-blog-header {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.siec-blog-badge {
+  background: #e0f2fe;
+  color: var(--green-800);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 6px 18px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.siec-blog-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--green-900);
+  margin-bottom: 10px;
+}
+
+.siec-blog-title-highlight {
+  color: var(--gold-600);
+}
+
+.siec-blog-subtitle {
+  color: var(--grey-600);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.siec-blog-slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.siec-blog-slider-container {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 100%;
+  scrollbar-width: none;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  scroll-snap-type: x mandatory;
+}
+
+.siec-blog-slider-container::-webkit-scrollbar {
+  display: none;
+}
+
+.siec-blog-row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.siec-blog-col {
+  flex: 0 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+  scroll-snap-align: start;
+}
+
+.siec-blog-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--green-800);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.siec-blog-prev-btn {
+  left: 5px;
+}
+
+.siec-blog-next-btn {
+  right: 5px;
+}
+
+.siec-blog-nav-btn:hover {
+  background-color: var(--green-800);
+  color: var(--white);
+  box-shadow: var(--shadow-md);
+}
+
+.siec-blog-card {
+  background-color: var(--white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.siec-blog-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+.siec-blog-img-box {
+  position: relative;
+  height: 180px;
+  overflow: visible;
+}
+
+.siec-blog-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.siec-blog-card:hover .siec-blog-img {
+  transform: scale(1.08);
+}
+
+.siec-blog-category {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: var(--white);
+  color: var(--green-900);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  box-shadow: var(--shadow-sm);
+  z-index: 2;
+}
+
+.siec-blog-date {
+  position: absolute;
+  bottom: -18px;
+  left: 15px;
+  background-color: var(--green-700);
+  color: var(--white);
+  padding: 6px 14px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  line-height: 1.1;
+  z-index: 5;
+}
+
+.siec-blog-day {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.siec-blog-month {
+  display: block;
+  font-size: 0.75rem;
+}
+
+.siec-blog-content {
+  padding: 30px 18px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.siec-blog-meta {
+  font-size: 0.85rem;
+  color: var(--gold-600);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.siec-blog-meta i {
+  margin-right: 4px;
+}
+
+.siec-blog-card-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--green-900);
+  margin: 0 0 10px 0;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.siec-blog-desc {
+  font-size: 0.875rem;
+  color: var(--grey-600);
+  line-height: 1.5;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.siec-blog-link {
+  margin-top: auto;
+  color: var(--green-800);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.3s ease;
+}
+
+.siec-blog-link:hover {
+  color: var(--gold-600);
+}
+
+.siec-blog-footer {
+  margin-top: 40px;
+}
+
+.siec-blog-view-btn {
+  background-color: var(--gold-500);
+  color: var(--green-900);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 12px 36px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.siec-blog-view-btn:hover {
+  background-color: var(--gold-600);
+  transform: translateY(-2px);
+}
+
+@media (min-width: 992px) {
+  .siec-blog-col { flex: 0 0 33.333333%; max-width: 33.333333%; }
+  .siec-blog-prev-btn { left: -15px; }
+  .siec-blog-next-btn { right: -15px; }
+}
+
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .siec-blog-col { flex: 0 0 50%; max-width: 50%; }
+}
+
+@media (max-width: 767.98px) {
+  .siec-blog-col { flex: 0 0 100%; max-width: 100%; }
+  .siec-blog-title { font-size: 1.85rem; }
+  .siec-blog-nav-btn {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+     /*=====================================================
+      Blog Section css end
+      ====================================================== */
+      /* ======================================================
+      Alumni section css start 
+      =======================================================*/
+       .siec-testimonial-section {
+  background-color: var(--green-050);
+  padding: 80px 0;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.siec-testimonial-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.siec-testimonial-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.siec-testimonial-badge {
+  background: linear-gradient(135deg, #b3e5fc 0%, #81d4fa 100%);
+  color: var(--green-900);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 6px 22px;
+  border-radius: 20px 0px 20px 0px;
+  display: inline-block;
+  margin-bottom: 14px;
+}
+
+.siec-testimonial-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--green-900);
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.siec-testimonial-title-highlight {
+  color: var(--gold-600);
+}
+
+.siec-testimonial-subtitle {
+  color: var(--grey-600);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.siec-testimonial-body {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.siec-testimonial-left {
+  flex: 0 0 45%;
+  max-width: 45%;
+  position: relative;
+}
+
+.siec-text-slider-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.siec-text-slider-container {
+  height: 380px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  scroll-snap-type: y mandatory;
+  width: 100%;
+}
+
+.siec-text-slider-container::-webkit-scrollbar {
+  display: none;
+}
+
+.siec-text-slider-track {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.siec-text-card {
+  background: var(--white);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  scroll-snap-align: start;
+  box-sizing: border-box;
+}
+
+.siec-text-quote {
+  font-size: 0.92rem;
+  color: var(--grey-600);
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+}
+
+.siec-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.siec-user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.siec-user-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.siec-user-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--green-900);
+  margin: 0;
+}
+
+.siec-user-tag {
+  font-size: 0.75rem;
+  color: var(--gold-600);
+  font-weight: 500;
+}
+
+.siec-rating {
+  color: var(--gold-500);
+  font-size: 0.85rem;
+  display: flex;
+  gap: 2px;
+}
+
+.siec-text-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.siec-v-nav-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--green-800);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.siec-v-nav-btn:hover {
+  background: var(--green-800);
+  color: var(--white);
+}
+
+.siec-testimonial-right {
+  flex: 0 0 55%;
+  max-width: 55%;
+  position: relative;
+}
+
+.siec-video-slider-wrapper {
+  width: 100%;
+}
+
+.siec-video-slider-container {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  border-radius: 20px;
+}
+
+.siec-video-slider-container::-webkit-scrollbar {
+  display: none;
+}
+
+.siec-video-slider-track {
+  display: flex;
+}
+
+.siec-video-card {
+  flex: 0 0 100%;
+  max-width: 100%;
+  scroll-snap-align: start;
+}
+
+.siec-video-box {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: var(--shadow-md);
+  background: #000;
+}
+
+.siec-video-box iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.siec-video-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.siec-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.siec-dot.active {
+  width: 24px;
+  border-radius: 10px;
+  background: var(--green-800);
+}
+
+@media (max-width: 991.98px) {
+  .siec-testimonial-body {
+    flex-direction: column;
+  }
+  .siec-testimonial-left,
+  .siec-testimonial-right {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .siec-testimonial-title {
+    font-size: 1.85rem;
+  }
+  .siec-testimonial-subtitle br {
+    display: none;
+  }
+  .siec-text-slider-wrapper {
+    flex-direction: column;
+  }
+  .siec-text-nav {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+      /* ======================================================
+      Alumni section css end
+      ======================================================= */
+
 /* ========================================================
    Footer section start
  ======================================================== */
