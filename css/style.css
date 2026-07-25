@@ -1167,12 +1167,13 @@ img {
    SIEC HIGHLIGHTS STYLES End
    ========================================================= */
 
-   /* =========================================================
+/* =========================================================
    SIEC course search css start
    ========================================================= */
 .siec-search-slider-sec {
   font-family: 'Poppins', sans-serif;
-  background-color: var(--green-050); /* ওয়ার্ম লাইট ব্যাকগ্রাউন্ড */
+  background-color: var(--green-050);
+  /* ওয়ার্ম লাইট ব্যাকগ্রাউন্ড */
   padding: 80px 0;
   overflow: hidden;
 }
@@ -1450,7 +1451,7 @@ img {
 
 
 .siec-card {
-  min-width: calc((100% - 80px) / 5); 
+  min-width: calc((100% - 80px) / 5);
   max-width: calc((100% - 80px) / 5);
   background-color: var(--white);
   border-radius: 20px;
@@ -1602,7 +1603,7 @@ img {
   top: 12px;
   right: 12px;
   font-size: 1.4rem;
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.25));
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.25));
 }
 
 .dest-card .siec-card-stats {
@@ -1612,10 +1613,11 @@ img {
 .dest-card .siec-card-footer {
   margin: 0 16px 16px 16px;
 }
+
 /* =========================================================
    Siec course search css end
  ========================================================= */
- /* =========================================================
+/* =========================================================
    Siec university list css start
  ========================================================= */
 .siec-uni-sec {
@@ -1698,6 +1700,7 @@ img {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(calc(-50% - 30px));
   }
@@ -1707,14 +1710,19 @@ img {
   .siec-uni-title {
     font-size: 2.1rem;
   }
+
   .siec-uni-track {
     gap: 45px;
   }
+
   .siec-uni-slide {
     width: 140px;
   }
+
   @keyframes scrollInfinite {
-    100% { transform: translateX(calc(-50% - 22.5px)); }
+    100% {
+      transform: translateX(calc(-50% - 22.5px));
+    }
   }
 }
 
@@ -1722,20 +1730,27 @@ img {
   .siec-uni-sec {
     padding: 60px 0;
   }
+
   .siec-uni-title {
     font-size: 1.85rem;
   }
+
   .siec-uni-subtitle {
     font-size: 0.95rem;
   }
+
   .siec-uni-track {
     gap: 35px;
   }
+
   .siec-uni-slide {
     width: 125px;
   }
+
   @keyframes scrollInfinite {
-    100% { transform: translateX(calc(-50% - 17.5px)); }
+    100% {
+      transform: translateX(calc(-50% - 17.5px));
+    }
   }
 }
 
@@ -1743,14 +1758,19 @@ img {
   .siec-uni-title {
     font-size: 1.6rem;
   }
+
   .siec-uni-track {
     gap: 25px;
   }
+
   .siec-uni-slide {
     width: 110px;
   }
+
   @keyframes scrollInfinite {
-    100% { transform: translateX(calc(-50% - 12.5px)); }
+    100% {
+      transform: translateX(calc(-50% - 12.5px));
+    }
   }
 }
 
@@ -1758,27 +1778,35 @@ img {
   .siec-uni-sec {
     padding: 40px 0;
   }
+
   .siec-uni-title {
     font-size: 1.4rem;
   }
+
   .siec-uni-subtitle {
     font-size: 0.9rem;
   }
+
   .siec-uni-track {
     gap: 20px;
     animation-duration: 18s;
   }
+
   .siec-uni-slide {
     width: 95px;
   }
+
   @keyframes scrollInfinite {
-    100% { transform: translateX(calc(-50% - 10px)); }
+    100% {
+      transform: translateX(calc(-50% - 10px));
+    }
   }
 }
- /* =========================================================
+
+/* =========================================================
    Siec university list css End
  ========================================================= */
- /* =========================================================
+/* =========================================================
    Siec academic destination start
  ========================================================= */
 .siec-destination-sec {
@@ -1867,7 +1895,7 @@ img {
   overflow: hidden;
   position: relative;
   min-height: 325px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.015);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.015);
   transition: box-shadow 0.3s cubic-bezier(0.25, 1, 0.5, 1), border-color 0.3s ease;
 }
 
@@ -1892,7 +1920,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(0,0,0,0.45));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.45));
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1909,7 +1937,7 @@ img {
   width: 85px;
   border-radius: 6px;
   overflow: hidden;
-  box-shadow: 0 5px 12px rgba(0,0,0,0.25);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
   transform: scale(0.85);
   transition: transform 0.3s ease;
 }
@@ -1930,7 +1958,7 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   transform: translateY(8px);
   transition: transform 0.3s ease;
 }
@@ -2030,7 +2058,7 @@ img {
 
 .dest-single-item-card:hover {
   border-color: #cbd5e1;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 
 .dest-single-item-card:hover .dest-card-media-top {
@@ -2064,31 +2092,62 @@ img {
 }
 
 @media (max-width: 991.98px) {
-  .dest-section-heading { font-size: 1.95rem; }
-  .dest-plane-svg-icon { display: none; }
-  .dest-single-item-card { width: 210px; min-height: 300px; }
+  .dest-section-heading {
+    font-size: 1.95rem;
+  }
+
+  .dest-plane-svg-icon {
+    display: none;
+  }
+
+  .dest-single-item-card {
+    width: 210px;
+    min-height: 300px;
+  }
 }
 
 @media (max-width: 767.98px) {
-  .dest-section-heading { font-size: 1.6rem; }
-  .dest-section-subheading { font-size: 0.88rem; }
-  .dest-single-item-card { width: 180px; min-height: 275px; }
-  .dest-card-media-top { height: 115px; }
-  .dest-emoji-icon { font-size: 1rem; }
+  .dest-section-heading {
+    font-size: 1.6rem;
+  }
+
+  .dest-section-subheading {
+    font-size: 0.88rem;
+  }
+
+  .dest-single-item-card {
+    width: 180px;
+    min-height: 275px;
+  }
+
+  .dest-card-media-top {
+    height: 115px;
+  }
+
+  .dest-emoji-icon {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
-  .dest-single-item-card { width: 155px; min-height: 250px; }
-  .dest-card-country-txt { font-size: 0.95rem; }
+  .dest-single-item-card {
+    width: 155px;
+    min-height: 250px;
+  }
+
+  .dest-card-country-txt {
+    font-size: 0.95rem;
+  }
 }
- /* =========================================================
+
+/* =========================================================
    Siec academic destination End
  ========================================================= */
 
- /* ========================================================= 
+/* ========================================================= 
      service section css start
   ========================================================= */
- .siec-services-sec {
+.siec-services-sec {
   background-color: var(--green-050);
   padding: 80px 0;
   font-family: 'Inter', sans-serif;
@@ -2262,6 +2321,7 @@ img {
     flex: 0 0 50%;
     max-width: 50%;
   }
+
   .serv-col-header {
     flex: 0 0 100%;
     max-width: 100%;
@@ -2274,21 +2334,23 @@ img {
     flex: 0 0 100%;
     max-width: 100%;
   }
+
   .serv-card {
     height: 250px;
   }
+
   .serv-heading {
     font-size: 1.65rem;
   }
 }
 
-  /*=======================================================
+/*=======================================================
    service section css end 
    ========================================================*/
-   /* =====================================================
+/* =====================================================
    recognization css  start
    ======================================================== */
-   .siec-recognitions-sec {
+.siec-recognitions-sec {
   background: linear-gradient(135deg, var(--green-800) 0%, var(--green-900) 100%);
   padding: 70px 0;
   font-family: 'Inter', sans-serif;
@@ -2368,10 +2430,12 @@ img {
     font-size: 2rem;
     margin-bottom: 30px;
   }
+
   .recog-col {
     flex: 0 0 50%;
     max-width: 50%;
   }
+
   .recog-card {
     height: 120px;
   }
@@ -2382,18 +2446,20 @@ img {
     flex: 0 0 50%;
     max-width: 50%;
   }
+
   .recog-card {
     height: 100px;
     padding: 10px;
   }
 }
-   /*=======================================================
+
+/*=======================================================
     recognization css end
     ========================================================== */
-    /*=======================================================
+/*=======================================================
      Blog Section css start
      ======================================================== */
- .siec-blog-section {
+.siec-blog-section {
   background-color: var(--green-050);
   padding: 80px 0;
   font-family: 'Inter', sans-serif;
@@ -2666,32 +2732,51 @@ img {
 }
 
 @media (min-width: 992px) {
-  .siec-blog-col { flex: 0 0 33.333333%; max-width: 33.333333%; }
-  .siec-blog-prev-btn { left: -15px; }
-  .siec-blog-next-btn { right: -15px; }
+  .siec-blog-col {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
+  .siec-blog-prev-btn {
+    left: -15px;
+  }
+
+  .siec-blog-next-btn {
+    right: -15px;
+  }
 }
 
 @media (max-width: 991.98px) and (min-width: 768px) {
-  .siec-blog-col { flex: 0 0 50%; max-width: 50%; }
+  .siec-blog-col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 }
 
 @media (max-width: 767.98px) {
-  .siec-blog-col { flex: 0 0 100%; max-width: 100%; }
-  .siec-blog-title { font-size: 1.85rem; }
+  .siec-blog-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .siec-blog-title {
+    font-size: 1.85rem;
+  }
+
   .siec-blog-nav-btn {
     width: 36px;
     height: 36px;
   }
 }
 
-     /*=====================================================
+/*=====================================================
       Blog Section css end
       ====================================================== */
-      /* ======================================================
+/* ======================================================
       Alumni section css start 
-      =======================================================*/
-       .siec-testimonial-section {
-  background-color: var(--green-050);
+   =======================================================*/
+.siec-testimonial-section {
+  background-color: var(--green-050, #f2f7f5);
   padding: 80px 0;
   font-family: 'Inter', sans-serif;
   position: relative;
@@ -2713,7 +2798,7 @@ img {
 
 .siec-testimonial-badge {
   background: linear-gradient(135deg, #b3e5fc 0%, #81d4fa 100%);
-  color: var(--green-900);
+  color: #0b3c26;
   font-size: 0.875rem;
   font-weight: 600;
   padding: 6px 22px;
@@ -2726,17 +2811,17 @@ img {
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--green-900);
+  color: #0b3c26;
   margin-bottom: 12px;
   line-height: 1.2;
 }
 
 .siec-testimonial-title-highlight {
-  color: var(--gold-600);
+  color: #d4a373;
 }
 
 .siec-testimonial-subtitle {
-  color: var(--grey-600);
+  color: #666;
   font-size: 1rem;
   line-height: 1.6;
   margin: 0;
@@ -2780,10 +2865,10 @@ img {
 }
 
 .siec-text-card {
-  background: var(--white);
+  background: #ffffff;
   padding: 25px;
   border-radius: 16px;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   border: 1px solid rgba(0, 0, 0, 0.05);
   scroll-snap-align: start;
   box-sizing: border-box;
@@ -2791,7 +2876,7 @@ img {
 
 .siec-text-quote {
   font-size: 0.92rem;
-  color: var(--grey-600);
+  color: #555;
   line-height: 1.6;
   margin: 0 0 20px 0;
 }
@@ -2818,18 +2903,18 @@ img {
 .siec-user-name {
   font-size: 0.95rem;
   font-weight: 700;
-  color: var(--green-900);
+  color: #0b3c26;
   margin: 0;
 }
 
 .siec-user-tag {
   font-size: 0.75rem;
-  color: var(--gold-600);
+  color: #d4a373;
   font-weight: 500;
 }
 
 .siec-rating {
-  color: var(--gold-500);
+  color: #ffc107;
   font-size: 0.85rem;
   display: flex;
   gap: 2px;
@@ -2838,27 +2923,28 @@ img {
 .siec-text-nav {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
+  flex-shrink: 0;
 }
 
 .siec-v-nav-btn {
-  width: 38px;
-  height: 38px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
-  background: var(--white);
+  background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  color: var(--green-800);
+  color: #0b3c26;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
 }
 
 .siec-v-nav-btn:hover {
-  background: var(--green-800);
-  color: var(--white);
+  background: #0b3c26;
+  color: #fff;
 }
 
 .siec-testimonial-right {
@@ -2893,14 +2979,52 @@ img {
   scroll-snap-align: start;
 }
 
+/* কাস্টম ইউটিউব বক্স ও থাম্বনেল স্টাইল */
 .siec-video-box {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
   border-radius: 20px;
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   background: #000;
+  cursor: pointer;
+}
+
+.siec-yt-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.siec-yt-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+  z-index: 2;
+  transition: transform 0.2s ease;
+}
+
+.siec-video-box:hover .siec-yt-play-btn {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.siec-yt-play-bg {
+  transition: fill 0.2s ease;
+}
+
+.siec-video-box:hover .siec-yt-play-bg {
+  fill: #cc0000;
 }
 
 .siec-video-box iframe {
@@ -2910,6 +3034,7 @@ img {
   width: 100%;
   height: 100%;
   border: 0;
+  z-index: 3;
 }
 
 .siec-video-dots {
@@ -2929,9 +3054,9 @@ img {
 }
 
 .siec-dot.active {
-  width: 24px;
+  width: 28px;
   border-radius: 10px;
-  background: var(--green-800);
+  background: #0b3c26;
 }
 
 @media (max-width: 991.98px) {
@@ -2953,16 +3078,104 @@ img {
     display: none;
   }
   .siec-text-slider-wrapper {
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
   }
   .siec-text-nav {
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  /* ==========================================
+   RESPONSIVE FIXES (Mobile & Tablet)
+   ========================================== */
+
+/* ট্যাবলেট ও ছোট ল্যাপটপ (991px এর নিচে) */
+@media (max-width: 991.98px) {
+  .siec-testimonial-body {
+    flex-direction: column; /* পাশাপাশি না রেখে ওপর-নিচে করা হলো */
+    gap: 40px;
+  }
+
+  .siec-testimonial-left,
+  .siec-testimonial-right {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .siec-video-slider-container {
+    width: 100%;
   }
 }
-      /* ======================================================
+
+/* মোবাইল স্ক্রিন (767px এর নিচে) */
+@media (max-width: 767.98px) {
+  .siec-testimonial-section {
+    padding: 40px 0;
+  }
+
+  .siec-testimonial-title {
+    font-size: 1.75rem;
+  }
+
+  .siec-testimonial-subtitle br {
+    display: none;
+  }
+
+  /* টেক্সট স্লাইডার ফিক্স */
+  .siec-text-slider-wrapper {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .siec-text-slider-container {
+    height: 320px; /* মোবাইলে কার্ডের হাইট অ্যাডজাস্টমেন্ট */
+  }
+
+  .siec-text-card {
+    padding: 18px;
+  }
+
+  .siec-card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  /* ভিডিও বক্স রেসপন্সিভ ফিক্স */
+  .siec-video-card {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  .siec-video-box {
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio ঠিক রাখার জন্য */
+    height: 0;
+  }
+
+  .siec-yt-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .siec-yt-play-btn svg {
+    width: 50px;
+    height: 35px;
+  }
+
+  /* নেভিগেশন বাটন সাইজ ছোট করা */
+  .siec-v-nav-btn {
+    width: 36px;
+    height: 36px;
+  }
+}
+}
+
+/* ======================================================
       Alumni section css end
-      ======================================================= */
+  ======================================================= */
 
 /* ========================================================
    Footer section start
@@ -2996,7 +3209,7 @@ img {
 .footer-title {
   color: var(--siec-footer-dark);
   font-size: 1.15rem;
-   font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   margin-bottom: 22px;
   position: relative;

@@ -349,20 +349,65 @@ document.addEventListener("DOMContentLoaded", () => {
   //siec blog section js end
 
   //Alumni section js start
-  document.addEventListener('DOMContentLoaded', () => {
+ document.addEventListener('DOMContentLoaded', () => {
+  // ১. ইউটিউব কাস্টম প্লেয়ার হ্যান্ডলার (Error 153 বাইপাস করার জন্য)
+  const videoBoxes = document.querySelectorAll('.siec-video-box');
+
+  videoBoxes.forEach((box) => {
+    box.addEventListener('click', function () {
+      if (this.querySelector('iframe')) return; // ইতোমধ্যে লোড হয়ে থাকলে কিছু করবে না
+
+      const videoId = this.getAttribute('data-video-id');
+      const iframe = document.createElement('iframe');
+      
+      iframe.setAttribute('src', `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`);
+      iframe.setAttribute('title', 'Student Video Testimonial');
+      iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+      iframe.setAttribute('allowfullscreen', 'true');
+
+      this.appendChild(iframe);
+    });
+  });
+
+  // ২. টেক্সট স্লাইডার লজিক
   const textContainer = document.getElementById('siecTextSlider');
   const textPrev = document.getElementById('siecTextPrev');
   const textNext = document.getElementById('siecTextNext');
 
-  if (textContainer && textPrev && textNext) {
-    textNext.addEventListener('click', () => {
-      textContainer.scrollBy({ top: 160, behavior: 'smooth' });
-    });
-    textPrev.addEventListener('click', () => {
-      textContainer.scrollBy({ top: -160, behavior: 'smooth' });
-    });
+  if (textContainer) {
+    const scrollTextDown = () => {
+      const card = textContainer.querySelector('.siec-text-card');
+      const step = card ? card.offsetHeight + 20 : 160;
+      if (textContainer.scrollTop + textContainer.clientHeight >= textContainer.scrollHeight - 5) {
+        textContainer.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        textContainer.scrollBy({ top: step, behavior: 'smooth' });
+      }
+    };
+
+    let textAutoSlide = setInterval(scrollTextDown, 4000);
+
+    if (textNext && textPrev) {
+      textNext.addEventListener('click', () => {
+        scrollTextDown();
+        resetTextTimer();
+      });
+
+      textPrev.addEventListener('click', () => {
+        const card = textContainer.querySelector('.siec-text-card');
+        const step = card ? card.offsetHeight + 20 : 160;
+        textContainer.scrollBy({ top: -step, behavior: 'smooth' });
+        resetTextTimer();
+      });
+    }
+
+    const resetTextTimer = () => {
+      clearInterval(textAutoSlide);
+      textAutoSlide = setInterval(scrollTextDown, 4000);
+    };
   }
 
+  // ৩. ভিডিও ডট ও স্লাইডার লজিক
   const videoContainer = document.getElementById('siecVideoSlider');
   const dotsContainer = document.getElementById('siecVideoDots');
   const videoCards = document.querySelectorAll('.siec-video-card');
@@ -377,6 +422,7 @@ document.addEventListener("DOMContentLoaded", () => {
           left: videoContainer.offsetWidth * idx,
           behavior: 'smooth'
         });
+        resetVideoTimer();
       });
       dotsContainer.appendChild(dot);
     });
@@ -389,16 +435,21 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 
-    let autoSlide = setInterval(() => {
+    const scrollVideoNext = () => {
       let nextIdx = Math.round(videoContainer.scrollLeft / videoContainer.offsetWidth) + 1;
       if (nextIdx >= videoCards.length) nextIdx = 0;
       videoContainer.scrollTo({
         left: videoContainer.offsetWidth * nextIdx,
         behavior: 'smooth'
       });
-    }, 5000);
+    };
 
-    videoContainer.addEventListener('mouseenter', () => clearInterval(autoSlide));
+    let videoAutoSlide = setInterval(scrollVideoNext, 6000);
+
+    const resetVideoTimer = () => {
+      clearInterval(videoAutoSlide);
+      videoAutoSlide = setInterval(scrollVideoNext, 6000);
+    };
   }
 });
 
