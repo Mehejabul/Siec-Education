@@ -452,5 +452,46 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   }
 });
+ //Alumni section js end
 
-  //Alumni section js end
+//Question & Answer section js start
+document.addEventListener('DOMContentLoaded', () => {
+  const tabButtons = document.querySelectorAll('.siec-faq-tab-btn');
+  const categoryContents = document.querySelectorAll('.siec-faq-category-content');
+
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const targetCategory = button.getAttribute('data-category');
+
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      categoryContents.forEach(content => {
+        if (content.id === `category-${targetCategory}`) {
+          content.classList.add('active');
+        } else {
+          content.classList.remove('active');
+        }
+      });
+    });
+  });
+
+  const faqItems = document.querySelectorAll('.siec-faq-item');
+
+  faqItems.forEach(item => {
+    const questionBtn = item.querySelector('.siec-faq-question');
+
+    questionBtn.addEventListener('click', () => {
+      const isOpen = item.classList.contains('active');
+
+      const parentCategory = item.parentElement;
+      const siblingItems = parentCategory.querySelectorAll('.siec-faq-item');
+      siblingItems.forEach(sibling => sibling.classList.remove('active'));
+
+      if (!isOpen) {
+        item.classList.add('active');
+      }
+    });
+  });
+});
+// Question & Answer section js end

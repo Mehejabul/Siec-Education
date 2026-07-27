@@ -3177,6 +3177,260 @@ img {
       Alumni section css end
   ======================================================= */
 
+  /* ======================================================
+    Question & Answer section css start
+  ======================================================= */
+.siec-faq-section {
+  background-color: #ffffff;
+  padding: 80px 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.siec-faq-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.siec-faq-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.siec-faq-badge {
+  background: linear-gradient(135deg, #b3e5fc 0%, #81d4fa 100%);
+  color: #0b3c26;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 6px 22px;
+  border-radius: 20px 0px 20px 0px;
+  display: inline-block;
+  margin-bottom: 14px;
+}
+
+.siec-faq-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0b3c26;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.siec-faq-title-highlight {
+  color: #d4a373;
+}
+
+.siec-faq-subtitle {
+  color: #666666;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.siec-faq-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.siec-faq-tab-btn {
+  background-color: transparent;
+  color: #222222;
+  border: 1px solid #cccccc;
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.siec-faq-tab-btn:hover {
+  border-color: #d4a373;
+  color: #0b3c26;
+}
+
+.siec-faq-tab-btn.active {
+  background-color: #f7d08a;
+  border-color: #f7d08a;
+  color: #0b3c26;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(212, 163, 115, 0.25);
+}
+
+.siec-faq-body {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.siec-faq-left {
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+
+.siec-faq-right {
+  flex: 0 0 40%;
+  max-width: 40%;
+  position: sticky;
+  top: 100px;
+}
+
+.siec-faq-category-content {
+  display: none;
+  animation: siecFadeIn 0.4s ease-in-out;
+}
+
+.siec-faq-category-content.active {
+  display: block;
+}
+
+@keyframes siecFadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.siec-faq-item {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.siec-faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.siec-faq-question:hover {
+  color: #0b3c26;
+}
+
+.siec-faq-icon {
+  width: 32px;
+  height: 32px;
+  background-color: #fceecb;
+  color: #0b3c26;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-left: 15px;
+  transition: all 0.3s ease;
+}
+
+.siec-faq-item.active .siec-faq-icon {
+  background-color: #0b3c26;
+  color: #ffffff;
+  transform: rotate(45deg);
+}
+
+.siec-faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+}
+
+.siec-faq-item.active .siec-faq-answer {
+  max-height: 500px;
+  transition: max-height 0.35s cubic-bezier(1, 0, 1, 0);
+}
+
+.siec-faq-answer p {
+  color: #555555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 10px 0 5px 0;
+}
+
+.siec-faq-banner-wrapper {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.siec-faq-banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 991.98px) {
+  .siec-faq-body {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .siec-faq-left,
+  .siec-faq-right {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .siec-faq-right {
+    position: static;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .siec-faq-section {
+    padding: 50px 0;
+  }
+
+  .siec-faq-title {
+    font-size: 1.85rem;
+  }
+
+  .siec-faq-subtitle br {
+    display: none;
+  }
+
+  .siec-faq-tabs {
+    gap: 8px;
+  }
+
+  .siec-faq-tab-btn {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+
+  .siec-faq-question {
+    font-size: 0.95rem;
+  }
+
+  .siec-faq-icon {
+    width: 28px;
+    height: 28px;
+    font-size: 1rem;
+  }
+}
+
+  /* ======================================================
+    Question & Answer section css end
+  ======================================================= */
+
 /* ========================================================
    Footer section start
  ======================================================== */
