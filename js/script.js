@@ -495,3 +495,51 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 // Question & Answer section js end
+
+// Contact Page js start
+document.addEventListener('DOMContentLoaded', () => {
+  const tabButtons = document.querySelectorAll('.siec-office-tab-btn');
+  const officeGrids = document.querySelectorAll('.siec-office-grid');
+
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const targetId = button.getAttribute('data-target');
+
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      officeGrids.forEach(grid => {
+        if (grid.id === targetId) {
+          grid.classList.add('active');
+        } else {
+          grid.classList.remove('active');
+        }
+      });
+    });
+  });
+
+  const searchInput = document.getElementById('siecOfficeSearchInput');
+
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase().trim();
+      const activeGrid = document.querySelector('.siec-office-grid.active');
+
+      if (activeGrid) {
+        const cards = activeGrid.querySelectorAll('.siec-office-card');
+
+        cards.forEach(card => {
+          const nameData = card.getAttribute('data-name') || '';
+          const cardText = card.textContent.toLowerCase();
+
+          if (nameData.toLowerCase().includes(query) || cardText.includes(query)) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+    });
+  }
+});
+// Contact page js End
