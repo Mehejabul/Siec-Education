@@ -4085,3 +4085,952 @@ img {
     /* =====================================================
     SIEC EDUCATION Contact page End
     ===================================================== */
+    /* =====================================================
+    SIEC EDUCATION Course search css start
+    ===================================================== */
+.siec-course-search-section {
+  padding: 24px 0;
+  background-color: var(--white);
+  font-family: 'Inter', sans-serif;
+  color: var(--siec-text-main);
+}
+
+.siec-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.siec-breadcrumb-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.siec-breadcrumb-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.siec-back-btn {
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.siec-back-btn:hover {
+  transform: translateX(-3px);
+  color: var(--green-800);
+}
+
+.siec-breadcrumb-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.siec-breadcrumb-link {
+  color: var(--grey-600);
+  text-decoration: none;
+}
+
+.siec-breadcrumb-sep {
+  color: var(--grey-600);
+}
+
+.siec-breadcrumb-current {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.siec-counselor-top-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--gold-500);
+  color: var(--ink);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.siec-counselor-top-btn:hover {
+  background-color: var(--gold-600);
+}
+
+.siec-live-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--green-600);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.siec-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.siec-mode-switch {
+  display: flex;
+  background-color: var(--green-050);
+  border: 1px solid var(--line);
+  padding: 4px;
+  border-radius: 8px;
+  gap: 4px;
+}
+
+.siec-mode-btn {
+  border: none;
+  background: transparent;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--grey-600);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+  font-family: 'Inter', sans-serif;
+}
+
+.siec-mode-btn.active {
+  background-color: var(--green-900);
+  color: var(--white);
+}
+
+.siec-badge {
+  background: var(--line);
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.siec-mode-btn.active .siec-badge {
+  background: var(--white);
+  color: var(--green-900);
+}
+
+.siec-search-right {
+  flex-grow: 1;
+  max-width: 360px;
+}
+
+.siec-search-field {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  background-color: var(--white);
+  color: var(--ink);
+  font-family: 'Inter', sans-serif;
+}
+
+.siec-search-field:focus {
+  border-color: var(--green-700);
+}
+
+.siec-filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.siec-filter-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.siec-filter-toggle-btn {
+  background-color: var(--green-900);
+  color: var(--white);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+}
+
+.siec-select {
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--ink);
+  outline: none;
+  background-color: var(--white);
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+}
+
+.siec-selected-tags-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.siec-country-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--green-100);
+  border: 1px solid var(--line);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: var(--green-900);
+  font-weight: 600;
+}
+
+.siec-close-tag {
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--grey-600);
+}
+
+.siec-close-tag:hover {
+  color: #ef4444;
+}
+
+.siec-compare-btn {
+  background-color: transparent;
+  border: 1px solid var(--line);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--ink);
+  cursor: pointer;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+}
+
+.siec-course-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.siec-course-card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 20px;
+  background-color: var(--white);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.siec-course-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.siec-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.siec-course-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.siec-wishlist-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--grey-600);
+  padding: 0;
+}
+
+.siec-wishlist-btn:hover {
+  color: #ef4444;
+}
+
+.siec-institute-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.siec-university-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--green-900);
+  margin: 0 0 4px 0;
+}
+
+.siec-campus-tag {
+  display: inline-block;
+  font-size: 11px;
+  background-color: var(--green-050);
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: var(--grey-600);
+  margin-bottom: 4px;
+}
+
+.siec-location {
+  font-size: 12px;
+  color: var(--grey-600);
+  margin: 0;
+}
+
+.siec-qs-badge {
+  background-color: var(--green-100);
+  padding: 4px 8px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.siec-qs-label {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--green-900);
+}
+
+.siec-qs-val {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--green-900);
+}
+
+.siec-card-separator {
+  height: 1px;
+  background-color: var(--line);
+  margin-bottom: 16px;
+}
+
+.siec-course-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.siec-meta-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.siec-meta-label {
+  font-size: 11px;
+  color: var(--grey-600);
+}
+
+.siec-meta-value {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.siec-card-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.siec-btn-primary {
+  flex: 1;
+  text-align: center;
+  background-color: var(--green-900);
+  color: var(--white);
+  padding: 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.siec-btn-primary:hover {
+  background-color: var(--green-800);
+}
+
+.siec-btn-secondary {
+  flex: 1;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  padding: 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.siec-btn-secondary:hover {
+  background-color: var(--green-050);
+}
+
+.siec-pagination-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.siec-pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 6px;
+}
+
+.siec-page-link {
+  display: block;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.siec-page-item.active .siec-page-link {
+  background-color: var(--green-900);
+  color: var(--white);
+  border-color: var(--green-900);
+}
+
+.siec-page-item.disabled .siec-page-link {
+  color: var(--grey-600);
+  cursor: not-allowed;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .siec-course-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .siec-course-grid {
+    grid-template-columns: 1fr;
+  }
+  .siec-search-right {
+    max-width: 100%;
+    width: 100%;
+  }
+  .siec-filter-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .siec-filter-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}.siec-course-search-section {
+  padding: 24px 0;
+  background-color: var(--white);
+  font-family: 'Inter', sans-serif;
+  color: var(--siec-text-main);
+}
+
+.siec-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.siec-breadcrumb-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.siec-breadcrumb-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.siec-back-btn {
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.siec-back-btn:hover {
+  transform: translateX(-3px);
+  color: var(--green-800);
+}
+
+.siec-breadcrumb-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.siec-breadcrumb-link {
+  color: var(--grey-600);
+  text-decoration: none;
+}
+
+.siec-breadcrumb-sep {
+  color: var(--grey-600);
+}
+
+.siec-breadcrumb-current {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.siec-counselor-top-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--gold-500);
+  color: var(--ink);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.siec-counselor-top-btn:hover {
+  background-color: var(--gold-600);
+}
+
+.siec-live-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--green-600);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.siec-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.siec-mode-switch {
+  display: flex;
+  background-color: var(--green-050);
+  border: 1px solid var(--line);
+  padding: 4px;
+  border-radius: 8px;
+  gap: 4px;
+}
+
+.siec-mode-btn {
+  border: none;
+  background: transparent;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--grey-600);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+  font-family: 'Inter', sans-serif;
+}
+
+.siec-mode-btn.active {
+  background-color: var(--green-900);
+  color: var(--white);
+}
+
+.siec-badge {
+  background: var(--line);
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.siec-mode-btn.active .siec-badge {
+  background: var(--white);
+  color: var(--green-900);
+}
+
+.siec-search-right {
+  flex-grow: 1;
+  max-width: 360px;
+}
+
+.siec-search-field {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  background-color: var(--white);
+  color: var(--ink);
+  font-family: 'Inter', sans-serif;
+}
+
+.siec-search-field:focus {
+  border-color: var(--green-700);
+}
+
+.siec-filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.siec-filter-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.siec-filter-toggle-btn {
+  background-color: var(--green-900);
+  color: var(--white);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+}
+
+.siec-select {
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--ink);
+  outline: none;
+  background-color: var(--white);
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+}
+
+.siec-selected-tags-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.siec-country-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--green-100);
+  border: 1px solid var(--line);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: var(--green-900);
+  font-weight: 600;
+}
+
+.siec-close-tag {
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--grey-600);
+}
+
+.siec-close-tag:hover {
+  color: #ef4444;
+}
+
+.siec-compare-btn {
+  background-color: transparent;
+  border: 1px solid var(--line);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--ink);
+  cursor: pointer;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+}
+
+.siec-course-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.siec-course-card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 20px;
+  background-color: var(--white);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.siec-course-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.siec-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.siec-course-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.siec-wishlist-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--grey-600);
+  padding: 0;
+}
+
+.siec-wishlist-btn:hover {
+  color: #ef4444;
+}
+
+.siec-institute-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.siec-university-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--green-900);
+  margin: 0 0 4px 0;
+}
+
+.siec-campus-tag {
+  display: inline-block;
+  font-size: 11px;
+  background-color: var(--green-050);
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: var(--grey-600);
+  margin-bottom: 4px;
+}
+
+.siec-location {
+  font-size: 12px;
+  color: var(--grey-600);
+  margin: 0;
+}
+
+.siec-qs-badge {
+  background-color: var(--green-100);
+  padding: 4px 8px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.siec-qs-label {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--green-900);
+}
+
+.siec-qs-val {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--green-900);
+}
+
+.siec-card-separator {
+  height: 1px;
+  background-color: var(--line);
+  margin-bottom: 16px;
+}
+
+.siec-course-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.siec-meta-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.siec-meta-label {
+  font-size: 11px;
+  color: var(--grey-600);
+}
+
+.siec-meta-value {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.siec-card-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.siec-btn-primary {
+  flex: 1;
+  text-align: center;
+  background-color: var(--green-900);
+  color: var(--white);
+  padding: 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.siec-btn-primary:hover {
+  background-color: var(--green-800);
+}
+
+.siec-btn-secondary {
+  flex: 1;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  padding: 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.siec-btn-secondary:hover {
+  background-color: var(--green-050);
+}
+
+.siec-pagination-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.siec-pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 6px;
+}
+
+.siec-page-link {
+  display: block;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.siec-page-item.active .siec-page-link {
+  background-color: var(--green-900);
+  color: var(--white);
+  border-color: var(--green-900);
+}
+
+.siec-page-item.disabled .siec-page-link {
+  color: var(--grey-600);
+  cursor: not-allowed;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .siec-course-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .siec-course-grid {
+    grid-template-columns: 1fr;
+  }
+  .siec-search-right {
+    max-width: 100%;
+    width: 100%;
+  }
+  .siec-filter-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .siec-filter-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+    /* ===================================================
+    SIEC EDUCATION Course search css end
+    =================================================== */

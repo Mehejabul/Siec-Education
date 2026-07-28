@@ -543,3 +543,57 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 // Contact page js End
+
+//Course search page js start
+function siecSwitchTab(tabType) {
+  const courseView = document.getElementById('siec-courses-view');
+  const uniView = document.getElementById('siec-universities-view');
+  const courseBtn = document.getElementById('siec-tab-course');
+  const uniBtn = document.getElementById('siec-tab-uni');
+
+  if (tabType === 'courses') {
+    courseView.style.display = 'block';
+    uniView.style.display = 'none';
+    courseBtn.classList.add('active');
+    uniBtn.classList.remove('active');
+  } else {
+    courseView.style.display = 'none';
+    uniView.style.display = 'block';
+    uniBtn.classList.add('active');
+    courseBtn.classList.remove('active');
+  }
+}
+
+function siecAddCountry(selectEl) {
+  const selectedOption = selectEl.options[selectEl.selectedIndex];
+  const countryName = selectedOption.value;
+  const flag = selectedOption.getAttribute('data-flag') || '🌐';
+  
+  if (!countryName) return;
+
+  const tagsWrapper = document.getElementById('siec-tags-wrapper');
+  
+  const existingTags = tagsWrapper.querySelectorAll('.siec-country-tag span:first-child');
+  for (let tag of existingTags) {
+    if (tag.textContent.includes(countryName)) {
+      selectEl.value = '';
+      return;
+    }
+  }
+
+  const newTag = document.createElement('div');
+  newTag.className = 'siec-country-tag';
+  newTag.innerHTML = `
+    <span>${flag} ${countryName}</span>
+    <span class="siec-close-tag" onclick="siecRemoveTag(this)">×</span>
+  `;
+
+  tagsWrapper.appendChild(newTag);
+  selectEl.value = '';
+}
+
+function siecRemoveTag(closeBtn) {
+  const tagElement = closeBtn.parentElement;
+  tagElement.remove();
+}
+//course search page js end
