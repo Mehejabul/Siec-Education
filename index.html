@@ -1,1039 +1,1502 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIEC Bangladesh | Shaping Careers Since 1995</title>
+    <link rel="icon" href="image/siecbangladesh.png" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SIEC Bangladesh | Shaping Careers Since 1995</title>
-  <link rel="icon" href="image/siecbangladesh.png">
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Fonts: simple, clean, eye-catching
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    /> -->
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/pages/home.css" />
+  </head>
 
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Fonts: simple, clean, eye-catching -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
-    rel="stylesheet">
-  <!-- custom css -->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
-</head>
+  <body>
+    <!-- =========== Floating icon website right ============ -->
+    <div class="floating-container">
+      <button
+        id="scrollToTopBtn"
+        class="float-btn btn-scroll-top"
+        title="Go to top"
+      >
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
 
-<body>
+      <a
+        href="tel:+123456789"
+        class="float-btn btn-support"
+        title="Live Support"
+      >
+        <i class="fa-solid fa-headset"></i>
+      </a>
 
-  <!-- =========== Floating icon website right ============ -->
-  <div class="floating-container">
+      <a
+        href="https://wa.me/YOUR_PHONE_NUMBER"
+        target="_blank"
+        class="float-btn btn-whatsapp"
+        title="Chat on WhatsApp"
+      >
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </div>
+    <!-- =========== Floating icon website right end ============ -->
 
-    <button id="scrollToTopBtn" class="float-btn btn-scroll-top" title="Go to top">
-      <i class="fa-solid fa-arrow-up"></i>
-    </button>
-
-    <a href="tel:+123456789" class="float-btn btn-support" title="Live Support">
-      <i class="fa-solid fa-headset"></i>
-    </a>
-
-    <a href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank" class="float-btn btn-whatsapp" title="Chat on WhatsApp">
-      <i class="fa-brands fa-whatsapp"></i>
-    </a>
-
-  </div>
-  <!-- =========== Floating icon website right end ============ -->
-
-  <!-- ============ TOP UTILITY BAR ============ -->
-  <div class="topbar">
-    <div class="container-fluid px-4 px-lg-5">
-      <div class="topbar-inner">
-        <div class="topbar-left">
-          <a href="mailto:admissions@siecbangladesh.com"><i
-              class="bi bi-envelope-fill"></i>admissions@siecbangladesh.com</a>
-          <a href="tel:+919779046382"><i class="bi bi-telephone-fill"></i>+880 9643218891</a>
-          <a href="#"><i class="bi bi-mortarboard-fill"></i>Partner with SIEC</a>
-        </div>
-
-        <div class="topbar-right">
-          <div class="topbar-search">
-            <i class="bi bi-search"></i>
-            <input type="text" placeholder="Search Courses, Blogs &amp; Countries">
-            <button class="btn-search-inline">Search</button>
+    <!-- ============ TOP UTILITY BAR ============ -->
+    <div class="topbar">
+      <div class="container-fluid px-4 px-lg-5">
+        <div class="topbar-inner">
+          <div class="topbar-left">
+            <a href="mailto:admissions@siecbangladesh.com"
+              ><i class="bi bi-envelope-fill"></i
+              >admissions@siecbangladesh.com</a
+            >
+            <a href="tel:+919779046382"
+              ><i class="bi bi-telephone-fill"></i>+880 9643218891</a
+            >
+            <a href="#"
+              ><i class="bi bi-mortarboard-fill"></i>Partner with SIEC</a
+            >
           </div>
 
-          <button class="icon-circle" title="Wishlist"><i class="bi bi-heart-fill"></i></button>
-          <!-- <button class="btn-signin">Sign In</button> -->
+          <div class="topbar-right">
+            <div class="topbar-search">
+              <i class="bi bi-search"></i>
+              <input
+                type="text"
+                placeholder="Search Courses, Blogs &amp; Countries"
+              />
+              <button class="btn-search-inline">Search</button>
+            </div>
 
-          <div class="meet-experts-wrap">
-            <a href="#" class="meet-experts-badge">
-              <i class="bi bi-megaphone-fill"></i>
-              <span>Meet<br>Experts</span>
-            </a>
-            <a href="#" class="join-zoom-link">Join Via Google Meet</a>
+            <button class="icon-circle" title="Wishlist">
+              <i class="bi bi-heart-fill"></i>
+            </button>
+            <!-- <button class="btn-signin">Sign In</button> -->
+
+            <div class="meet-experts-wrap">
+              <a href="#" class="meet-experts-badge">
+                <i class="bi bi-megaphone-fill"></i>
+                <span>Meet<br />Experts</span>
+              </a>
+              <a href="#" class="join-zoom-link">Join Via Google Meet</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- ============ MAIN NAVIGATION ============ -->
-  <header class="main-nav" id="mainNav">
-    <div class="container-fluid px-4 px-lg-5">
-      <div class="main-nav-inner">
+    <!-- ============ MAIN NAVIGATION ============ -->
+    <header class="main-nav" id="mainNav">
+      <div class="container-fluid px-4 px-lg-5">
+        <div class="main-nav-inner">
+          <a href="index.html" class="brand">
+            <img src="image/siecbangladesh.png" alt="SIEC Education" />
+          </a>
 
-        <a href="index.html" class="brand">
-          <img src="image/siecbangladesh.png" alt="SIEC Education">
-        </a>
+          <div class="mobile-search">
+            <i class="bi bi-search"></i>
+            <input type="text" placeholder="Search Courses, Blo..." />
+          </div>
 
-        <div class="mobile-search">
-          <i class="bi bi-search"></i>
-          <input type="text" placeholder="Search Courses, Blo...">
-        </div>
-
-        <button class="mobile-toggle d-lg-none" id="mobileToggle" aria-label="Open menu">
-          <i class="bi bi-list"></i>
-        </button>
-
-        <nav class="nav-menu" id="navMenu">
-          <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
-            <i class="bi bi-x-lg"></i>
+          <button
+            class="mobile-toggle d-lg-none"
+            id="mobileToggle"
+            aria-label="Open menu"
+          >
+            <i class="bi bi-list"></i>
           </button>
 
-          <div class="mobile-menu-logo">
-            <img src="image/siecbangladesh.png" alt="SIEC Education">
-          </div>
+          <nav class="nav-menu" id="navMenu">
+            <button
+              class="mobile-menu-close"
+              id="mobileMenuClose"
+              aria-label="Close menu"
+            >
+              <i class="bi bi-x-lg"></i>
+            </button>
 
-          <ul>
-            <li><a href="#">About Us</a></li>
+            <div class="mobile-menu-logo">
+              <img src="image/siecbangladesh.png" alt="SIEC Education" />
+            </div>
 
-            <li class="has-dropdown">
-              <a href="#" class="dropdown-trigger">Explore Countries <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">About Us</a></li>
 
-              <div class="mega-dropdown">
-                <div class="mega-dropdown-grid">
+              <li class="has-dropdown">
+                <a href="#" class="dropdown-trigger"
+                  >Explore Countries <i class="bi bi-chevron-down"></i
+                ></a>
 
-                  <!-- Promo card -->
-                  <div class="mega-promo">
-                    <span class="promo-badge">Global Career</span>
-                    <h4>Explore the Best Countries to <span>Study Abroad</span></h4>
-                    <img src="image/promo-student.png" alt="Study Abroad" class="promo-img">
-                  </div>
-
-                  <!-- Column 1 -->
-                  <div class="mega-col">
-                    <a href="#" class="country-item">
-                      <img src="https://flagcdn.com/w40/au.png" alt="">
-                      <span>Australia</span>
-                    </a>
-                    <a href="#" class="country-item">
-                      <img src="https://flagcdn.com/w40/ca.png" alt="">
-                      <span>Canada</span>
-                    </a>
-                    <a href="#" class="country-item">
-                      <img src="https://flagcdn.com/w40/nz.png" alt="">
-                      <span>New Zealand</span>
-                    </a>
-                    <a href="#" class="country-item">
-                      <img src="https://flagcdn.com/w40/us.png" alt="">
-                      <span>United States</span>
-                    </a>
-                    <a href="#" class="country-item">
-                      <img src="https://flagcdn.com/w40/gb.png" alt="">
-                      <span>United Kingdom</span>
-                    </a>
-                  </div>
-
-                  <!-- Column 2 -->
-                  <div class="mega-col">
-                    <a href="#" class="country-item">
-                      <img src="https://flagcdn.com/w40/ae.png" alt="">
-                      <span>Dubai</span>
-                    </a>
-                    <a href="#" class="country-item">
-                      <img src="https://flagcdn.com/w40/de.png" alt="">
-                      <span>Germany</span>
-                    </a>
-                    <a href="#" class="country-item">
-                      <img src="https://flagcdn.com/w40/my.png" alt="">
-                      <span>Malaysia</span>
-                    </a>
-
-                    <div class="country-item has-submenu" data-submenu="submenuAsia">
-                      <img src="https://flagcdn.com/w40/vn.png" alt="">
-                      <span>Asia</span>
-                      <i class="bi bi-chevron-right submenu-arrow"></i>
-
-                      <div class="flyout-submenu" id="submenuAsia">
-                        <a href="#" class="country-item">
-                          <img src="https://flagcdn.com/w40/ae.png" alt="">
-                          <span>Dubai</span>
-                        </a>
-                        <a href="#" class="country-item">
-                          <img src="https://flagcdn.com/w40/sg.png" alt="">
-                          <span>Singapore</span>
-                        </a>
-                      </div>
+                <div class="mega-dropdown">
+                  <div class="mega-dropdown-grid">
+                    <!-- Promo card -->
+                    <div class="mega-promo">
+                      <span class="promo-badge">Global Career</span>
+                      <h4>
+                        Explore the Best Countries to <span>Study Abroad</span>
+                      </h4>
+                      <img
+                        src="image/promo-student.png"
+                        alt="Study Abroad"
+                        class="promo-img"
+                      />
                     </div>
 
-                    <a href="#" class="country-item">
-                      <img src="https://flagcdn.com/w40/eu.png" alt="">
-                      <span>Europe</span>
-                    </a>
-                  </div>
+                    <!-- Column 1 -->
+                    <div class="mega-col">
+                      <a href="#" class="country-item">
+                        <img src="https://flagcdn.com/w40/au.png" alt="" />
+                        <span>Australia</span>
+                      </a>
+                      <a href="#" class="country-item">
+                        <img src="https://flagcdn.com/w40/ca.png" alt="" />
+                        <span>Canada</span>
+                      </a>
+                      <a href="#" class="country-item">
+                        <img src="https://flagcdn.com/w40/nz.png" alt="" />
+                        <span>New Zealand</span>
+                      </a>
+                      <a href="#" class="country-item">
+                        <img src="https://flagcdn.com/w40/us.png" alt="" />
+                        <span>United States</span>
+                      </a>
+                      <a href="#" class="country-item">
+                        <img src="https://flagcdn.com/w40/gb.png" alt="" />
+                        <span>United Kingdom</span>
+                      </a>
+                    </div>
 
+                    <!-- Column 2 -->
+                    <div class="mega-col">
+                      <a href="#" class="country-item">
+                        <img src="https://flagcdn.com/w40/ae.png" alt="" />
+                        <span>Dubai</span>
+                      </a>
+                      <a href="#" class="country-item">
+                        <img src="https://flagcdn.com/w40/de.png" alt="" />
+                        <span>Germany</span>
+                      </a>
+                      <a href="#" class="country-item">
+                        <img src="https://flagcdn.com/w40/my.png" alt="" />
+                        <span>Malaysia</span>
+                      </a>
+
+                      <div
+                        class="country-item has-submenu"
+                        data-submenu="submenuAsia"
+                      >
+                        <img src="https://flagcdn.com/w40/vn.png" alt="" />
+                        <span>Asia</span>
+                        <i class="bi bi-chevron-right submenu-arrow"></i>
+
+                        <div class="flyout-submenu" id="submenuAsia">
+                          <a href="#" class="country-item">
+                            <img src="https://flagcdn.com/w40/ae.png" alt="" />
+                            <span>Dubai</span>
+                          </a>
+                          <a href="#" class="country-item">
+                            <img src="https://flagcdn.com/w40/sg.png" alt="" />
+                            <span>Singapore</span>
+                          </a>
+                        </div>
+                      </div>
+
+                      <a href="#" class="country-item">
+                        <img src="https://flagcdn.com/w40/eu.png" alt="" />
+                        <span>Europe</span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </li>
+              </li>
 
-            <li class="has-dropdown">
-              <a href="#" class="dropdown-trigger">Services <i class="bi bi-chevron-down"></i></a>
+              <li class="has-dropdown">
+                <a href="#" class="dropdown-trigger"
+                  >Services <i class="bi bi-chevron-down"></i
+                ></a>
 
-              <div class="mega-dropdown mega-dropdown--services">
-                <div class="mega-dropdown-grid mega-dropdown-grid--services">
+                <div class="mega-dropdown mega-dropdown--services">
+                  <div class="mega-dropdown-grid mega-dropdown-grid--services">
+                    <!-- Promo card -->
+                    <div class="mega-promo">
+                      <span class="promo-decor"
+                        ><span></span><span></span><span></span
+                      ></span>
+                      <span class="promo-badge promo-badge--stat">10,000+</span>
+                      <h4>Best counselor to guide you in each steps</h4>
+                      <img
+                        src="image/promo-student.png"
+                        alt="Study Abroad Counsellor"
+                        class="promo-img"
+                      />
+                    </div>
 
-                  <!-- Promo card -->
-                  <div class="mega-promo">
-                    <span class="promo-decor"><span></span><span></span><span></span></span>
-                    <span class="promo-badge promo-badge--stat">10,000+</span>
-                    <h4>Best counselor to guide you in each steps</h4>
-                    <img src="image/promo-student.png" alt="Study Abroad Counsellor" class="promo-img">
+                    <!-- Column 1 -->
+                    <div class="mega-col mega-col--services">
+                      <a href="#" class="service-item">
+                        <h5>Counselling</h5>
+                        <p>Avail Our FREE Counselling Services</p>
+                      </a>
+                      <a href="#" class="service-item">
+                        <h5>University &amp; Course Selection</h5>
+                        <p>
+                          Choose from the best universities and courses to study
+                          abroad
+                        </p>
+                      </a>
+                      <a href="#" class="service-item">
+                        <h5>University Application Process</h5>
+                        <p>
+                          Get help from university application to admission
+                          guidance
+                        </p>
+                      </a>
+                      <a href="#" class="service-item">
+                        <h5>Scholarship Guidance</h5>
+                        <p>
+                          Get a curated list of the best study abroad
+                          scholarships from our experts
+                        </p>
+                      </a>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="mega-col mega-col--services">
+                      <a href="#" class="service-item">
+                        <h5>Visa Assistance</h5>
+                        <p>
+                          Avail visa support from our top study abroad visa
+                          consultants
+                        </p>
+                      </a>
+                      <a href="#" class="service-item">
+                        <h5>IELTS/PTE/TOEFL/GRE/GMAT</h5>
+                        <p>
+                          Get test prep courses, practice materials &amp; mock
+                          tests
+                        </p>
+                      </a>
+                      <a href="#" class="service-item">
+                        <h5>Student Accommodation</h5>
+                        <p>
+                          Get assistance in accommodation, ticketing, education
+                          loans, &amp; more
+                        </p>
+                      </a>
+                      <a href="#" class="service-item">
+                        <h5>Interview Preparation</h5>
+                        <p>
+                          This helps you stand out to both admissions officers
+                          and visa authorities
+                        </p>
+                      </a>
+                    </div>
                   </div>
-
-                  <!-- Column 1 -->
-                  <div class="mega-col mega-col--services">
-                    <a href="#" class="service-item">
-                      <h5>Counselling</h5>
-                      <p>Avail Our FREE Counselling Services</p>
-                    </a>
-                    <a href="#" class="service-item">
-                      <h5>University &amp; Course Selection</h5>
-                      <p>Choose from the best universities and courses to study abroad</p>
-                    </a>
-                    <a href="#" class="service-item">
-                      <h5>University Application Process</h5>
-                      <p>Get help from university application to admission guidance</p>
-                    </a>
-                    <a href="#" class="service-item">
-                      <h5>Scholarship Guidance</h5>
-                      <p>Get a curated list of the best study abroad scholarships from our experts</p>
-                    </a>
-                  </div>
-
-                  <!-- Column 2 -->
-                  <div class="mega-col mega-col--services">
-                    <a href="#" class="service-item">
-                      <h5>Visa Assistance</h5>
-                      <p>Avail visa support from our top study abroad visa consultants</p>
-                    </a>
-                    <a href="#" class="service-item">
-                      <h5>IELTS/PTE/TOEFL/GRE/GMAT</h5>
-                      <p>Get test prep courses, practice materials &amp; mock tests</p>
-                    </a>
-                    <a href="#" class="service-item">
-                      <h5>Student Accommodation</h5>
-                      <p>Get assistance in accommodation, ticketing, education loans, &amp; more</p>
-                    </a>
-                    <a href="#" class="service-item">
-                      <h5>Interview Preparation</h5>
-                      <p>This helps you stand out to both admissions officers and visa authorities</p>
-                    </a>
-                  </div>
-
                 </div>
-              </div>
-            </li>
+              </li>
 
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Blogs</a></li>
-            <li><a href="#">Course Search</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Course Search</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
 
-          <div class="mobile-menu-actions">
-            <a href="#" class="btn-meet-mobile"><i class="bi bi-megaphone-fill"></i>Meet Online Experts</a>
-            <!-- <a href="#" class="btn-signin-mobile">Sign In</a> -->
-          </div>
-          <hr class="mobile-menu-divider">
-          <div class="mobile-menu-contact">
-            <a href="mailto:admissions@siecbangladesh.com"><i
-                class="bi bi-envelope-fill"></i>admissions@siecbangladesh.com</a>
-            <a href="tel:+919779046382"><i class="bi bi-whatsapp"></i>+880 9643218891</a>
-          </div>
-        </nav>
-      </div>
-    </div>
-  </header>
-
-  <div class="nav-overlay" id="navOverlay"></div>
-
-  <!-- ============ HERO SLIDER ============ -->
-  <section class="hero-slider">
-    <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel" data-bs-pause="hover">
-      <div class="carousel-inner">
-
-        <!-- Slide 1: Australia Education Fair -- image only, no overlay text -->
-        <div class="carousel-item active hero-slide hero-slide--plain" data-bs-interval="6000">
-          <div class="hero-slide-bg" style="background-image:url('image/hero/ban1.webp');"></div>
+            <div class="mobile-menu-actions">
+              <a href="#" class="btn-meet-mobile"
+                ><i class="bi bi-megaphone-fill"></i>Meet Online Experts</a
+              >
+              <!-- <a href="#" class="btn-signin-mobile">Sign In</a> -->
+            </div>
+            <hr class="mobile-menu-divider" />
+            <div class="mobile-menu-contact">
+              <a href="mailto:admissions@siecbangladesh.com"
+                ><i class="bi bi-envelope-fill"></i
+                >admissions@siecbangladesh.com</a
+              >
+              <a href="tel:+919779046382"
+                ><i class="bi bi-whatsapp"></i>+880 9643218891</a
+              >
+            </div>
+          </nav>
         </div>
+      </div>
+    </header>
 
-        <!-- Slide 2: Find Your Ideal Home Abroad -- white card over graduation photo -->
-        <div class="carousel-item hero-slide hero-slide--card" data-bs-interval="6000">
-          <div class="hero-slide-bg" style="background-image:url('image/hero/ban2.webp');"></div>
-          <div class="hero-slide-scrim"></div>
-          <div class="container hero-slide-content">
-            <div class="hero-card">
-              <h2 class="hero-heading reveal-item" data-delay="1">Find Your Ideal Home Abroad</h2>
-              <p class="hero-subtext reveal-item" data-delay="2">Choose from 100% verified properties</p>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- ============ HERO SLIDER ============ -->
+    <section class="hero-slider">
+      <div
+        id="heroCarousel"
+        class="carousel slide hero-carousel"
+        data-bs-ride="carousel"
+        data-bs-pause="hover"
+      >
+        <div class="carousel-inner">
+          <!-- Slide 1: Australia Education Fair -- image only, no overlay text -->
+          <div
+            class="carousel-item active hero-slide hero-slide--plain"
+            data-bs-interval="6000"
+          >
+            <div
+              class="hero-slide-bg"
+              style="background-image: url(&quot;image/hero/ban1.webp&quot;)"
+            ></div>
+          </div>
+
+          <!-- Slide 2: Find Your Ideal Home Abroad -- white card over graduation photo -->
+          <div
+            class="carousel-item hero-slide hero-slide--card"
+            data-bs-interval="6000"
+          >
+            <div
+              class="hero-slide-bg"
+              style="background-image: url(&quot;image/hero/ban2.webp&quot;)"
+            ></div>
+            <div class="hero-slide-scrim"></div>
+            <div class="container hero-slide-content">
+              <div class="hero-card">
+                <h2 class="hero-heading reveal-item" data-delay="1">
+                  Find Your Ideal Home Abroad
+                </h2>
+                <p class="hero-subtext reveal-item" data-delay="2">
+                  Choose from 100% verified properties
+                </p>
+                <div class="hero-btn-row reveal-item" data-delay="3">
+                  <a href="#" class="btn-hero btn-hero--solid-green"
+                    >Find Accommodations</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3: Shaping Careers Since 1995 -- light abstract background -->
+          <div
+            class="carousel-item hero-slide hero-slide--light"
+            data-bs-interval="6000"
+          >
+            <div
+              class="hero-slide-bg"
+              style="background-image: url(&quot;image/hero/ban3.webp&quot;)"
+            ></div>
+            <div class="container hero-slide-content">
+              <span class="hero-eyebrow reveal-item" data-delay="1"
+                >SIEC EDUCATION</span
+              >
+              <h2 class="hero-heading reveal-item" data-delay="2">
+                Shaping Careers Since 1995
+              </h2>
+              <p class="hero-subtext reveal-item" data-delay="3">
+                Explore World-Class Universities and Perfectly Matched
+                Scholarships
+              </p>
+              <div class="hero-btn-row reveal-item" data-delay="4">
+                <a href="#" class="btn-hero btn-hero--solid-green"
+                  ><i class="bi bi-stars"></i>Free Profile Evaluation</a
+                >
+                <a href="#" class="btn-hero btn-hero--outline-dark"
+                  >Career Consultation</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4: Ace The Test, Score Your Best -- green tint over campus photo -->
+          <div
+            class="carousel-item hero-slide hero-slide--tint"
+            data-bs-interval="6000"
+          >
+            <div
+              class="hero-slide-bg"
+              style="background-image: url(&quot;image/hero/ban4.webp&quot;)"
+            ></div>
+            <div class="hero-slide-scrim hero-slide-scrim--green"></div>
+            <div class="container hero-slide-content">
+              <h2
+                class="hero-heading hero-heading--gold reveal-item"
+                data-delay="1"
+              >
+                Ace The Test, Score Your Best
+              </h2>
+              <p
+                class="hero-subtext hero-subtext--light reveal-item"
+                data-delay="2"
+              >
+                Get Expert Guidance on IELTS, TOEFL, PTE, GRE, GMAT, SAT &amp;
+                more.
+              </p>
               <div class="hero-btn-row reveal-item" data-delay="3">
-                <a href="#" class="btn-hero btn-hero--solid-green">Find Accommodations</a>
+                <a href="#" class="btn-hero btn-hero--solid-gold">Book Demo</a>
+                <a href="#" class="btn-hero btn-hero--outline-light"
+                  >Enroll Now</a
+                >
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Slide 3: Shaping Careers Since 1995 -- light abstract background -->
-        <div class="carousel-item hero-slide hero-slide--light" data-bs-interval="6000">
-          <div class="hero-slide-bg" style="background-image:url('image/hero/ban3.webp');"></div>
-          <div class="container hero-slide-content">
-            <span class="hero-eyebrow reveal-item" data-delay="1">SIEC EDUCATION</span>
-            <h2 class="hero-heading reveal-item" data-delay="2">Shaping Careers Since 1995</h2>
-            <p class="hero-subtext reveal-item" data-delay="3">Explore World-Class Universities and Perfectly Matched
-              Scholarships</p>
-            <div class="hero-btn-row reveal-item" data-delay="4">
-              <a href="#" class="btn-hero btn-hero--solid-green"><i class="bi bi-stars"></i>Free Profile Evaluation</a>
-              <a href="#" class="btn-hero btn-hero--outline-dark">Career Consultation</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 4: Ace The Test, Score Your Best -- green tint over campus photo -->
-        <div class="carousel-item hero-slide hero-slide--tint" data-bs-interval="6000">
-          <div class="hero-slide-bg" style="background-image:url('image/hero/ban4.webp');"></div>
-          <div class="hero-slide-scrim hero-slide-scrim--green"></div>
-          <div class="container hero-slide-content">
-            <h2 class="hero-heading hero-heading--gold reveal-item" data-delay="1">Ace The Test, Score Your Best</h2>
-            <p class="hero-subtext hero-subtext--light reveal-item" data-delay="2">Get Expert Guidance on IELTS, TOEFL,
-              PTE, GRE, GMAT, SAT &amp; more.</p>
-            <div class="hero-btn-row reveal-item" data-delay="3">
-              <a href="#" class="btn-hero btn-hero--solid-gold">Book Demo</a>
-              <a href="#" class="btn-hero btn-hero--outline-light">Enroll Now</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- prev / next controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-        <span class="hero-control-icon"><i class="bi bi-chevron-left"></i></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-        <span class="hero-control-icon"><i class="bi bi-chevron-right"></i></span>
-      </button>
-
-      <!-- indicators -->
-      <div class="carousel-indicators hero-indicators">
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
-          aria-current="true"></button>
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
-      </div>
-    </div>
-  </section>
-  <!-- ============ HERO SLIDER END ============ -->
-
-  <!-- ============ Siec Admission start ============ -->
-  <section class="siec-highlights py-5">
-    <div class="container-fluid px-4 px-lg-5">
-
-      <div class="text-center mb-5">
-        <span class="badge-highlight mb-3">SIEC Highlights</span>
-        <h2 class="section-title">Turn ambitions into admissions — it all starts with the <span
-            class="text-accent">Right Guidance</span></h2>
-        <p class="section-subtitle mx-auto">Get in touch with our expert counsellors to simplify the process, all the
-          way from university applications to visa clearance</p>
-      </div>
-
-      <div class="highlights-grid-wrapper">
-
-        <div
-          class="highlight-card card-yellow-light d-flex flex-column justify-content-center align-items-center text-center p-4">
-          <div class="card-icon mb-3">
-            <i class="fa-solid fa-graduation-cap highlight-icon"></i>
-          </div>
-          <h3 class="counter-num" data-target="30">0</h3>
-          <p class="card-label">Years of <br>Excellence</p>
-        </div>
-
-        <div class="highlight-card card-banner-img p-0">
-          <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=600"
-            alt="Student on luggage" class="img-fluid banner-inner-img">
-        </div>
-
-        <div
-          class="highlight-card card-pink-light d-flex flex-column justify-content-center align-items-center text-center p-4">
-          <div class="card-icon mb-3">
-            <i class="fa-solid fa-users highlight-icon"></i>
-          </div>
-          <h3 class="counter-num" data-target="150">0</h3>
-          <p class="card-label">Expert Counsellors</p>
-        </div>
-
-        <div
-          class="highlight-card card-blue-light d-flex flex-column justify-content-center align-items-center text-center p-4">
-          <div class="card-icon mb-3">
-            <i class="fa-solid fa-earth-americas highlight-icon"></i>
-          </div>
-          <h3 class="counter-num" data-target="30">0</h3>
-          <p class="card-label">Global Study <br>Destination</p>
-        </div>
-
-        <div
-          class="highlight-card card-orange-light d-flex flex-column justify-content-center align-items-center text-center p-4">
-          <div class="card-icon mb-3">
-            <i class="fa-solid fa-comments highlight-icon"></i>
-          </div>
-          <h3 class="counter-num" data-target="2" data-suffix="M+">0</h3>
-          <p class="card-label">Student <br>Counselled</p>
-        </div>
-
-        <div class="highlight-card card-monuments-bg d-flex align-items-end justify-content-center p-0">
-          <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&q=80&w=600"
-            alt="Global Landmarks" class="img-fluid monuments-img">
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- ============ Siec Admission End ============ -->
-
-  <!-- =========== Siec course search start ============ -->
-  <section class="siec-search-slider-sec">
-    <div class="siec-container">
-
-      <div class="siec-sec-header">
-        <span class="siec-badge">Course Search</span>
-        <h2 class="siec-main-title">
-          Explore with <span>iCSA</span> – Intelligent Course Search Advisor, perfectly aligned with your <span>Career
-            Goals</span>
-        </h2>
-      </div>
-
-      <div class="siec-filter-bar">
-        <div class="siec-select-group">
-          <div class="siec-select-box">
-            <i class="fa-solid fa-graduation-cap siec-select-icon"></i>
-            <select>
-              <option value="" disabled selected>Select level of study</option>
-              <option value="undergrad">Undergraduate</option>
-              <option value="postgrad">Postgraduate</option>
-              <option value="doctorate">Doctorate / PhD</option>
-            </select>
-          </div>
-
-          <div class="siec-select-box">
-            <i class="fa-solid fa-book-open siec-select-icon"></i>
-            <select>
-              <option value="" disabled selected>Select field of study</option>
-              <option value="it">Information Technology</option>
-              <option value="business">Business & Management</option>
-              <option value="engineering">Engineering</option>
-            </select>
-          </div>
-
-          <div class="siec-select-box">
-            <i class="fa-solid fa-earth-americas siec-select-icon"></i>
-            <select>
-              <option value="" disabled selected>Select Country</option>
-              <option value="uk">United Kingdom</option>
-              <option value="usa">United States</option>
-              <option value="australia">Australia</option>
-            </select>
-          </div>
-        </div>
-
-        <button class="siec-find-btn">
-          Find Courses <i class="fa-solid fa-magnifying-glass"></i>
+        <!-- prev / next controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="hero-control-icon"
+            ><i class="bi bi-chevron-left"></i
+          ></span>
         </button>
-      </div>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next"
+        >
+          <span class="hero-control-icon"
+            ><i class="bi bi-chevron-right"></i
+          ></span>
+        </button>
 
-      <div class="siec-discover-row">
-        <h3 class="siec-discover-title">
-          Discover courses by
-          <svg class="siec-arrow-svg" width="40" height="20" viewBox="0 0 50 25" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M2 2C15 15 35 22 45 10M45 10C41 11 36 11 34 8M45 10C44 14 43 19 45 22" stroke="#0F3D22"
-              stroke-width="2.5" stroke-linecap="round" />
-          </svg>
-        </h3>
-
-        <div class="siec-tabs-wrapper">
-          <div class="siec-tab active" data-tab-target="tab-field">
-            <div class="siec-tab-icon">
-              <i class="fa-solid fa-book"></i>
-            </div>
-            <div class="siec-tab-text">
-              <span>Search by</span>
-              <strong>Field of Study</strong>
-            </div>
-          </div>
-
-          <div class="siec-tab" data-tab-target="tab-goal">
-            <div class="siec-tab-icon">
-              <i class="fa-solid fa-briefcase"></i>
-            </div>
-            <div class="siec-tab-text">
-              <span>Search by</span>
-              <strong>Career Goal</strong>
-            </div>
-          </div>
-
-          <div class="siec-tab" data-tab-target="tab-destination">
-            <div class="siec-tab-icon">
-              <i class="fa-solid fa-earth-asia"></i>
-            </div>
-            <div class="siec-tab-text">
-              <span>Search by</span>
-              <strong>Destination</strong>
-            </div>
-          </div>
+        <!-- indicators -->
+        <div class="carousel-indicators hero-indicators">
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="3"
+          ></button>
         </div>
       </div>
+    </section>
+    <!-- ============ HERO SLIDER END ============ -->
 
-      <div class="siec-sliders-container">
-        <div id="tab-field" class="siec-slider-panel active">
-          <div class="siec-slider-wrapper">
-            <button class="siec-nav-btn prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
-            <div class="siec-slider-track">
+    <!-- ============ Siec Admission start ============ -->
+    <section class="siec-highlights py-5">
+      <div class="container-fluid px-4 px-lg-5">
+        <div class="text-center mb-5">
+          <span class="badge-highlight mb-3">SIEC Highlights</span>
+          <h2 class="section-title">
+            Turn ambitions into admissions — it all starts with the
+            <span class="text-accent">Right Guidance</span>
+          </h2>
+          <p class="section-subtitle mx-auto">
+            Get in touch with our expert counsellors to simplify the process,
+            all the way from university applications to visa clearance
+          </p>
+        </div>
 
-              <div class="siec-card shadow-card">
-                <div class="siec-card-top">
-                  <div class="siec-card-icon"><i class="fa-solid fa-compass-drafting"></i></div>
-                  <h4 class="siec-card-name">Architecture and building</h4>
-                </div>
-                <div class="siec-card-stats">
-                  <div class="stat-box"><strong>2</strong> <span>Specializations</span></div>
-                  <div class="stat-box"><strong>1364</strong> <span>Courses</span></div>
-                </div>
-                <div class="siec-card-footer">
-                  <span>Explore more</span>
-                  <div class="siec-arrow-circle"><i class="fa-solid fa-arrow-right"></i></div>
-                </div>
-              </div>
-
-              <div class="siec-card shadow-card">
-                <div class="siec-card-top">
-                  <div class="siec-card-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
-                  <h4 class="siec-card-name">Education</h4>
-                </div>
-                <div class="siec-card-stats">
-                  <div class="stat-box"><strong>3</strong> <span>Specializations</span></div>
-                  <div class="stat-box"><strong>4228</strong> <span>Courses</span></div>
-                </div>
-                <div class="siec-card-footer">
-                  <span>Explore more</span>
-                  <div class="siec-arrow-circle"><i class="fa-solid fa-arrow-right"></i></div>
-                </div>
-              </div>
-
-              <div class="siec-card shadow-card">
-                <div class="siec-card-top">
-                  <div class="siec-card-icon"><i class="fa-solid fa-suitcase-medical"></i></div>
-                  <h4 class="siec-card-name">Health</h4>
-                </div>
-                <div class="siec-card-stats">
-                  <div class="stat-box"><strong>11</strong> <span>Specializations</span></div>
-                  <div class="stat-box"><strong>5650</strong> <span>Courses</span></div>
-                </div>
-                <div class="siec-card-footer">
-                  <span>Explore more</span>
-                  <div class="siec-arrow-circle"><i class="fa-solid fa-arrow-right"></i></div>
-                </div>
-              </div>
-
-              <div class="siec-card shadow-card">
-                <div class="siec-card-top">
-                  <div class="siec-card-icon"><i class="fa-solid fa-gavel"></i></div>
-                  <h4 class="siec-card-name">Law</h4>
-                </div>
-                <div class="siec-card-stats">
-                  <div class="stat-box"><strong>1</strong> <span>Specializations</span></div>
-                  <div class="stat-box"><strong>1035</strong> <span>Courses</span></div>
-                </div>
-                <div class="siec-card-footer">
-                  <span>Explore more</span>
-                  <div class="siec-arrow-circle"><i class="fa-solid fa-arrow-right"></i></div>
-                </div>
-              </div>
-
-              <div class="siec-card shadow-card">
-                <div class="siec-card-top">
-                  <div class="siec-card-icon"><i class="fa-solid fa-laptop-code"></i></div>
-                  <h4 class="siec-card-name">Engineering and Technologies</h4>
-                </div>
-                <div class="siec-card-stats">
-                  <div class="stat-box"><strong>10</strong> <span>Specializations</span></div>
-                  <div class="stat-box"><strong>5706</strong> <span>Courses</span></div>
-                </div>
-                <div class="siec-card-footer">
-                  <span>Explore more</span>
-                  <div class="siec-arrow-circle"><i class="fa-solid fa-arrow-right"></i></div>
-                </div>
-              </div>
-
+        <div class="highlights-grid-wrapper">
+          <div
+            class="highlight-card card-yellow-light d-flex flex-column justify-content-center align-items-center text-center p-4"
+          >
+            <div class="card-icon mb-3">
+              <i class="fa-solid fa-graduation-cap highlight-icon"></i>
             </div>
-            <button class="siec-nav-btn next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+            <h3 class="counter-num" data-target="30">0</h3>
+            <p class="card-label">Years of <br />Excellence</p>
+          </div>
+
+          <div class="highlight-card card-banner-img p-0">
+            <img
+              src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=600"
+              alt="Student on luggage"
+              class="img-fluid banner-inner-img"
+            />
+          </div>
+
+          <div
+            class="highlight-card card-pink-light d-flex flex-column justify-content-center align-items-center text-center p-4"
+          >
+            <div class="card-icon mb-3">
+              <i class="fa-solid fa-users highlight-icon"></i>
+            </div>
+            <h3 class="counter-num" data-target="150">0</h3>
+            <p class="card-label">Expert Counsellors</p>
+          </div>
+
+          <div
+            class="highlight-card card-blue-light d-flex flex-column justify-content-center align-items-center text-center p-4"
+          >
+            <div class="card-icon mb-3">
+              <i class="fa-solid fa-earth-americas highlight-icon"></i>
+            </div>
+            <h3 class="counter-num" data-target="30">0</h3>
+            <p class="card-label">Global Study <br />Destination</p>
+          </div>
+
+          <div
+            class="highlight-card card-orange-light d-flex flex-column justify-content-center align-items-center text-center p-4"
+          >
+            <div class="card-icon mb-3">
+              <i class="fa-solid fa-comments highlight-icon"></i>
+            </div>
+            <h3 class="counter-num" data-target="2" data-suffix="M+">0</h3>
+            <p class="card-label">Student <br />Counselled</p>
+          </div>
+
+          <div
+            class="highlight-card card-monuments-bg d-flex align-items-end justify-content-center p-0"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&q=80&w=600"
+              alt="Global Landmarks"
+              class="img-fluid monuments-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============ Siec Admission End ============ -->
+
+    <!-- =========== Siec course search start ============ -->
+    <section class="siec-search-slider-sec">
+      <div class="siec-container">
+        <div class="siec-sec-header">
+          <span class="siec-badge">Course Search</span>
+          <h2 class="siec-main-title">
+            Explore with <span>iCSA</span> – Intelligent Course Search Advisor,
+            perfectly aligned with your <span>Career Goals</span>
+          </h2>
+        </div>
+
+        <div class="siec-filter-bar">
+          <div class="siec-select-group">
+            <div class="siec-select-box">
+              <i class="fa-solid fa-graduation-cap siec-select-icon"></i>
+              <select>
+                <option value="" disabled selected>
+                  Select level of study
+                </option>
+                <option value="undergrad">Undergraduate</option>
+                <option value="postgrad">Postgraduate</option>
+                <option value="doctorate">Doctorate / PhD</option>
+              </select>
+            </div>
+
+            <div class="siec-select-box">
+              <i class="fa-solid fa-book-open siec-select-icon"></i>
+              <select>
+                <option value="" disabled selected>
+                  Select field of study
+                </option>
+                <option value="it">Information Technology</option>
+                <option value="business">Business & Management</option>
+                <option value="engineering">Engineering</option>
+              </select>
+            </div>
+
+            <div class="siec-select-box">
+              <i class="fa-solid fa-earth-americas siec-select-icon"></i>
+              <select>
+                <option value="" disabled selected>Select Country</option>
+                <option value="uk">United Kingdom</option>
+                <option value="usa">United States</option>
+                <option value="australia">Australia</option>
+              </select>
+            </div>
+          </div>
+
+          <button class="siec-find-btn">
+            Find Courses <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <div class="siec-discover-row">
+          <h3 class="siec-discover-title">
+            Discover courses by
+            <svg
+              class="siec-arrow-svg"
+              width="40"
+              height="20"
+              viewBox="0 0 50 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2 2C15 15 35 22 45 10M45 10C41 11 36 11 34 8M45 10C44 14 43 19 45 22"
+                stroke="#0F3D22"
+                stroke-width="2.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </h3>
+
+          <div class="siec-tabs-wrapper">
+            <div class="siec-tab active" data-tab-target="tab-field">
+              <div class="siec-tab-icon">
+                <i class="fa-solid fa-book"></i>
+              </div>
+              <div class="siec-tab-text">
+                <span>Search by</span>
+                <strong>Field of Study</strong>
+              </div>
+            </div>
+
+            <div class="siec-tab" data-tab-target="tab-goal">
+              <div class="siec-tab-icon">
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+              <div class="siec-tab-text">
+                <span>Search by</span>
+                <strong>Career Goal</strong>
+              </div>
+            </div>
+
+            <div class="siec-tab" data-tab-target="tab-destination">
+              <div class="siec-tab-icon">
+                <i class="fa-solid fa-earth-asia"></i>
+              </div>
+              <div class="siec-tab-text">
+                <span>Search by</span>
+                <strong>Destination</strong>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div id="tab-goal" class="siec-slider-panel">
-          <div class="siec-slider-wrapper">
-            <button class="siec-nav-btn prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
-            <div class="siec-slider-track">
+        <div class="siec-sliders-container">
+          <div id="tab-field" class="siec-slider-panel active">
+            <div class="siec-slider-wrapper">
+              <button class="siec-nav-btn prev-btn">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <div class="siec-slider-track">
+                <div class="siec-card shadow-card">
+                  <div class="siec-card-top">
+                    <div class="siec-card-icon">
+                      <i class="fa-solid fa-compass-drafting"></i>
+                    </div>
+                    <h4 class="siec-card-name">Architecture and building</h4>
+                  </div>
+                  <div class="siec-card-stats">
+                    <div class="stat-box">
+                      <strong>2</strong> <span>Specializations</span>
+                    </div>
+                    <div class="stat-box">
+                      <strong>1364</strong> <span>Courses</span>
+                    </div>
+                  </div>
+                  <div class="siec-card-footer">
+                    <span>Explore more</span>
+                    <div class="siec-arrow-circle">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
 
-              <div class="siec-card shadow-card">
-                <div class="siec-card-top">
-                  <div class="siec-card-icon"><i class="fa-solid fa-plane"></i></div>
-                  <h4 class="siec-card-name">Airlines</h4>
+                <div class="siec-card shadow-card">
+                  <div class="siec-card-top">
+                    <div class="siec-card-icon">
+                      <i class="fa-solid fa-chalkboard-user"></i>
+                    </div>
+                    <h4 class="siec-card-name">Education</h4>
+                  </div>
+                  <div class="siec-card-stats">
+                    <div class="stat-box">
+                      <strong>3</strong> <span>Specializations</span>
+                    </div>
+                    <div class="stat-box">
+                      <strong>4228</strong> <span>Courses</span>
+                    </div>
+                  </div>
+                  <div class="siec-card-footer">
+                    <span>Explore more</span>
+                    <div class="siec-arrow-circle">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
                 </div>
-                <div class="siec-card-stats">
-                  <div class="stat-box"><strong>16</strong> <span>Careers</span></div>
-                  <div class="stat-box"><strong>1</strong> <span>Courses</span></div>
+
+                <div class="siec-card shadow-card">
+                  <div class="siec-card-top">
+                    <div class="siec-card-icon">
+                      <i class="fa-solid fa-suitcase-medical"></i>
+                    </div>
+                    <h4 class="siec-card-name">Health</h4>
+                  </div>
+                  <div class="siec-card-stats">
+                    <div class="stat-box">
+                      <strong>11</strong> <span>Specializations</span>
+                    </div>
+                    <div class="stat-box">
+                      <strong>5650</strong> <span>Courses</span>
+                    </div>
+                  </div>
+                  <div class="siec-card-footer">
+                    <span>Explore more</span>
+                    <div class="siec-arrow-circle">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
                 </div>
-                <div class="siec-card-footer">
-                  <span>Explore more</span>
-                  <div class="siec-arrow-circle"><i class="fa-solid fa-arrow-right"></i></div>
+
+                <div class="siec-card shadow-card">
+                  <div class="siec-card-top">
+                    <div class="siec-card-icon">
+                      <i class="fa-solid fa-gavel"></i>
+                    </div>
+                    <h4 class="siec-card-name">Law</h4>
+                  </div>
+                  <div class="siec-card-stats">
+                    <div class="stat-box">
+                      <strong>1</strong> <span>Specializations</span>
+                    </div>
+                    <div class="stat-box">
+                      <strong>1035</strong> <span>Courses</span>
+                    </div>
+                  </div>
+                  <div class="siec-card-footer">
+                    <span>Explore more</span>
+                    <div class="siec-arrow-circle">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="siec-card shadow-card">
+                  <div class="siec-card-top">
+                    <div class="siec-card-icon">
+                      <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h4 class="siec-card-name">Engineering and Technologies</h4>
+                  </div>
+                  <div class="siec-card-stats">
+                    <div class="stat-box">
+                      <strong>10</strong> <span>Specializations</span>
+                    </div>
+                    <div class="stat-box">
+                      <strong>5706</strong> <span>Courses</span>
+                    </div>
+                  </div>
+                  <div class="siec-card-footer">
+                    <span>Explore more</span>
+                    <div class="siec-arrow-circle">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
-
-              <div class="siec-card shadow-card">
-                <div class="siec-card-top">
-                  <div class="siec-card-icon"><i class="fa-solid fa-display"></i></div>
-                  <h4 class="siec-card-name">Education Training</h4>
-                </div>
-                <div class="siec-card-stats">
-                  <div class="stat-box"><strong>31</strong> <span>Careers</span></div>
-                  <div class="stat-box"><strong>4315</strong> <span>Courses</span></div>
-                </div>
-                <div class="siec-card-footer">
-                  <span>Explore more</span>
-                  <div class="siec-arrow-circle"><i class="fa-solid fa-arrow-right"></i></div>
-                </div>
-              </div>
-
-              <div class="siec-card shadow-card">
-                <div class="siec-card-top">
-                  <div class="siec-card-icon"><i class="fa-solid fa-terminal"></i></div>
-                  <h4 class="siec-card-name">Information Technology</h4>
-                </div>
-                <div class="siec-card-stats">
-                  <div class="stat-box"><strong>209</strong> <span>Careers</span></div>
-                  <div class="stat-box"><strong>5423</strong> <span>Courses</span></div>
-                </div>
-                <div class="siec-card-footer">
-                  <span>Explore more</span>
-                  <div class="siec-arrow-circle"><i class="fa-solid fa-arrow-right"></i></div>
-                </div>
-              </div>
-
-              <div class="siec-card shadow-card">
-                <div class="siec-card-top">
-                  <div class="siec-card-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                  <h4 class="siec-card-name">Insurance</h4>
-                </div>
-                <div class="siec-card-stats">
-                  <div class="stat-box"><strong>30</strong> <span>Careers</span></div>
-                  <div class="stat-box"><strong>24</strong> <span>Courses</span></div>
-                </div>
-                <div class="siec-card-footer">
-                  <span>Explore more</span>
-                  <div class="siec-arrow-circle"><i class="fa-solid fa-arrow-right"></i></div>
-                </div>
-              </div>
-
-              <div class="siec-card shadow-card">
-                <div class="siec-card-top">
-                  <div class="siec-card-icon"><i class="fa-solid fa-bell-concierge"></i></div>
-                  <h4 class="siec-card-name">Hospitality Hotels</h4>
-                </div>
-                <div class="siec-card-stats">
-                  <div class="stat-box"><strong>5</strong> <span>Careers</span></div>
-                  <div class="stat-box"><strong>266</strong> <span>Courses</span></div>
-                </div>
-                <div class="siec-card-footer">
-                  <span>Explore more</span>
-                  <div class="siec-arrow-circle"><i class="fa-solid fa-arrow-right"></i></div>
-                </div>
-              </div>
-
+              <button class="siec-nav-btn next-btn">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
             </div>
-            <button class="siec-nav-btn next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+
+          <div id="tab-goal" class="siec-slider-panel">
+            <div class="siec-slider-wrapper">
+              <button class="siec-nav-btn prev-btn">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <div class="siec-slider-track">
+                <div class="siec-card shadow-card">
+                  <div class="siec-card-top">
+                    <div class="siec-card-icon">
+                      <i class="fa-solid fa-plane"></i>
+                    </div>
+                    <h4 class="siec-card-name">Airlines</h4>
+                  </div>
+                  <div class="siec-card-stats">
+                    <div class="stat-box">
+                      <strong>16</strong> <span>Careers</span>
+                    </div>
+                    <div class="stat-box">
+                      <strong>1</strong> <span>Courses</span>
+                    </div>
+                  </div>
+                  <div class="siec-card-footer">
+                    <span>Explore more</span>
+                    <div class="siec-arrow-circle">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="siec-card shadow-card">
+                  <div class="siec-card-top">
+                    <div class="siec-card-icon">
+                      <i class="fa-solid fa-display"></i>
+                    </div>
+                    <h4 class="siec-card-name">Education Training</h4>
+                  </div>
+                  <div class="siec-card-stats">
+                    <div class="stat-box">
+                      <strong>31</strong> <span>Careers</span>
+                    </div>
+                    <div class="stat-box">
+                      <strong>4315</strong> <span>Courses</span>
+                    </div>
+                  </div>
+                  <div class="siec-card-footer">
+                    <span>Explore more</span>
+                    <div class="siec-arrow-circle">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="siec-card shadow-card">
+                  <div class="siec-card-top">
+                    <div class="siec-card-icon">
+                      <i class="fa-solid fa-terminal"></i>
+                    </div>
+                    <h4 class="siec-card-name">Information Technology</h4>
+                  </div>
+                  <div class="siec-card-stats">
+                    <div class="stat-box">
+                      <strong>209</strong> <span>Careers</span>
+                    </div>
+                    <div class="stat-box">
+                      <strong>5423</strong> <span>Courses</span>
+                    </div>
+                  </div>
+                  <div class="siec-card-footer">
+                    <span>Explore more</span>
+                    <div class="siec-arrow-circle">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="siec-card shadow-card">
+                  <div class="siec-card-top">
+                    <div class="siec-card-icon">
+                      <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h4 class="siec-card-name">Insurance</h4>
+                  </div>
+                  <div class="siec-card-stats">
+                    <div class="stat-box">
+                      <strong>30</strong> <span>Careers</span>
+                    </div>
+                    <div class="stat-box">
+                      <strong>24</strong> <span>Courses</span>
+                    </div>
+                  </div>
+                  <div class="siec-card-footer">
+                    <span>Explore more</span>
+                    <div class="siec-arrow-circle">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="siec-card shadow-card">
+                  <div class="siec-card-top">
+                    <div class="siec-card-icon">
+                      <i class="fa-solid fa-bell-concierge"></i>
+                    </div>
+                    <h4 class="siec-card-name">Hospitality Hotels</h4>
+                  </div>
+                  <div class="siec-card-stats">
+                    <div class="stat-box">
+                      <strong>5</strong> <span>Careers</span>
+                    </div>
+                    <div class="stat-box">
+                      <strong>266</strong> <span>Courses</span>
+                    </div>
+                  </div>
+                  <div class="siec-card-footer">
+                    <span>Explore more</span>
+                    <div class="siec-arrow-circle">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="siec-nav-btn next-btn">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div id="tab-destination" class="siec-slider-panel">
+            <div class="siec-slider-wrapper">
+              <button class="siec-nav-btn prev-btn">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <div class="siec-slider-track">
+                <div class="siec-card shadow-card dest-card">
+                  <div class="dest-media-box">
+                    <img
+                      src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=350&q=80"
+                      alt="Australia"
+                      class="dest-bg-img"
+                    />
+                    <span class="dest-badge">Australia</span>
+                    <span class="dest-flag">🇦🇺</span>
+                  </div>
+                  <div class="siec-card-stats">
+                    <div class="stat-box">
+                      <strong>116</strong> <span>Universities</span>
+                    </div>
+                    <div class="stat-box">
+                      <strong>7153</strong> <span>Courses</span>
+                    </div>
+                  </div>
+                  <div class="siec-card-footer">
+                    <span>Explore more</span>
+                    <div class="siec-arrow-circle">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="siec-card shadow-card dest-card">
+                  <div class="dest-media-box">
+                    <img
+                      src="https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?auto=format&fit=crop&w=350&q=80"
+                      alt="Canada"
+                      class="dest-bg-img"
+                    />
+                    <span class="dest-badge">Canada</span>
+                    <span class="dest-flag">🇨🇦</span>
+                  </div>
+                  <div class="siec-card-stats">
+                    <div class="stat-box">
+                      <strong>146</strong> <span>Universities</span>
+                    </div>
+                    <div class="stat-box">
+                      <strong>8269</strong> <span>Courses</span>
+                    </div>
+                  </div>
+                  <div class="siec-card-footer">
+                    <span>Explore more</span>
+                    <div class="siec-arrow-circle">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="siec-card shadow-card dest-card">
+                  <div class="dest-media-box">
+                    <img
+                      src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=350&q=80"
+                      alt="France"
+                      class="dest-bg-img"
+                    />
+                    <span class="dest-badge">France</span>
+                    <span class="dest-flag">🇫🇷</span>
+                  </div>
+                  <div class="siec-card-stats">
+                    <div class="stat-box">
+                      <strong>53</strong> <span>Universities</span>
+                    </div>
+                    <div class="stat-box">
+                      <strong>304</strong> <span>Courses</span>
+                    </div>
+                  </div>
+                  <div class="siec-card-footer">
+                    <span>Explore more</span>
+                    <div class="siec-arrow-circle">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="siec-card shadow-card dest-card">
+                  <div class="dest-media-box">
+                    <img
+                      src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=350&q=80"
+                      alt="Germany"
+                      class="dest-bg-img"
+                    />
+                    <span class="dest-badge">Germany</span>
+                    <span class="dest-flag">🇩🇪</span>
+                  </div>
+                  <div class="siec-card-stats">
+                    <div class="stat-box">
+                      <strong>151</strong> <span>Universities</span>
+                    </div>
+                    <div class="stat-box">
+                      <strong>1702</strong> <span>Courses</span>
+                    </div>
+                  </div>
+                  <div class="siec-card-footer">
+                    <span>Explore more</span>
+                    <div class="siec-arrow-circle">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="siec-card shadow-card dest-card">
+                  <div class="dest-media-box">
+                    <img
+                      src="https://images.unsplash.com/photo-1590089215341-4643717d2949?auto=format&fit=crop&w=350&q=80"
+                      alt="Ireland"
+                      class="dest-bg-img"
+                    />
+                    <span class="dest-badge">Ireland</span>
+                    <span class="dest-flag">🇮🇪</span>
+                  </div>
+                  <div class="siec-card-stats">
+                    <div class="stat-box">
+                      <strong>19</strong> <span>Universities</span>
+                    </div>
+                    <div class="stat-box">
+                      <strong>1954</strong> <span>Courses</span>
+                    </div>
+                  </div>
+                  <div class="siec-card-footer">
+                    <span>Explore more</span>
+                    <div class="siec-arrow-circle">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="siec-nav-btn next-btn">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
+    <!-- ========== Siec course search end ============ -->
 
-        <div id="tab-destination" class="siec-slider-panel">
-          <div class="siec-slider-wrapper">
-            <button class="siec-nav-btn prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
-            <div class="siec-slider-track">
+    <!-- ========== Siec university list start ============ -->
+    <section class="siec-uni-sec">
+      <div class="siec-container">
+        <div class="siec-uni-header">
+          <h2 class="siec-uni-title">
+            Your Dream University is Just a <span>Search Away</span>
+          </h2>
+          <p class="siec-uni-subtitle">
+            Explore universities in different parts of the world that can open
+            doors to your international career
+          </p>
+        </div>
+        <div class="siec-uni-slider-wrapper">
+          <div class="siec-uni-track">
+            <div class="siec-uni-slide">
+              <img src="image/university/10146.png" alt="Victoria University" />
+            </div>
+            <div class="siec-uni-slide">
+              <img
+                src="image/university/10147.png"
+                alt="Western Sydney University"
+              />
+            </div>
+            <div class="siec-uni-slide">
+              <img
+                src="image/university/10148.png"
+                alt="William Angliss Institute"
+              />
+            </div>
+            <div class="siec-uni-slide">
+              <img src="image/university/10149.png" alt="Griffith University" />
+            </div>
+            <div class="siec-uni-slide">
+              <img
+                src="image/university/10150.png"
+                alt="St. Thomas University"
+              />
+            </div>
+            <div class="siec-uni-slide">
+              <img src="image/university/10151.png" alt="SAE Institute" />
+            </div>
+            <div class="siec-uni-slide">
+              <img src="image/university/10152.png" alt="RMIT University" />
+            </div>
+            <div class="siec-uni-slide">
+              <img
+                src="image/university/10153.jpeg"
+                alt="Victoria University"
+              />
+            </div>
+            <div class="siec-uni-slide">
+              <img
+                src="image/university/10154.png"
+                alt="Western Sydney University"
+              />
+            </div>
+            <div class="siec-uni-slide">
+              <img
+                src="image/university/10155.png"
+                alt="William Angliss Institute"
+              />
+            </div>
+            <div class="siec-uni-slide">
+              <img src="image/university/10156.png" alt="Griffith University" />
+            </div>
+            <div class="siec-uni-slide">
+              <img
+                src="image/university/10158.png"
+                alt="St. Thomas University"
+              />
+            </div>
+            <div class="siec-uni-slide">
+              <img src="image/university/10158.png" alt="SAE Institute" />
+            </div>
+            <div class="siec-uni-slide">
+              <img src="image/university/10159.jpeg" alt="RMIT University" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Siec university list End ============ -->
+    <!-- ========== Siec academic destination start ============ -->
+    <section class="siec-destination-sec">
+      <div class="dest-section-container">
+        <div class="dest-main-header-wrap">
+          <div class="dest-plane-svg-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#9bb1a5"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+            </svg>
+          </div>
+          <span class="dest-badge-tag">Academic Destination</span>
+          <h2 class="dest-section-heading">
+            Your Go-to-Guide For Studying Abroad at
+            <span>Top Destinations</span>
+          </h2>
+          <p class="dest-section-subheading">
+            Your roadmap to the best study abroad countries — USA, UK, Canada,
+            Australia, Germany, and beyond — with expert guidance on
+            universities, costs, and future careers.
+          </p>
+        </div>
 
-              <div class="siec-card shadow-card dest-card">
-                <div class="dest-media-box">
+        <div class="dest-slider-viewport">
+          <div class="dest-slider-moving-track">
+            <div class="dest-single-item-card">
+              <div class="dest-card-media-top">
+                <img
+                  src="https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?auto=format&fit=crop&w=400&q=80"
+                  alt="Finland"
+                  class="dest-card-img-src"
+                />
+                <div class="dest-card-hover-mask">
+                  <div class="dest-card-big-flag">
+                    <img
+                      src="https://flagcdn.com/w160/fi.png"
+                      alt="Finland Flag"
+                    />
+                  </div>
+                  <a href="#" class="dest-card-hover-anchor">
+                    Study in Finland
+                    <span class="dest-arrow-circle-span">➔</span>
+                  </a>
+                </div>
+              </div>
+              <div class="dest-card-body-bottom">
+                <div class="dest-card-title-flex">
+                  <span class="dest-card-country-txt">Finland</span>
                   <img
-                    src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=350&q=80"
-                    alt="Australia" class="dest-bg-img">
-                  <span class="dest-badge">Australia</span>
-                  <span class="dest-flag">🇦🇺</span>
+                    src="https://flagcdn.com/w40/fi.png"
+                    alt="Finland"
+                    class="dest-card-mini-flag"
+                  />
                 </div>
-                <div class="siec-card-stats">
-                  <div class="stat-box"><strong>116</strong> <span>Universities</span></div>
-                  <div class="stat-box"><strong>7153</strong> <span>Courses</span></div>
+                <div class="dest-card-metrics-row">
+                  <div class="dest-card-meta-box">
+                    <span class="dest-emoji-icon">🎓</span>
+                    <div class="dest-meta-txt-wrap">
+                      <strong>14</strong><span>Universities</span>
+                    </div>
+                  </div>
+                  <div class="dest-card-meta-box">
+                    <span class="dest-emoji-icon">📚</span>
+                    <div class="dest-meta-txt-wrap">
+                      <strong>689</strong><span>Courses</span>
+                    </div>
+                  </div>
                 </div>
-                <div class="siec-card-footer">
-                  <span>Explore more</span>
-                  <div class="siec-arrow-circle"><i class="fa-solid fa-arrow-right"></i></div>
-                </div>
-              </div>
-
-              <div class="siec-card shadow-card dest-card">
-                <div class="dest-media-box">
-                  <img
-                    src="https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?auto=format&fit=crop&w=350&q=80"
-                    alt="Canada" class="dest-bg-img">
-                  <span class="dest-badge">Canada</span>
-                  <span class="dest-flag">🇨🇦</span>
-                </div>
-                <div class="siec-card-stats">
-                  <div class="stat-box"><strong>146</strong> <span>Universities</span></div>
-                  <div class="stat-box"><strong>8269</strong> <span>Courses</span></div>
-                </div>
-                <div class="siec-card-footer">
-                  <span>Explore more</span>
-                  <div class="siec-arrow-circle"><i class="fa-solid fa-arrow-right"></i></div>
-                </div>
-              </div>
-
-              <div class="siec-card shadow-card dest-card">
-                <div class="dest-media-box">
-                  <img
-                    src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=350&q=80"
-                    alt="France" class="dest-bg-img">
-                  <span class="dest-badge">France</span>
-                  <span class="dest-flag">🇫🇷</span>
-                </div>
-                <div class="siec-card-stats">
-                  <div class="stat-box"><strong>53</strong> <span>Universities</span></div>
-                  <div class="stat-box"><strong>304</strong> <span>Courses</span></div>
-                </div>
-                <div class="siec-card-footer">
-                  <span>Explore more</span>
-                  <div class="siec-arrow-circle"><i class="fa-solid fa-arrow-right"></i></div>
-                </div>
-              </div>
-
-              <div class="siec-card shadow-card dest-card">
-                <div class="dest-media-box">
-                  <img
-                    src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=350&q=80"
-                    alt="Germany" class="dest-bg-img">
-                  <span class="dest-badge">Germany</span>
-                  <span class="dest-flag">🇩🇪</span>
-                </div>
-                <div class="siec-card-stats">
-                  <div class="stat-box"><strong>151</strong> <span>Universities</span></div>
-                  <div class="stat-box"><strong>1702</strong> <span>Courses</span></div>
-                </div>
-                <div class="siec-card-footer">
-                  <span>Explore more</span>
-                  <div class="siec-arrow-circle"><i class="fa-solid fa-arrow-right"></i></div>
-                </div>
-              </div>
-
-              <div class="siec-card shadow-card dest-card">
-                <div class="dest-media-box">
-                  <img
-                    src="https://images.unsplash.com/photo-1590089215341-4643717d2949?auto=format&fit=crop&w=350&q=80"
-                    alt="Ireland" class="dest-bg-img">
-                  <span class="dest-badge">Ireland</span>
-                  <span class="dest-flag">🇮🇪</span>
-                </div>
-                <div class="siec-card-stats">
-                  <div class="stat-box"><strong>19</strong> <span>Universities</span></div>
-                  <div class="stat-box"><strong>1954</strong> <span>Courses</span></div>
-                </div>
-                <div class="siec-card-footer">
-                  <span>Explore more</span>
-                  <div class="siec-arrow-circle"><i class="fa-solid fa-arrow-right"></i></div>
-                </div>
-              </div>
-
-            </div>
-            <button class="siec-nav-btn next-btn"><i class="fa-solid fa-chevron-right"></i></button>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-  <!-- ========== Siec course search end ============ -->
-
-  <!-- ========== Siec university list start ============ -->
-  <section class="siec-uni-sec">
-    <div class="siec-container">
-      <div class="siec-uni-header">
-        <h2 class="siec-uni-title">Your Dream University is Just a <span>Search Away</span></h2>
-        <p class="siec-uni-subtitle">Explore universities in different parts of the world that can open doors to your
-          international career</p>
-      </div>
-      <div class="siec-uni-slider-wrapper">
-        <div class="siec-uni-track">
-          <div class="siec-uni-slide"><img src="image/university/10146.png" alt="Victoria University"></div>
-          <div class="siec-uni-slide"><img src="image/university/10147.png" alt="Western Sydney University"></div>
-          <div class="siec-uni-slide"><img src="image/university/10148.png" alt="William Angliss Institute"></div>
-          <div class="siec-uni-slide"><img src="image/university/10149.png" alt="Griffith University"></div>
-          <div class="siec-uni-slide"><img src="image/university/10150.png" alt="St. Thomas University"></div>
-          <div class="siec-uni-slide"><img src="image/university/10151.png" alt="SAE Institute"></div>
-          <div class="siec-uni-slide"><img src="image/university/10152.png" alt="RMIT University"></div>
-          <div class="siec-uni-slide"><img src="image/university/10153.jpeg" alt="Victoria University"></div>
-          <div class="siec-uni-slide"><img src="image/university/10154.png" alt="Western Sydney University"></div>
-          <div class="siec-uni-slide"><img src="image/university/10155.png" alt="William Angliss Institute"></div>
-          <div class="siec-uni-slide"><img src="image/university/10156.png" alt="Griffith University"></div>
-          <div class="siec-uni-slide"><img src="image/university/10158.png" alt="St. Thomas University"></div>
-          <div class="siec-uni-slide"><img src="image/university/10158.png" alt="SAE Institute"></div>
-          <div class="siec-uni-slide"><img src="image/university/10159.jpeg" alt="RMIT University"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ========== Siec university list End ============ -->
-  <!-- ========== Siec academic destination start ============ -->
-  <section class="siec-destination-sec">
-    <div class="dest-section-container">
-
-      <div class="dest-main-header-wrap">
-        <div class="dest-plane-svg-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#9bb1a5" stroke-width="1.5" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
-          </svg>
-        </div>
-        <span class="dest-badge-tag">Academic Destination</span>
-        <h2 class="dest-section-heading">Your Go-to-Guide For Studying Abroad at <span>Top Destinations</span></h2>
-        <p class="dest-section-subheading">Your roadmap to the best study abroad countries — USA, UK, Canada, Australia,
-          Germany, and beyond — with expert guidance on universities, costs, and future careers.</p>
-      </div>
-
-      <div class="dest-slider-viewport">
-        <div class="dest-slider-moving-track">
-
-          <div class="dest-single-item-card">
-            <div class="dest-card-media-top">
-              <img src="https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?auto=format&fit=crop&w=400&q=80"
-                alt="Finland" class="dest-card-img-src">
-              <div class="dest-card-hover-mask">
-                <div class="dest-card-big-flag"><img src="https://flagcdn.com/w160/fi.png" alt="Finland Flag"></div>
-                <a href="#" class="dest-card-hover-anchor">
+                <a href="#" class="dest-card-static-anchor">
                   Study in Finland
-                  <span class="dest-arrow-circle-span">➔</span>
+                  <span class="dest-arrow-inline-span">➔</span>
                 </a>
               </div>
             </div>
-            <div class="dest-card-body-bottom">
-              <div class="dest-card-title-flex">
-                <span class="dest-card-country-txt">Finland</span>
-                <img src="https://flagcdn.com/w40/fi.png" alt="Finland" class="dest-card-mini-flag">
-              </div>
-              <div class="dest-card-metrics-row">
-                <div class="dest-card-meta-box">
-                  <span class="dest-emoji-icon">🎓</span>
-                  <div class="dest-meta-txt-wrap"><strong>14</strong><span>Universities</span></div>
-                </div>
-                <div class="dest-card-meta-box">
-                  <span class="dest-emoji-icon">📚</span>
-                  <div class="dest-meta-txt-wrap"><strong>689</strong><span>Courses</span></div>
-                </div>
-              </div>
-              <a href="#" class="dest-card-static-anchor">
-                Study in Finland
-                <span class="dest-arrow-inline-span">➔</span>
-              </a>
-            </div>
-          </div>
 
-          <div class="dest-single-item-card">
-            <div class="dest-card-media-top">
-              <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=400&q=80"
-                alt="France" class="dest-card-img-src">
-              <div class="dest-card-hover-mask">
-                <div class="dest-card-big-flag"><img src="https://flagcdn.com/w160/fr.png" alt="France Flag"></div>
-                <a href="#" class="dest-card-hover-anchor">
+            <div class="dest-single-item-card">
+              <div class="dest-card-media-top">
+                <img
+                  src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=400&q=80"
+                  alt="France"
+                  class="dest-card-img-src"
+                />
+                <div class="dest-card-hover-mask">
+                  <div class="dest-card-big-flag">
+                    <img
+                      src="https://flagcdn.com/w160/fr.png"
+                      alt="France Flag"
+                    />
+                  </div>
+                  <a href="#" class="dest-card-hover-anchor">
+                    Study in France
+                    <span class="dest-arrow-circle-span">➔</span>
+                  </a>
+                </div>
+              </div>
+              <div class="dest-card-body-bottom">
+                <div class="dest-card-title-flex">
+                  <span class="dest-card-country-txt">France</span>
+                  <img
+                    src="https://flagcdn.com/w40/fr.png"
+                    alt="France"
+                    class="dest-card-mini-flag"
+                  />
+                </div>
+                <div class="dest-card-metrics-row">
+                  <div class="dest-card-meta-box">
+                    <span class="dest-emoji-icon">🎓</span>
+                    <div class="dest-meta-txt-wrap">
+                      <strong>57</strong><span>Universities</span>
+                    </div>
+                  </div>
+                  <div class="dest-card-meta-box">
+                    <span class="dest-emoji-icon">📚</span>
+                    <div class="dest-meta-txt-wrap">
+                      <strong>349</strong><span>Courses</span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="dest-card-static-anchor">
                   Study in France
-                  <span class="dest-arrow-circle-span">➔</span>
+                  <span class="dest-arrow-inline-span">➔</span>
                 </a>
               </div>
             </div>
-            <div class="dest-card-body-bottom">
-              <div class="dest-card-title-flex">
-                <span class="dest-card-country-txt">France</span>
-                <img src="https://flagcdn.com/w40/fr.png" alt="France" class="dest-card-mini-flag">
-              </div>
-              <div class="dest-card-metrics-row">
-                <div class="dest-card-meta-box">
-                  <span class="dest-emoji-icon">🎓</span>
-                  <div class="dest-meta-txt-wrap"><strong>57</strong><span>Universities</span></div>
-                </div>
-                <div class="dest-card-meta-box">
-                  <span class="dest-emoji-icon">📚</span>
-                  <div class="dest-meta-txt-wrap"><strong>349</strong><span>Courses</span></div>
-                </div>
-              </div>
-              <a href="#" class="dest-card-static-anchor">
-                Study in France
-                <span class="dest-arrow-inline-span">➔</span>
-              </a>
-            </div>
-          </div>
 
-          <div class="dest-single-item-card">
-            <div class="dest-card-media-top">
-              <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=400&q=80"
-                alt="Georgia" class="dest-card-img-src">
-              <div class="dest-card-hover-mask">
-                <div class="dest-card-big-flag"><img src="https://flagcdn.com/w160/ge.png" alt="Georgia Flag"></div>
-                <a href="#" class="dest-card-hover-anchor">
+            <div class="dest-single-item-card">
+              <div class="dest-card-media-top">
+                <img
+                  src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=400&q=80"
+                  alt="Georgia"
+                  class="dest-card-img-src"
+                />
+                <div class="dest-card-hover-mask">
+                  <div class="dest-card-big-flag">
+                    <img
+                      src="https://flagcdn.com/w160/ge.png"
+                      alt="Georgia Flag"
+                    />
+                  </div>
+                  <a href="#" class="dest-card-hover-anchor">
+                    Study in Georgia
+                    <span class="dest-arrow-circle-span">➔</span>
+                  </a>
+                </div>
+              </div>
+              <div class="dest-card-body-bottom">
+                <div class="dest-card-title-flex">
+                  <span class="dest-card-country-txt">Georgia</span>
+                  <img
+                    src="https://flagcdn.com/w40/ge.png"
+                    alt="Georgia"
+                    class="dest-card-mini-flag"
+                  />
+                </div>
+                <div class="dest-card-metrics-row">
+                  <div class="dest-card-meta-box">
+                    <span class="dest-emoji-icon">🎓</span>
+                    <div class="dest-meta-txt-wrap">
+                      <strong>5</strong><span>Universities</span>
+                    </div>
+                  </div>
+                  <div class="dest-card-meta-box">
+                    <span class="dest-emoji-icon">📚</span>
+                    <div class="dest-meta-txt-wrap">
+                      <strong>6</strong><span>Courses</span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="dest-card-static-anchor">
                   Study in Georgia
-                  <span class="dest-arrow-circle-span">➔</span>
+                  <span class="dest-arrow-inline-span">➔</span>
                 </a>
               </div>
             </div>
-            <div class="dest-card-body-bottom">
-              <div class="dest-card-title-flex">
-                <span class="dest-card-country-txt">Georgia</span>
-                <img src="https://flagcdn.com/w40/ge.png" alt="Georgia" class="dest-card-mini-flag">
-              </div>
-              <div class="dest-card-metrics-row">
-                <div class="dest-card-meta-box">
-                  <span class="dest-emoji-icon">🎓</span>
-                  <div class="dest-meta-txt-wrap"><strong>5</strong><span>Universities</span></div>
-                </div>
-                <div class="dest-card-meta-box">
-                  <span class="dest-emoji-icon">📚</span>
-                  <div class="dest-meta-txt-wrap"><strong>6</strong><span>Courses</span></div>
-                </div>
-              </div>
-              <a href="#" class="dest-card-static-anchor">
-                Study in Georgia
-                <span class="dest-arrow-inline-span">➔</span>
-              </a>
-            </div>
-          </div>
 
-          <div class="dest-single-item-card">
-            <div class="dest-card-media-top">
-              <img src="https://images.unsplash.com/photo-1524443169398-9aa1ceab67d5?auto=format&fit=crop&w=400&q=80"
-                alt="Australia" class="dest-card-img-src">
-              <div class="dest-card-hover-mask">
-                <div class="dest-card-big-flag"><img src="https://flagcdn.com/w160/au.png" alt="Australia Flag"></div>
-                <a href="#" class="dest-card-hover-anchor">
+            <div class="dest-single-item-card">
+              <div class="dest-card-media-top">
+                <img
+                  src="https://images.unsplash.com/photo-1524443169398-9aa1ceab67d5?auto=format&fit=crop&w=400&q=80"
+                  alt="Australia"
+                  class="dest-card-img-src"
+                />
+                <div class="dest-card-hover-mask">
+                  <div class="dest-card-big-flag">
+                    <img
+                      src="https://flagcdn.com/w160/au.png"
+                      alt="Australia Flag"
+                    />
+                  </div>
+                  <a href="#" class="dest-card-hover-anchor">
+                    Study in Australia
+                    <span class="dest-arrow-circle-span">➔</span>
+                  </a>
+                </div>
+              </div>
+              <div class="dest-card-body-bottom">
+                <div class="dest-card-title-flex">
+                  <span class="dest-card-country-txt">Australia</span>
+                  <img
+                    src="https://flagcdn.com/w40/au.png"
+                    alt="Australia"
+                    class="dest-card-mini-flag"
+                  />
+                </div>
+                <div class="dest-card-metrics-row">
+                  <div class="dest-card-meta-box">
+                    <span class="dest-emoji-icon">🎓</span>
+                    <div class="dest-meta-txt-wrap">
+                      <strong>116</strong><span>Universities</span>
+                    </div>
+                  </div>
+                  <div class="dest-card-meta-box">
+                    <span class="dest-emoji-icon">📚</span>
+                    <div class="dest-meta-txt-wrap">
+                      <strong>7153</strong><span>Courses</span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="dest-card-static-anchor">
                   Study in Australia
-                  <span class="dest-arrow-circle-span">➔</span>
+                  <span class="dest-arrow-inline-span">➔</span>
                 </a>
               </div>
             </div>
-            <div class="dest-card-body-bottom">
-              <div class="dest-card-title-flex">
-                <span class="dest-card-country-txt">Australia</span>
-                <img src="https://flagcdn.com/w40/au.png" alt="Australia" class="dest-card-mini-flag">
-              </div>
-              <div class="dest-card-metrics-row">
-                <div class="dest-card-meta-box">
-                  <span class="dest-emoji-icon">🎓</span>
-                  <div class="dest-meta-txt-wrap"><strong>116</strong><span>Universities</span></div>
-                </div>
-                <div class="dest-card-meta-box">
-                  <span class="dest-emoji-icon">📚</span>
-                  <div class="dest-meta-txt-wrap"><strong>7153</strong><span>Courses</span></div>
-                </div>
-              </div>
-              <a href="#" class="dest-card-static-anchor">
-                Study in Australia
-                <span class="dest-arrow-inline-span">➔</span>
-              </a>
-            </div>
-          </div>
 
-          <div class="dest-single-item-card">
-            <div class="dest-card-media-top">
-              <img src="https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?auto=format&fit=crop&w=400&q=80"
-                alt="Spain" class="dest-card-img-src">
-              <div class="dest-card-hover-mask">
-                <div class="dest-card-big-flag"><img src="https://flagcdn.com/w160/es.png" alt="Spain Flag"></div>
-                <a href="#" class="dest-hover-link">
+            <div class="dest-single-item-card">
+              <div class="dest-card-media-top">
+                <img
+                  src="https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?auto=format&fit=crop&w=400&q=80"
+                  alt="Spain"
+                  class="dest-card-img-src"
+                />
+                <div class="dest-card-hover-mask">
+                  <div class="dest-card-big-flag">
+                    <img
+                      src="https://flagcdn.com/w160/es.png"
+                      alt="Spain Flag"
+                    />
+                  </div>
+                  <a href="#" class="dest-hover-link">
+                    Study in Spain
+                    <span class="dest-arrow-circle-span">➔</span>
+                  </a>
+                </div>
+              </div>
+              <div class="dest-card-body-bottom">
+                <div class="dest-card-title-flex">
+                  <span class="dest-card-country-txt">Spain</span>
+                  <img
+                    src="https://flagcdn.com/w40/es.png"
+                    alt="Spain"
+                    class="dest-card-mini-flag"
+                  />
+                </div>
+                <div class="dest-card-metrics-row">
+                  <div class="dest-card-meta-box">
+                    <span class="dest-emoji-icon">🎓</span>
+                    <div class="dest-meta-txt-wrap">
+                      <strong>27</strong><span>Universities</span>
+                    </div>
+                  </div>
+                  <div class="dest-card-meta-box">
+                    <span class="dest-emoji-icon">📚</span>
+                    <div class="dest-meta-txt-wrap">
+                      <strong>293</strong><span>Courses</span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="dest-card-static-anchor">
                   Study in Spain
-                  <span class="dest-arrow-circle-span">➔</span>
+                  <span class="dest-arrow-inline-span">➔</span>
                 </a>
               </div>
-            </div>
-            <div class="dest-card-body-bottom">
-              <div class="dest-card-title-flex">
-                <span class="dest-card-country-txt">Spain</span>
-                <img src="https://flagcdn.com/w40/es.png" alt="Spain" class="dest-card-mini-flag">
-              </div>
-              <div class="dest-card-metrics-row">
-                <div class="dest-card-meta-box">
-                  <span class="dest-emoji-icon">🎓</span>
-                  <div class="dest-meta-txt-wrap"><strong>27</strong><span>Universities</span></div>
-                </div>
-                <div class="dest-card-meta-box">
-                  <span class="dest-emoji-icon">📚</span>
-                  <div class="dest-meta-txt-wrap"><strong>293</strong><span>Courses</span></div>
-                </div>
-              </div>
-              <a href="#" class="dest-card-static-anchor">
-                Study in Spain
-                <span class="dest-arrow-inline-span">➔</span>
-              </a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- ========== Siec academic destination End ============ -->
-   <!-- ========== Siec service provider section start ============ -->
-  <section class="siec-services-sec">
-    <div class="serv-container">
-      <div class="serv-row">
-
-        <div class="serv-col serv-col-header">
-          <div class="serv-header-card">
-            <span class="serv-badge">Service Provided</span>
-            <h2 class="serv-heading">
-              <span>Overseas Education</span> Made Simple and Accessible
-            </h2>
-            <p class="serv-subheading">
-              From test prep to education loans, we simplify every step — so your journey abroad feels effortless.
-            </p>
-          </div>
-        </div>
-
-        <div class="serv-col">
-          <div class="serv-card">
-            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80"
-              alt="Career Guidance" class="serv-card-img">
-            <div class="serv-icon-badge">
-              <i class="fa-solid fa-users"></i>
-            </div>
-            <div class="serv-default-title">Career Guidance</div>
-            <div class="serv-hover-card">
-              <h3 class="serv-hover-title">Career Guidance</h3>
-              <p class="serv-hover-desc">Avail Our FREE Study Abroad Counselling Services</p>
+    </section>
+    <!-- ========== Siec academic destination End ============ -->
+    <!-- ========== Siec service provider section start ============ -->
+    <section class="siec-services-sec">
+      <div class="serv-container">
+        <div class="serv-row">
+          <div class="serv-col serv-col-header">
+            <div class="serv-header-card">
+              <span class="serv-badge">Service Provided</span>
+              <h2 class="serv-heading">
+                <span>Overseas Education</span> Made Simple and Accessible
+              </h2>
+              <p class="serv-subheading">
+                From test prep to education loans, we simplify every step — so
+                your journey abroad feels effortless.
+              </p>
             </div>
           </div>
-        </div>
 
-        <!-- <div class="serv-col">
+          <div class="serv-col">
+            <div class="serv-card">
+              <img
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80"
+                alt="Career Guidance"
+                class="serv-card-img"
+              />
+              <div class="serv-icon-badge">
+                <i class="fa-solid fa-users"></i>
+              </div>
+              <div class="serv-default-title">Career Guidance</div>
+              <div class="serv-hover-card">
+                <h3 class="serv-hover-title">Career Guidance</h3>
+                <p class="serv-hover-desc">
+                  Avail Our FREE Study Abroad Counselling Services
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="serv-col">
           <div class="serv-card">
             <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=600&q=80"
               alt="Test Prep" class="serv-card-img">
@@ -1048,58 +1511,72 @@
           </div>
         </div> -->
 
-        <div class="serv-col">
-          <div class="serv-card">
-            <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=600&q=80"
-              alt="University Application" class="serv-card-img">
-            <div class="serv-icon-badge">
-              <i class="fa-solid fa-file-pen"></i>
+          <div class="serv-col">
+            <div class="serv-card">
+              <img
+                src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=600&q=80"
+                alt="University Application"
+                class="serv-card-img"
+              />
+              <div class="serv-icon-badge">
+                <i class="fa-solid fa-file-pen"></i>
+              </div>
+              <div class="serv-default-title">University Application</div>
+              <div class="serv-hover-card">
+                <h3 class="serv-hover-title">University Application</h3>
+                <p class="serv-hover-desc">
+                  Seamless application processing for top global universities.
+                </p>
+              </div>
             </div>
-            <div class="serv-default-title">University Application</div>
-            <div class="serv-hover-card">
-              <h3 class="serv-hover-title">University Application</h3>
-              <p class="serv-hover-desc">Seamless application processing for top global universities.</p>
+          </div>
+
+          <div class="serv-col">
+            <div class="serv-card">
+              <img
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80"
+                alt="Visa Guidance"
+                class="serv-card-img"
+              />
+              <div class="serv-icon-badge">
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+              <div class="serv-default-title">Visa Guidance</div>
+              <div class="serv-hover-card">
+                <h3 class="serv-hover-title">Visa Guidance</h3>
+                <p class="serv-hover-desc">
+                  Hassle-free visa documentation and mock interview prep.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="serv-col">
+            <div class="serv-card">
+              <img
+                src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80"
+                alt="Air Ticketing"
+                class="serv-card-img"
+              />
+              <div class="serv-icon-badge">
+                <i class="fa-solid fa-passport"></i>
+              </div>
+              <div class="serv-default-title">Air Ticketing</div>
+              <div class="serv-hover-card">
+                <h3 class="serv-hover-title">Air Ticketing</h3>
+                <p class="serv-hover-desc">
+                  Best flight deals and student travel assistance guaranteed.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="serv-col">
-          <div class="serv-card">
-            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80"
-              alt="Visa Guidance" class="serv-card-img">
-            <div class="serv-icon-badge">
-              <i class="fa-solid fa-briefcase"></i>
-            </div>
-            <div class="serv-default-title">Visa Guidance</div>
-            <div class="serv-hover-card">
-              <h3 class="serv-hover-title">Visa Guidance</h3>
-              <p class="serv-hover-desc">Hassle-free visa documentation and mock interview prep.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="serv-col">
-          <div class="serv-card">
-            <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80"
-              alt="Air Ticketing" class="serv-card-img">
-            <div class="serv-icon-badge">
-              <i class="fa-solid fa-passport"></i>
-            </div>
-            <div class="serv-default-title">Air Ticketing</div>
-            <div class="serv-hover-card">
-              <h3 class="serv-hover-title">Air Ticketing</h3>
-              <p class="serv-hover-desc">Best flight deals and student travel assistance guaranteed.</p>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </div>
-  </section>
-  <!-- ========== Siec service provider section end ============ -->
-  
-   <!-- ========== Siec recognization start ============ -->
-  <!-- <section class="siec-recognitions-sec">
+    </section>
+    <!-- ========== Siec service provider section end ============ -->
+
+    <!-- ========== Siec recognization start ============ -->
+    <!-- <section class="siec-recognitions-sec">
     <div class="recog-container">
       <h2 class="recog-heading">Recognitions</h2>
 
@@ -1144,545 +1621,718 @@
       </div>
     </div>
   </section> -->
-  <!-- ========== Siec recognization End ============ -->
-  <!-- ========== Siec Blog section  start ============ -->
-  <section class="siec-blog-section">
-    <div class="siec-blog-container">
-
-      <div class="siec-blog-header text-center">
-        <span class="siec-blog-badge">Edu Insights</span>
-        <h2 class="siec-blog-title">
-          Latest Study Abroad <span class="siec-blog-title-highlight">Blogs & News</span>
-        </h2>
-        <p class="siec-blog-subtitle">
-          Updates & Insights on Overseas Education, Accommodations, Latest News and More
-        </p>
-      </div>
-
-      <div class="siec-blog-slider-wrapper">
-
-        <button class="siec-blog-nav-btn siec-blog-prev-btn" id="siecBlogPrev" aria-label="Previous">
-          <i class="fa-solid fa-chevron-left"></i>
-        </button>
-
-        <div class="siec-blog-slider-container" id="siecBlogContainer">
-          <div class="siec-blog-row" id="siecBlogTrack">
-
-            <div class="col-lg-4 col-md-6 col-sm-12 siec-blog-col">
-              <div class="siec-blog-card">
-                <div class="siec-blog-img-box">
-                  <img src="image/blog/10020.jpg" alt="Canada Fast-Track Visa" class="siec-blog-img">
-                  <span class="siec-blog-category">SIEC SCOOP</span>
-                  <div class="siec-blog-date">
-                    <span class="siec-blog-day">22</span>
-                    <span class="siec-blog-month">Apr</span>
-                  </div>
-                </div>
-                <div class="siec-blog-content">
-                  <div class="siec-blog-meta">
-                    <i class="fa-solid fa-user"></i> By SIEC
-                  </div>
-                  <h3 class="siec-blog-card-title">Canada Fast-Track Visa Update 2026</h3>
-                  <p class="siec-blog-desc">
-                    Canada Fast-Track Visa 2026 brings faster processing and new opportunities for international
-                    students...
-                  </p>
-                  <a href="#" class="siec-blog-link">
-                    Read More <i class="fa-solid fa-circle-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12 siec-blog-col">
-              <div class="siec-blog-card">
-                <div class="siec-blog-img-box">
-                  <img src="image/blog/10204.jpg" alt="Study Abroad for Indian Students" class="siec-blog-img">
-                  <span class="siec-blog-category">OTHER</span>
-                  <div class="siec-blog-date">
-                    <span class="siec-blog-day">17</span>
-                    <span class="siec-blog-month">Apr</span>
-                  </div>
-                </div>
-                <div class="siec-blog-content">
-                  <div class="siec-blog-meta">
-                    <i class="fa-solid fa-user"></i> By SIEC
-                  </div>
-                  <h3 class="siec-blog-card-title">Study Abroad for Indian Students: 2026 Guide</h3>
-                  <p class="siec-blog-desc">
-                    Explore the complete 2026 guide for Indian students to study abroad—top countries, costs, visas...
-                  </p>
-                  <a href="#" class="siec-blog-link">
-                    Read More <i class="fa-solid fa-circle-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12 siec-blog-col">
-              <div class="siec-blog-card">
-                <div class="siec-blog-img-box">
-                  <img src="image/blog/10138.jpg" alt="Japan Citizenship" class="siec-blog-img">
-                  <span class="siec-blog-category">JAPAN</span>
-                  <div class="siec-blog-date">
-                    <span class="siec-blog-day">1</span>
-                    <span class="siec-blog-month">Apr</span>
-                  </div>
-                </div>
-                <div class="siec-blog-content">
-                  <div class="siec-blog-meta">
-                    <i class="fa-solid fa-user"></i> By SIEC
-                  </div>
-                  <h3 class="siec-blog-card-title">Japan Doubles Citizenship Residency to 10 Years</h3>
-                  <p class="siec-blog-desc">
-                    Japan doubles its citizenship residency requirement to 10 years in 2026. Discover what it means...
-                  </p>
-                  <a href="#" class="siec-blog-link">
-                    Read More <i class="fa-solid fa-circle-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12 siec-blog-col">
-              <div class="siec-blog-card">
-                <div class="siec-blog-img-box">
-                  <img src="image/blog/10196.jpg" alt="Affordable Countries in Europe" class="siec-blog-img">
-                  <span class="siec-blog-category">OTHER</span>
-                  <div class="siec-blog-date">
-                    <span class="siec-blog-day">28</span>
-                    <span class="siec-blog-month">Mar</span>
-                  </div>
-                </div>
-                <div class="siec-blog-content">
-                  <div class="siec-blog-meta">
-                    <i class="fa-solid fa-user"></i> By SIEC
-                  </div>
-                  <h3 class="siec-blog-card-title">Affordable Countries in Europe for Indian Students</h3>
-                  <p class="siec-blog-desc">
-                    Explore affordable countries in Europe for Indian students with low tuition, living costs, and
-                    scholarships...
-                  </p>
-                  <a href="#" class="siec-blog-link">
-                    Read More <i class="fa-solid fa-circle-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12 siec-blog-col">
-              <div class="siec-blog-card">
-                <div class="siec-blog-img-box">
-                  <img src="image/blog/10194.jpg" alt="Italy Schengen Visa" class="siec-blog-img">
-                  <span class="siec-blog-category">ITALY</span>
-                  <div class="siec-blog-date">
-                    <span class="siec-blog-day">24</span>
-                    <span class="siec-blog-month">Mar</span>
-                  </div>
-                </div>
-                <div class="siec-blog-content">
-                  <div class="siec-blog-meta">
-                    <i class="fa-solid fa-user"></i> By SIEC
-                  </div>
-                  <h3 class="siec-blog-card-title">Italy Schengen Visa Update 2026: Faster Processing</h3>
-                  <p class="siec-blog-desc">
-                    Italy Schengen Visa Update 2026 introduces faster, fully digital processing—making applications
-                    smooth...
-                  </p>
-                  <a href="#" class="siec-blog-link">
-                    Read More <i class="fa-solid fa-circle-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-          </div>
+    <!-- ========== Siec recognization End ============ -->
+    <!-- ========== Siec Blog section  start ============ -->
+    <section class="siec-blog-section">
+      <div class="siec-blog-container">
+        <div class="siec-blog-header text-center">
+          <span class="siec-blog-badge">Edu Insights</span>
+          <h2 class="siec-blog-title">
+            Latest Study Abroad
+            <span class="siec-blog-title-highlight">Blogs & News</span>
+          </h2>
+          <p class="siec-blog-subtitle">
+            Updates & Insights on Overseas Education, Accommodations, Latest
+            News and More
+          </p>
         </div>
 
-        <button class="siec-blog-nav-btn siec-blog-next-btn" id="siecBlogNext" aria-label="Next">
-          <i class="fa-solid fa-chevron-right"></i>
-        </button>
+        <div class="siec-blog-slider-wrapper">
+          <button
+            class="siec-blog-nav-btn siec-blog-prev-btn"
+            id="siecBlogPrev"
+            aria-label="Previous"
+          >
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
 
-      </div>
-
-      <div class="siec-blog-footer text-center">
-        <a href="#" class="siec-blog-view-btn">View All</a>
-      </div>
-
-    </div>
-  </section>
-  <!-- ========== Siec Blog section End ============ -->
-   <!-- ========== Siec Alumni section start ============ -->
-    <section class="siec-testimonial-section">
-  <div class="siec-testimonial-container">
-    
-    <div class="siec-testimonial-header text-center">
-      <span class="siec-testimonial-badge">SIEC Alumni</span>
-      <h2 class="siec-testimonial-title">
-        Student testimonials from all <span class="siec-testimonial-title-highlight">Around The Globe</span>
-      </h2>
-      <p class="siec-testimonial-subtitle">
-        Read testimonials from our very own alumni to know how they turned<br>their academic dreams into reality
-      </p>
-    </div>
-    <div class="siec-testimonial-body">
-      <div class="siec-testimonial-left">
-        <div class="siec-text-slider-wrapper">
-          <div class="siec-text-slider-container" id="siecTextSlider">
-            <div class="siec-text-slider-track">
-              <div class="siec-text-card">
-                <p class="siec-text-quote">
-                  I undertook GRE coaching with SIEC for about 4 months before sitting for my exam. I landed at SIEC fortunately because of their Effective Course Model, test materials and effective short tricks and tips.
-                </p>
-                <div class="siec-card-footer">
-                  <div class="siec-user-info">
-                    <img src="image/person/10171.webp" alt= "Moksh Mehta" class="siec-user-avatar">
-                    <div>
-                      <h4 class="siec-user-name">Moksh Mehta</h4>
-                      <span class="siec-user-tag">Test Prep</span>
+          <div class="siec-blog-slider-container" id="siecBlogContainer">
+            <div class="siec-blog-row" id="siecBlogTrack">
+              <div class="col-lg-4 col-md-6 col-sm-12 siec-blog-col">
+                <div class="siec-blog-card">
+                  <div class="siec-blog-img-box">
+                    <img
+                      src="image/blog/10020.jpg"
+                      alt="Canada Fast-Track Visa"
+                      class="siec-blog-img"
+                    />
+                    <span class="siec-blog-category">SIEC SCOOP</span>
+                    <div class="siec-blog-date">
+                      <span class="siec-blog-day">22</span>
+                      <span class="siec-blog-month">Apr</span>
                     </div>
                   </div>
-                  <div class="siec-rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                  <div class="siec-blog-content">
+                    <div class="siec-blog-meta">
+                      <i class="fa-solid fa-user"></i> By SIEC
+                    </div>
+                    <h3 class="siec-blog-card-title">
+                      Canada Fast-Track Visa Update 2026
+                    </h3>
+                    <p class="siec-blog-desc">
+                      Canada Fast-Track Visa 2026 brings faster processing and
+                      new opportunities for international students...
+                    </p>
+                    <a href="#" class="siec-blog-link">
+                      Read More <i class="fa-solid fa-circle-arrow-right"></i>
+                    </a>
                   </div>
                 </div>
               </div>
-              <div class="siec-text-card">
-                <p class="siec-text-quote">
-                  Preparing for my IELTS exam at ACCT was one of the best decision made by me. I had joined the classes in December 2021 and was prepared for 1 month. The teaching and guidance not only prepared me.
-                </p>
-                <div class="siec-card-footer">
-                  <div class="siec-user-info">
-                    <img src="image/person/10173.webp" alt="Gurkirat Singh" class="siec-user-avatar">
-                    <div>
-                      <h4 class="siec-user-name">Gurkirat Singh</h4>
-                      <span class="siec-user-tag">Test Prep</span>
+
+              <div class="col-lg-4 col-md-6 col-sm-12 siec-blog-col">
+                <div class="siec-blog-card">
+                  <div class="siec-blog-img-box">
+                    <img
+                      src="image/blog/10204.jpg"
+                      alt="Study Abroad for Indian Students"
+                      class="siec-blog-img"
+                    />
+                    <span class="siec-blog-category">OTHER</span>
+                    <div class="siec-blog-date">
+                      <span class="siec-blog-day">17</span>
+                      <span class="siec-blog-month">Apr</span>
                     </div>
                   </div>
-                  <div class="siec-rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                  <div class="siec-blog-content">
+                    <div class="siec-blog-meta">
+                      <i class="fa-solid fa-user"></i> By SIEC
+                    </div>
+                    <h3 class="siec-blog-card-title">
+                      Study Abroad for Indian Students: 2026 Guide
+                    </h3>
+                    <p class="siec-blog-desc">
+                      Explore the complete 2026 guide for Indian students to
+                      study abroad—top countries, costs, visas...
+                    </p>
+                    <a href="#" class="siec-blog-link">
+                      Read More <i class="fa-solid fa-circle-arrow-right"></i>
+                    </a>
                   </div>
                 </div>
               </div>
-              <div class="siec-text-card">
-                <p class="siec-text-quote">
-                  I attended an SIEC Education fair held in New Delhi. The guidance provided by the experts regarding UK university admissions was top-notch and reliable.
-                </p>
-                <div class="siec-card-footer">
-                  <div class="siec-user-info">
-                    <img src="image/person/10176.webp" alt="Rohan Sharma" class="siec-user-avatar">
-                    <div>
-                      <h4 class="siec-user-name">Rohan Sharma</h4>
-                      <span class="siec-user-tag">Admissions</span>
+
+              <div class="col-lg-4 col-md-6 col-sm-12 siec-blog-col">
+                <div class="siec-blog-card">
+                  <div class="siec-blog-img-box">
+                    <img
+                      src="image/blog/10138.jpg"
+                      alt="Japan Citizenship"
+                      class="siec-blog-img"
+                    />
+                    <span class="siec-blog-category">JAPAN</span>
+                    <div class="siec-blog-date">
+                      <span class="siec-blog-day">1</span>
+                      <span class="siec-blog-month">Apr</span>
                     </div>
                   </div>
-                  <div class="siec-rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                  <div class="siec-blog-content">
+                    <div class="siec-blog-meta">
+                      <i class="fa-solid fa-user"></i> By SIEC
+                    </div>
+                    <h3 class="siec-blog-card-title">
+                      Japan Doubles Citizenship Residency to 10 Years
+                    </h3>
+                    <p class="siec-blog-desc">
+                      Japan doubles its citizenship residency requirement to 10
+                      years in 2026. Discover what it means...
+                    </p>
+                    <a href="#" class="siec-blog-link">
+                      Read More <i class="fa-solid fa-circle-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-sm-12 siec-blog-col">
+                <div class="siec-blog-card">
+                  <div class="siec-blog-img-box">
+                    <img
+                      src="image/blog/10196.jpg"
+                      alt="Affordable Countries in Europe"
+                      class="siec-blog-img"
+                    />
+                    <span class="siec-blog-category">OTHER</span>
+                    <div class="siec-blog-date">
+                      <span class="siec-blog-day">28</span>
+                      <span class="siec-blog-month">Mar</span>
+                    </div>
+                  </div>
+                  <div class="siec-blog-content">
+                    <div class="siec-blog-meta">
+                      <i class="fa-solid fa-user"></i> By SIEC
+                    </div>
+                    <h3 class="siec-blog-card-title">
+                      Affordable Countries in Europe for Indian Students
+                    </h3>
+                    <p class="siec-blog-desc">
+                      Explore affordable countries in Europe for Indian students
+                      with low tuition, living costs, and scholarships...
+                    </p>
+                    <a href="#" class="siec-blog-link">
+                      Read More <i class="fa-solid fa-circle-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-sm-12 siec-blog-col">
+                <div class="siec-blog-card">
+                  <div class="siec-blog-img-box">
+                    <img
+                      src="image/blog/10194.jpg"
+                      alt="Italy Schengen Visa"
+                      class="siec-blog-img"
+                    />
+                    <span class="siec-blog-category">ITALY</span>
+                    <div class="siec-blog-date">
+                      <span class="siec-blog-day">24</span>
+                      <span class="siec-blog-month">Mar</span>
+                    </div>
+                  </div>
+                  <div class="siec-blog-content">
+                    <div class="siec-blog-meta">
+                      <i class="fa-solid fa-user"></i> By SIEC
+                    </div>
+                    <h3 class="siec-blog-card-title">
+                      Italy Schengen Visa Update 2026: Faster Processing
+                    </h3>
+                    <p class="siec-blog-desc">
+                      Italy Schengen Visa Update 2026 introduces faster, fully
+                      digital processing—making applications smooth...
+                    </p>
+                    <a href="#" class="siec-blog-link">
+                      Read More <i class="fa-solid fa-circle-arrow-right"></i>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="siec-text-nav">
-            <button class="siec-v-nav-btn" id="siecTextPrev" aria-label="Up">
-              <i class="fa-solid fa-chevron-up"></i>
-            </button>
-            <button class="siec-v-nav-btn" id="siecTextNext" aria-label="Down">
-              <i class="fa-solid fa-chevron-down"></i>
-            </button>
-          </div>
+
+          <button
+            class="siec-blog-nav-btn siec-blog-next-btn"
+            id="siecBlogNext"
+            aria-label="Next"
+          >
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="siec-blog-footer text-center">
+          <a href="#" class="siec-blog-view-btn">View All</a>
         </div>
       </div>
-      <div class="siec-testimonial-right">
-        <div class="siec-video-slider-wrapper">
-          <div class="siec-video-slider-container" id="siecVideoSlider">
-            <div class="siec-video-slider-track" id="siecVideoTrack">
-              <div class="siec-video-card">
-                <div class="siec-video-box" data-video-id="Ck6LLvllcmM">
-                  <img src="https://img.youtube.com/vi/Ck6LLvllcmM/hqdefault.jpg" alt="Video Thumbnail" class="siec-yt-thumb">
-                  <button class="siec-yt-play-btn" aria-label="Play Video">
-                    <svg viewBox="0 0 68 48" width="68" height="48">
-                      <path class="siec-yt-play-bg" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,0.1,34,0,34,0S12.21,0.1,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.9,34,48,34,48s21.79-0.1,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00"></path>
-                      <path d="M 45,24 27,14 27,34" fill="#fff"></path>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="siec-video-card">
-                <div class="siec-video-box" data-video-id="Ck6LLvllcmM">
-                  <img src="https://img.youtube.com/vi/Ck6LLvllcmM/hqdefault.jpg" alt="Video Thumbnail" class="siec-yt-thumb">
-                  <button class="siec-yt-play-btn" aria-label="Play Video">
-                    <svg viewBox="0 0 68 48" width="68" height="48">
-                      <path class="siec-yt-play-bg" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,0.1,34,0,34,0S12.21,0.1,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.9,34,48,34,48s21.79-0.1,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00"></path>
-                      <path d="M 45,24 27,14 27,34" fill="#fff"></path>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="siec-video-card">
-                <div class="siec-video-box" data-video-id="Ck6LLvllcmM">
-                  <img src="https://img.youtube.com/vi/Ck6LLvllcmM/hqdefault.jpg" alt="Video Thumbnail" class="siec-yt-thumb">
-                  <button class="siec-yt-play-btn" aria-label="Play Video">
-                    <svg viewBox="0 0 68 48" width="68" height="48">
-                      <path class="siec-yt-play-bg" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,0.1,34,0,34,0S12.21,0.1,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.9,34,48,34,48s21.79-0.1,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00"></path>
-                      <path d="M 45,24 27,14 27,34" fill="#fff"></path>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="siec-video-dots" id="siecVideoDots"></div>
-        </div>
-      </div>
-    </div>
-  </div>
     </section>
-  <!-- ========== Siec Alumni section End ============ -->
-   <!-- ========== Siec Question & Answer section start ============ -->
+    <!-- ========== Siec Blog section End ============ -->
+    <!-- ========== Siec Alumni section start ============ -->
+    <section class="siec-testimonial-section">
+      <div class="siec-testimonial-container">
+        <div class="siec-testimonial-header text-center">
+          <span class="siec-testimonial-badge">SIEC Alumni</span>
+          <h2 class="siec-testimonial-title">
+            Student testimonials from all
+            <span class="siec-testimonial-title-highlight"
+              >Around The Globe</span
+            >
+          </h2>
+          <p class="siec-testimonial-subtitle">
+            Read testimonials from our very own alumni to know how they
+            turned<br />their academic dreams into reality
+          </p>
+        </div>
+        <div class="siec-testimonial-body">
+          <div class="siec-testimonial-left">
+            <div class="siec-text-slider-wrapper">
+              <div class="siec-text-slider-container" id="siecTextSlider">
+                <div class="siec-text-slider-track">
+                  <div class="siec-text-card">
+                    <p class="siec-text-quote">
+                      I undertook GRE coaching with SIEC for about 4 months
+                      before sitting for my exam. I landed at SIEC fortunately
+                      because of their Effective Course Model, test materials
+                      and effective short tricks and tips.
+                    </p>
+                    <div class="siec-card-footer">
+                      <div class="siec-user-info">
+                        <img
+                          src="image/person/10171.webp"
+                          alt="Moksh Mehta"
+                          class="siec-user-avatar"
+                        />
+                        <div>
+                          <h4 class="siec-user-name">Moksh Mehta</h4>
+                          <span class="siec-user-tag">Test Prep</span>
+                        </div>
+                      </div>
+                      <div class="siec-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="siec-text-card">
+                    <p class="siec-text-quote">
+                      Preparing for my IELTS exam at ACCT was one of the best
+                      decision made by me. I had joined the classes in December
+                      2021 and was prepared for 1 month. The teaching and
+                      guidance not only prepared me.
+                    </p>
+                    <div class="siec-card-footer">
+                      <div class="siec-user-info">
+                        <img
+                          src="image/person/10173.webp"
+                          alt="Gurkirat Singh"
+                          class="siec-user-avatar"
+                        />
+                        <div>
+                          <h4 class="siec-user-name">Gurkirat Singh</h4>
+                          <span class="siec-user-tag">Test Prep</span>
+                        </div>
+                      </div>
+                      <div class="siec-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="siec-text-card">
+                    <p class="siec-text-quote">
+                      I attended an SIEC Education fair held in New Delhi. The
+                      guidance provided by the experts regarding UK university
+                      admissions was top-notch and reliable.
+                    </p>
+                    <div class="siec-card-footer">
+                      <div class="siec-user-info">
+                        <img
+                          src="image/person/10176.webp"
+                          alt="Rohan Sharma"
+                          class="siec-user-avatar"
+                        />
+                        <div>
+                          <h4 class="siec-user-name">Rohan Sharma</h4>
+                          <span class="siec-user-tag">Admissions</span>
+                        </div>
+                      </div>
+                      <div class="siec-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="siec-text-nav">
+                <button
+                  class="siec-v-nav-btn"
+                  id="siecTextPrev"
+                  aria-label="Up"
+                >
+                  <i class="fa-solid fa-chevron-up"></i>
+                </button>
+                <button
+                  class="siec-v-nav-btn"
+                  id="siecTextNext"
+                  aria-label="Down"
+                >
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="siec-testimonial-right">
+            <div class="siec-video-slider-wrapper">
+              <div class="siec-video-slider-container" id="siecVideoSlider">
+                <div class="siec-video-slider-track" id="siecVideoTrack">
+                  <div class="siec-video-card">
+                    <div class="siec-video-box" data-video-id="Ck6LLvllcmM">
+                      <img
+                        src="https://img.youtube.com/vi/Ck6LLvllcmM/hqdefault.jpg"
+                        alt="Video Thumbnail"
+                        class="siec-yt-thumb"
+                      />
+                      <button class="siec-yt-play-btn" aria-label="Play Video">
+                        <svg viewBox="0 0 68 48" width="68" height="48">
+                          <path
+                            class="siec-yt-play-bg"
+                            d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,0.1,34,0,34,0S12.21,0.1,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.9,34,48,34,48s21.79-0.1,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
+                            fill="#f00"
+                          ></path>
+                          <path d="M 45,24 27,14 27,34" fill="#fff"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="siec-video-card">
+                    <div class="siec-video-box" data-video-id="Ck6LLvllcmM">
+                      <img
+                        src="https://img.youtube.com/vi/Ck6LLvllcmM/hqdefault.jpg"
+                        alt="Video Thumbnail"
+                        class="siec-yt-thumb"
+                      />
+                      <button class="siec-yt-play-btn" aria-label="Play Video">
+                        <svg viewBox="0 0 68 48" width="68" height="48">
+                          <path
+                            class="siec-yt-play-bg"
+                            d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,0.1,34,0,34,0S12.21,0.1,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.9,34,48,34,48s21.79-0.1,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
+                            fill="#f00"
+                          ></path>
+                          <path d="M 45,24 27,14 27,34" fill="#fff"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="siec-video-card">
+                    <div class="siec-video-box" data-video-id="Ck6LLvllcmM">
+                      <img
+                        src="https://img.youtube.com/vi/Ck6LLvllcmM/hqdefault.jpg"
+                        alt="Video Thumbnail"
+                        class="siec-yt-thumb"
+                      />
+                      <button class="siec-yt-play-btn" aria-label="Play Video">
+                        <svg viewBox="0 0 68 48" width="68" height="48">
+                          <path
+                            class="siec-yt-play-bg"
+                            d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,0.1,34,0,34,0S12.21,0.1,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.9,34,48,34,48s21.79-0.1,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
+                            fill="#f00"
+                          ></path>
+                          <path d="M 45,24 27,14 27,34" fill="#fff"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="siec-video-dots" id="siecVideoDots"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Siec Alumni section End ============ -->
+    <!-- ========== Siec Question & Answer section start ============ -->
     <section class="siec-faq-section">
-  <div class="siec-faq-container">
-    
-    <div class="siec-faq-header text-center">
-      <span class="siec-faq-badge">Quick Answers</span>
-      <h2 class="siec-faq-title">
-        Frequently Asked <span class="siec-faq-title-highlight">Questions</span>
-      </h2>
-      <p class="siec-faq-subtitle">
-        From application steps to visa queries, we’ve covered the most common questions to<br>help you move forward with confidence.
-      </p>
-    </div>
+      <div class="siec-faq-container">
+        <div class="siec-faq-header text-center">
+          <span class="siec-faq-badge">Quick Answers</span>
+          <h2 class="siec-faq-title">
+            Frequently Asked
+            <span class="siec-faq-title-highlight">Questions</span>
+          </h2>
+          <p class="siec-faq-subtitle">
+            From application steps to visa queries, we’ve covered the most
+            common questions to<br />help you move forward with confidence.
+          </p>
+        </div>
 
-    <div class="siec-faq-tabs">
-      <button class="siec-faq-tab-btn active" data-category="application">Application</button>
-      <button class="siec-faq-tab-btn" data-category="admission">Admission</button>
-      <button class="siec-faq-tab-btn" data-category="visa">Visa</button>
-      <button class="siec-faq-tab-btn" data-category="scholarship">Scholarship</button>
-      <button class="siec-faq-tab-btn" data-category="accommodation">Accommodation</button>
-    </div>
+        <div class="siec-faq-tabs">
+          <button class="siec-faq-tab-btn active" data-category="application">
+            Application
+          </button>
+          <button class="siec-faq-tab-btn" data-category="admission">
+            Admission
+          </button>
+          <button class="siec-faq-tab-btn" data-category="visa">Visa</button>
+          <button class="siec-faq-tab-btn" data-category="scholarship">
+            Scholarship
+          </button>
+          <button class="siec-faq-tab-btn" data-category="accommodation">
+            Accommodation
+          </button>
+        </div>
 
-    <div class="siec-faq-body">
-      
-      <div class="siec-faq-left">
-        <div class="siec-faq-accordion-group">
-          
-          <div class="siec-faq-category-content active" id="category-application">
-            <div class="siec-faq-item">
-              <button class="siec-faq-question">
-                <span>How do I apply to study abroad?</span>
-                <span class="siec-faq-icon">+</span>
-              </button>
-              <div class="siec-faq-answer">
-                <p>You can start by choosing your preferred course and university. Our expert counselors will guide you through document preparation, application submission, and tracking your application status step-by-step.</p>
+        <div class="siec-faq-body">
+          <div class="siec-faq-left">
+            <div class="siec-faq-accordion-group">
+              <div
+                class="siec-faq-category-content active"
+                id="category-application"
+              >
+                <div class="siec-faq-item">
+                  <button class="siec-faq-question">
+                    <span>How do I apply to study abroad?</span>
+                    <span class="siec-faq-icon">+</span>
+                  </button>
+                  <div class="siec-faq-answer">
+                    <p>
+                      You can start by choosing your preferred course and
+                      university. Our expert counselors will guide you through
+                      document preparation, application submission, and tracking
+                      your application status step-by-step.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="siec-faq-item">
+                  <button class="siec-faq-question">
+                    <span
+                      >What documents are required to apply for studying
+                      overseas for international students?</span
+                    >
+                    <span class="siec-faq-icon">+</span>
+                  </button>
+                  <div class="siec-faq-answer">
+                    <p>
+                      Generally, you need academic transcripts, English
+                      proficiency test scores (IELTS/TOEFL/PTE), Statement of
+                      Purpose (SOP), Letters of Recommendation (LOR), a valid
+                      passport, and an updated CV.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="siec-faq-item">
+                  <button class="siec-faq-question">
+                    <span
+                      >What housing arrangements can I consider being an
+                      international student?</span
+                    >
+                    <span class="siec-faq-icon">+</span>
+                  </button>
+                  <div class="siec-faq-answer">
+                    <p>
+                      Options include university dormitories/halls of residence,
+                      private rented apartments, homestays with local families,
+                      or shared student housing near your campus.
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
 
-            <div class="siec-faq-item">
-              <button class="siec-faq-question">
-                <span>What documents are required to apply for studying overseas for international students?</span>
-                <span class="siec-faq-icon">+</span>
-              </button>
-              <div class="siec-faq-answer">
-                <p>Generally, you need academic transcripts, English proficiency test scores (IELTS/TOEFL/PTE), Statement of Purpose (SOP), Letters of Recommendation (LOR), a valid passport, and an updated CV.</p>
+              <div class="siec-faq-category-content" id="category-admission">
+                <div class="siec-faq-item">
+                  <button class="siec-faq-question">
+                    <span>When should I start the admission process?</span>
+                    <span class="siec-faq-icon">+</span>
+                  </button>
+                  <div class="siec-faq-answer">
+                    <p>
+                      It is recommended to start the process at least 6 to 12
+                      months before the intake deadline to ensure ample time for
+                      visa processing and funding arrangements.
+                    </p>
+                  </div>
+                </div>
+                <div class="siec-faq-item">
+                  <button class="siec-faq-question">
+                    <span>Can I get admission without IELTS?</span>
+                    <span class="siec-faq-icon">+</span>
+                  </button>
+                  <div class="siec-faq-answer">
+                    <p>
+                      Yes, several universities accept alternative tests like
+                      Medium of Instruction (MOI) certificates, Duolingo, or
+                      internal university English language tests.
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
 
-            <div class="siec-faq-item">
-              <button class="siec-faq-question">
-                <span>What housing arrangements can I consider being an international student?</span>
-                <span class="siec-faq-icon">+</span>
-              </button>
-              <div class="siec-faq-answer">
-                <p>Options include university dormitories/halls of residence, private rented apartments, homestays with local families, or shared student housing near your campus.</p>
+              <div class="siec-faq-category-content" id="category-visa">
+                <div class="siec-faq-item">
+                  <button class="siec-faq-question">
+                    <span>How long does student visa processing take?</span>
+                    <span class="siec-faq-icon">+</span>
+                  </button>
+                  <div class="siec-faq-answer">
+                    <p>
+                      Processing time varies by country. Usually, it takes
+                      between 3 to 8 weeks after submitting all required
+                      biometrics and financial verification documents.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="siec-faq-category-content" id="category-scholarship">
+                <div class="siec-faq-item">
+                  <button class="siec-faq-question">
+                    <span
+                      >Are fully funded scholarships available for international
+                      students?</span
+                    >
+                    <span class="siec-faq-icon">+</span>
+                  </button>
+                  <div class="siec-faq-answer">
+                    <p>
+                      Yes, merit-based government and university scholarships
+                      are available that cover full tuition fees, living
+                      expenses, and health insurance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="siec-faq-category-content"
+                id="category-accommodation"
+              >
+                <div class="siec-faq-item">
+                  <button class="siec-faq-question">
+                    <span>Does SIEC assist with finding accommodation?</span>
+                    <span class="siec-faq-icon">+</span>
+                  </button>
+                  <div class="siec-faq-answer">
+                    <p>
+                      Yes, we help students secure safe, affordable, and
+                      convenient accommodation before they fly out to their
+                      destination country.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="siec-faq-category-content" id="category-admission">
-            <div class="siec-faq-item">
-              <button class="siec-faq-question">
-                <span>When should I start the admission process?</span>
-                <span class="siec-faq-icon">+</span>
-              </button>
-              <div class="siec-faq-answer">
-                <p>It is recommended to start the process at least 6 to 12 months before the intake deadline to ensure ample time for visa processing and funding arrangements.</p>
-              </div>
-            </div>
-            <div class="siec-faq-item">
-              <button class="siec-faq-question">
-                <span>Can I get admission without IELTS?</span>
-                <span class="siec-faq-icon">+</span>
-              </button>
-              <div class="siec-faq-answer">
-                <p>Yes, several universities accept alternative tests like Medium of Instruction (MOI) certificates, Duolingo, or internal university English language tests.</p>
-              </div>
+          <div class="siec-faq-right">
+            <div class="siec-faq-banner-wrapper">
+              <img
+                src="image/faq/faq-right.svg"
+                alt="Talk to Counselor"
+                class="siec-faq-banner-img"
+              />
             </div>
           </div>
-
-          <div class="siec-faq-category-content" id="category-visa">
-            <div class="siec-faq-item">
-              <button class="siec-faq-question">
-                <span>How long does student visa processing take?</span>
-                <span class="siec-faq-icon">+</span>
-              </button>
-              <div class="siec-faq-answer">
-                <p>Processing time varies by country. Usually, it takes between 3 to 8 weeks after submitting all required biometrics and financial verification documents.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="siec-faq-category-content" id="category-scholarship">
-            <div class="siec-faq-item">
-              <button class="siec-faq-question">
-                <span>Are fully funded scholarships available for international students?</span>
-                <span class="siec-faq-icon">+</span>
-              </button>
-              <div class="siec-faq-answer">
-                <p>Yes, merit-based government and university scholarships are available that cover full tuition fees, living expenses, and health insurance.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="siec-faq-category-content" id="category-accommodation">
-            <div class="siec-faq-item">
-              <button class="siec-faq-question">
-                <span>Does SIEC assist with finding accommodation?</span>
-                <span class="siec-faq-icon">+</span>
-              </button>
-              <div class="siec-faq-answer">
-                <p>Yes, we help students secure safe, affordable, and convenient accommodation before they fly out to their destination country.</p>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
-
-      <div class="siec-faq-right">
-        <div class="siec-faq-banner-wrapper">
-          <img src="image/faq/faq-right.svg" alt="Talk to Counselor" class="siec-faq-banner-img">
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
+    </section>
     <!-- ========== Siec Question & Answer section End ============ -->
 
-  <!-- ============ Footer section start ============ -->
-  <footer class="siec-footer">
-    <div class="footer-container">
+    <!-- ============ Footer section start ============ -->
+    <footer class="siec-footer">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <h4 class="footer-title">Study Abroad</h4>
+            <ul class="footer-links">
+              <li><a href="#">Study in UK</a></li>
+              <li><a href="#">Study in USA</a></li>
+              <li><a href="#">Study in Australia</a></li>
+              <li><a href="#">Study in New Zealand</a></li>
+              <li><a href="#">Study in Germany</a></li>
+              <li><a href="#">Study in Singapore</a></li>
+            </ul>
+          </div>
 
-      <div class="footer-grid">
+          <div class="footer-column">
+            <h4 class="footer-title">Services</h4>
+            <ul class="footer-links">
+              <li><a href="#">Test Prep</a></li>
+              <li><a href="#">Course + University Match</a></li>
+              <li><a href="#">Expert Counselling</a></li>
+              <li><a href="#">Loan & Accommodation</a></li>
+              <li><a href="#">Migration</a></li>
+              <li><a href="#">International Careers</a></li>
+            </ul>
+          </div>
 
-        <div class="footer-column">
-          <h4 class="footer-title">Study Abroad</h4>
-          <ul class="footer-links">
-            <li><a href="#">Study in UK</a></li>
-            <li><a href="#">Study in USA</a></li>
-            <li><a href="#">Study in Australia</a></li>
-            <li><a href="#">Study in New Zealand</a></li>
-            <li><a href="#">Study in Germany</a></li>
-            <li><a href="#">Study in Singapore</a></li>
-          </ul>
-        </div>
+          <div class="footer-column">
+            <h4 class="footer-title">Company</h4>
+            <ul class="footer-links">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Become a Franchise</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+              <li><a href="#">Find Us</a></li>
+              <li><a href="#">Refer & Earn</a></li>
+              <li><a href="#">Review Us</a></li>
+            </ul>
+          </div>
 
-        <div class="footer-column">
-          <h4 class="footer-title">Services</h4>
-          <ul class="footer-links">
-            <li><a href="#">Test Prep</a></li>
-            <li><a href="#">Course + University Match</a></li>
-            <li><a href="#">Expert Counselling</a></li>
-            <li><a href="#">Loan & Accommodation</a></li>
-            <li><a href="#">Migration</a></li>
-            <li><a href="#">International Careers</a></li>
-          </ul>
-        </div>
+          <div class="footer-column subscribe-column">
+            <div class="subscribe-card">
+              <h4 class="subscribe-title">Subscribe Us</h4>
 
-        <div class="footer-column">
-          <h4 class="footer-title">Company</h4>
-          <ul class="footer-links">
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Become a Franchise</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-            <li><a href="#">Find Us</a></li>
-            <li><a href="#">Refer & Earn</a></li>
-            <li><a href="#">Review Us</a></li>
-          </ul>
-        </div>
+              <form class="subscribe-form">
+                <input
+                  type="email"
+                  placeholder="Email address"
+                  required
+                  class="subscribe-input"
+                />
+                <button type="submit" class="subscribe-btn">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </form>
 
-        <div class="footer-column subscribe-column">
-          <div class="subscribe-card">
-            <h4 class="subscribe-title">Subscribe Us</h4>
+              <p class="subscribe-text">
+                Get the latest updates on study abroad blogs, expert webinars,
+                and exclusive student events—straight to your inbox.
+              </p>
 
-            <form class="subscribe-form">
-              <input type="email" placeholder="Email address" required class="subscribe-input">
-              <button type="submit" class="subscribe-btn">
-                <i class="fa-solid fa-arrow-right"></i>
-              </button>
-            </form>
-
-            <p class="subscribe-text">
-              Get the latest updates on study abroad blogs, expert webinars, and exclusive student events—straight to
-              your inbox.
-            </p>
-
-            <div class="footer-socials">
-              <a href="#" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
-              <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+              <div class="footer-socials">
+                <a href="#" class="social-icon"
+                  ><i class="fa-brands fa-whatsapp"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </div>
             </div>
           </div>
         </div>
 
-      </div>
+        <div class="footer-partners-section">
+          <div class="partners-grid">
+            <div class="partner-card">
+              <img src="image/award/aaeri.png" alt="AAERI" />
+            </div>
+            <div class="partner-card">
+              <img src="image/award/aaea.png" alt="AAEA" />
+            </div>
+            <div class="partner-card">
+              <img src="image/award/airc.png" alt="AIRC" />
+            </div>
+            <div class="partner-card">
+              <img src="image/award/icff.png" alt="ICEF" />
+            </div>
+            <div class="partner-card">
+              <img src="image/award/airc2021.png" alt="AIRC Agency 2021" />
+            </div>
+            <div class="partner-card">
+              <img src="image/award/ucas.png" alt="UCAS" />
+            </div>
+          </div>
 
-      <div class="footer-partners-section">
-        <div class="partners-grid">
-          <div class="partner-card"><img src="image/award/aaeri.png" alt="AAERI"></div>
-          <div class="partner-card"><img src="image/award/aaea.png" alt="AAEA"></div>
-          <div class="partner-card"><img src="image/award/airc.png" alt="AIRC"></div>
-          <div class="partner-card"><img src="image/award/icff.png" alt="ICEF"></div>
-          <div class="partner-card"><img src="image/award/airc2021.png" alt="AIRC Agency 2021"></div>
-          <div class="partner-card"><img src="image/award/ucas.png" alt="UCAS"></div>
+          <p class="feedback-text">
+            For Suggestion and Feedback, please write to us on :
+            <a href="mailto:feedback@siecindia.com" class="feedback-email"
+              >admissions@siecbangladesh.com</a
+            >
+          </p>
         </div>
-
-        <p class="feedback-text">
-          For Suggestion and Feedback, please write to us on : <a href="mailto:feedback@siecindia.com"
-            class="feedback-email">admissions@siecbangladesh.com</a>
-        </p>
       </div>
 
-    </div>
-
-    <div class="footer-bottom">
-      <div class="footer-container bottom-flex">
-        <p class="copyright-text">
-          ©2025 SIEC Bangladesh. | Powered by DTE | <a href="#">Terms & Conditions</a>
-        </p>
+      <div class="footer-bottom">
+        <div class="footer-container bottom-flex">
+          <p class="copyright-text">
+            ©2025 SIEC Bangladesh. | Powered by DTE |
+            <a href="#">Terms & Conditions</a>
+          </p>
+        </div>
       </div>
-    </div>
-  </footer>
-  <!-- ============ Footer section End ============ -->
-  <!-- Project scripts -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/script.js"></script>
-</body>
-
+    </footer>
+    <!-- ============ Footer section End ============ -->
+    <!-- Project scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
